@@ -1,0 +1,65 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A4267915-782B-291B-96EE-A95E4B6AB273" name="ML_DEPT">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-24 04:10:32 UTC</createdTime>
+<generatorID>B0FDB79D-FE33-2A6D-1D26-418743B54BA1</generatorID>
+<ownerDesignName>MODEL</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="DEPTNO" id="12FE8D41-296E-099E-B752-FCA74C7C80F9">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-24 04:10:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[DEPARTMENT ID NUMBER]]></commentInRDBMS>
+<generatorID>DCD11DCE-567C-D56A-339A-AC52E9231633</generatorID>
+<ownerDesignName>MODEL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DNAME" id="BD2FD267-D3BE-D280-AFFB-ACD149C57F34">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-24 04:10:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[DEPARTMENT NAME]]></commentInRDBMS>
+<generatorID>1B1DEEDC-6EC0-7645-0AEC-2510E1A35172</generatorID>
+<ownerDesignName>MODEL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LOC" id="0E13587F-37E6-C443-55F1-6DF279B1D485">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-24 04:10:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[LOCATION CITY OF THE DEPARTMENT]]></commentInRDBMS>
+<generatorID>625BF1DF-1D01-41CD-A3E5-638E3DBC48E5</generatorID>
+<ownerDesignName>MODEL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="16B37A3F-BEC7-5B79-242A-5FA0B817E8AA" name="ML_DEPT_PK">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-24 04:10:32 UTC</createdTime>
+<generatorID>5D4046A5-9DA7-0AB9-EA5D-AE8D9ED3CFFB</generatorID>
+<ownerDesignName>MODEL</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="12FE8D41-296E-099E-B752-FCA74C7C80F9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

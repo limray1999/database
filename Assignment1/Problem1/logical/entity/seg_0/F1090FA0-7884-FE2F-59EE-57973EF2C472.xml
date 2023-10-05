@@ -1,0 +1,79 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F1090FA0-7884-FE2F-59EE-57973EF2C472" name="ML_PRO_pSKILL">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-13 02:01:42 UTC</createdTime>
+<ownerDesignName>Problem1</ownerDesignName>
+<engineerTo>
+<item key="8AD6FE7D-827F-8906-0AE7-DD21FCDD93B6" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="pID" id="1A77C7CF-9B94-DF7E-C005-FFA01B3A964A">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-13 02:02:46 UTC</createdTime>
+<generatorID>B3646654-8AF7-1822-A797-9A7010812DD9</generatorID>
+<ownerDesignName>Problem1</ownerDesignName>
+<engineerTo>
+<item key="8AD6FE7D-827F-8906-0AE7-DD21FCDD93B6" value="true"/>
+</engineerTo>
+<referedAttribute>BB6518F0-70B8-64A3-CCB0-03BBDD0F42A6</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="SKILLID" id="728BCED5-9A79-6C0E-E92D-5CECB3E16083">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-13 02:03:54 UTC</createdTime>
+<generatorID>B92798F9-4EEA-045D-1BF7-AEE39F9C6CBB</generatorID>
+<ownerDesignName>Problem1</ownerDesignName>
+<engineerTo>
+<item key="8AD6FE7D-827F-8906-0AE7-DD21FCDD93B6" value="true"/>
+</engineerTo>
+<referedAttribute>A1C10B6B-5B6D-485D-B657-1A07633D5C91</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PROFICIENCY" id="21CD4DF7-3488-BD08-1C4A-D2CCF4FEA735">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-13 02:06:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[PROFESSOR'S PROFICIENCY OF A SKILL, 0 REPRESENTS LOWEST PROFICIENCY AND 9 PRESENTS HIGHEST PROFICIENCY, ]]></commentInRDBMS>
+<ownerDesignName>Problem1</ownerDesignName>
+<engineerTo>
+<item key="8AD6FE7D-827F-8906-0AE7-DD21FCDD93B6" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="00DA04BE-4691-F39F-E366-BD477DB46616" name="PRO_pSKILL PK">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-13 02:04:02 UTC</createdTime>
+<ownerDesignName>Problem1</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="8AD6FE7D-827F-8906-0AE7-DD21FCDD93B6" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>1A77C7CF-9B94-DF7E-C005-FFA01B3A964A</attributeRef>
+<attributeRef>728BCED5-9A79-6C0E-E92D-5CECB3E16083</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

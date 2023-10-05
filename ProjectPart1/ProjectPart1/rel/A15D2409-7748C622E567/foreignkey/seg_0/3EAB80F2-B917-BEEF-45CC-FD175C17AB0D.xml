@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="3EAB80F2-B917-BEEF-45CC-FD175C17AB0D" containerWithKeyObject="AD2387B4-D7CF-7B2C-C8DA-14CDC70883AE" localFKIndex="25082B12-D4CB-EA8F-743F-D3D9682E1114" name="ML_OZ_MEMBER_ML_OZ_CUS_FK">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-12 19:17:58 UTC</createdTime>
+<generatorID>03A634B0-E6C8-EB1F-D27F-4D60F5BCA5CB</generatorID>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<referredTableLongName>ML_OZ_CUS</referredTableLongName>
+<arc>F6FAEF88-0C2D-1DD6-E56E-D13088DBBE68</arc>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>8B594382-3DE7-D4C9-1ED3-96114E265CC3</referredTableID>
+<keyObject>0097956C-CC37-7B0C-D110-9E10D83193FA</keyObject>
+<referredKeyID>0097956C-CC37-7B0C-D110-9E10D83193FA</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>PASSENGER_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<discriminatorValue>M</discriminatorValue>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

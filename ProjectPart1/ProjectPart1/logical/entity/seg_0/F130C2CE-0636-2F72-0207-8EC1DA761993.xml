@@ -1,0 +1,64 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F130C2CE-0636-2F72-0207-8EC1DA761993" name="ML_OZ_PAS_SPE">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-12 18:36:24 UTC</createdTime>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<engineerTo>
+<item key="A15D2409-CEE6-726D-472B-7748C622E567" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="PASSENGER_ID" id="C15BF282-F854-1037-7BA2-806BB6836DC2">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-12 18:58:13 UTC</createdTime>
+<generatorID>1E3316A2-A74F-DAC5-50D6-621268A9D956</generatorID>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<engineerTo>
+<item key="A15D2409-CEE6-726D-472B-7748C622E567" value="true"/>
+</engineerTo>
+<referedAttribute>AD399E72-765B-BF4B-D110-20B2FD9ED61E</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="REQUEST_ID" id="95872746-4DB0-92B0-6C13-A4784A812852">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-12 19:09:42 UTC</createdTime>
+<generatorID>83EAD4EF-56BC-D488-D949-84C0095543AA</generatorID>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<engineerTo>
+<item key="A15D2409-CEE6-726D-472B-7748C622E567" value="true"/>
+</engineerTo>
+<referedAttribute>3D6FE86B-AEA3-DDEE-CFB7-5B26470CE811</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="69F9A64A-CC94-996E-EF80-4059EF47E5E0" name="ML_OZ_PAS_SPE PK">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-12 19:09:49 UTC</createdTime>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<engineerTo>
+<item key="A15D2409-CEE6-726D-472B-7748C622E567" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>95872746-4DB0-92B0-6C13-A4784A812852</attributeRef>
+<attributeRef>C15BF282-F854-1037-7BA2-806BB6836DC2</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

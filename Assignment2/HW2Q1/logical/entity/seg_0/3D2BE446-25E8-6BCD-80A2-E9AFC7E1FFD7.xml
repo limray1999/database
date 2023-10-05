@@ -1,0 +1,215 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="3D2BE446-25E8-6BCD-80A2-E9AFC7E1FFD7" name="INDIVIDUAL">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-27 14:08:57 UTC</createdTime>
+<ownerDesignName>HW2Q1</ownerDesignName>
+<engineerTo>
+<item key="74E892E6-6B91-4587-BE7D-498957C17D1E" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<generateDiscrimColumn>true</generateDiscrimColumn>
+<discriminatorAttributeID>5FEB08CA-8F9D-BE01-581A-DD3ECF18D291</discriminatorAttributeID>
+<completeSubtypes>true</completeSubtypes>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="IndividualID" id="AF3984E8-FF4E-62F8-03BB-0B027044E473">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-27 14:09:21 UTC</createdTime>
+<commentInRDBMS><![CDATA[The Unique Number Assigned to Everyone]]></commentInRDBMS>
+<ownerDesignName>HW2Q1</ownerDesignName>
+<engineerTo>
+<item key="74E892E6-6B91-4587-BE7D-498957C17D1E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<ownDataTypeParameters>,20,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Itype" id="5FEB08CA-8F9D-BE01-581A-DD3ECF18D291">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-27 14:28:49 UTC</createdTime>
+<ownerDesignName>HW2Q1</ownerDesignName>
+<engineerTo>
+<item key="74E892E6-6B91-4587-BE7D-498957C17D1E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<ownDataTypeParameters>3,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="FNAME" id="4D9B08B2-31B4-E457-D369-1B31D30D7C90">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-27 14:15:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[First Name]]></commentInRDBMS>
+<ownerDesignName>HW2Q1</ownerDesignName>
+<engineerTo>
+<item key="74E892E6-6B91-4587-BE7D-498957C17D1E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="MNAME" id="A66286A9-8BEE-6E3F-28BD-D1AD5B7703DC">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-27 14:16:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Middle Name]]></commentInRDBMS>
+<ownerDesignName>HW2Q1</ownerDesignName>
+<engineerTo>
+<item key="74E892E6-6B91-4587-BE7D-498957C17D1E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="LNAME" id="5F4EA01F-923F-E842-5668-6B2C57A376A3">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-27 14:17:00 UTC</createdTime>
+<commentInRDBMS><![CDATA[Last Name]]></commentInRDBMS>
+<ownerDesignName>HW2Q1</ownerDesignName>
+<engineerTo>
+<item key="74E892E6-6B91-4587-BE7D-498957C17D1E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Gender" id="5EEE19B7-3D09-EA55-FA97-1EE31197F488">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-27 14:17:19 UTC</createdTime>
+<ownerDesignName>HW2Q1</ownerDesignName>
+<engineerTo>
+<item key="74E892E6-6B91-4587-BE7D-498957C17D1E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="BirthDate" id="A38E67B6-7551-D822-A69B-F87A3F666A47">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-27 14:18:21 UTC</createdTime>
+<ownerDesignName>HW2Q1</ownerDesignName>
+<engineerTo>
+<item key="74E892E6-6B91-4587-BE7D-498957C17D1E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Email" id="91BFDB18-9AF8-85AD-8833-14355F7A7F47">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-27 14:18:47 UTC</createdTime>
+<ownerDesignName>HW2Q1</ownerDesignName>
+<engineerTo>
+<item key="74E892E6-6B91-4587-BE7D-498957C17D1E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ContactNumber" id="7E38A4B3-62DB-E1BA-AE51-DCF143FDED11">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-27 14:19:06 UTC</createdTime>
+<ownerDesignName>HW2Q1</ownerDesignName>
+<engineerTo>
+<item key="74E892E6-6B91-4587-BE7D-498957C17D1E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<ownDataTypeParameters>,20,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="SSN" id="A295D2BC-03E5-4772-5513-09F89412E1C4">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-27 14:19:26 UTC</createdTime>
+<commentInRDBMS><![CDATA[Person's SSN number, an individual may not have SSN number.]]></commentInRDBMS>
+<ownerDesignName>HW2Q1</ownerDesignName>
+<engineerTo>
+<item key="74E892E6-6B91-4587-BE7D-498957C17D1E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<ownDataTypeParameters>,9,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="State" id="82D34F1F-C41F-885B-27C0-4B1DA88D774C">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-27 14:20:49 UTC</createdTime>
+<commentInRDBMS><![CDATA[Individual's Address]]></commentInRDBMS>
+<ownerDesignName>HW2Q1</ownerDesignName>
+<engineerTo>
+<item key="74E892E6-6B91-4587-BE7D-498957C17D1E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="City" id="774169B3-3893-BF1B-E1F0-EFEB1427B565">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-27 14:23:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[Individual's Address]]></commentInRDBMS>
+<ownerDesignName>HW2Q1</ownerDesignName>
+<engineerTo>
+<item key="74E892E6-6B91-4587-BE7D-498957C17D1E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Street" id="05236F63-3044-C89C-4C91-C9B8FD315E52">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-27 14:24:11 UTC</createdTime>
+<commentInRDBMS><![CDATA[Individual's Address]]></commentInRDBMS>
+<ownerDesignName>HW2Q1</ownerDesignName>
+<engineerTo>
+<item key="74E892E6-6B91-4587-BE7D-498957C17D1E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="1E93DE9D-74F3-B89A-925F-70B6776AFEE9" name="INDIVIDUAL PK">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-27 14:15:28 UTC</createdTime>
+<ownerDesignName>HW2Q1</ownerDesignName>
+<engineerTo>
+<item key="74E892E6-6B91-4587-BE7D-498957C17D1E" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>AF3984E8-FF4E-62F8-03BB-0B027044E473</attributeRef>
+<attributeRef>5FEB08CA-8F9D-BE01-581A-DD3ECF18D291</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

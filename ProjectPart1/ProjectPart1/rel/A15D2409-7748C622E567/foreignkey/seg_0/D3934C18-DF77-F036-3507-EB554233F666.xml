@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="D3934C18-DF77-F036-3507-EB554233F666" containerWithKeyObject="9153C4E4-1D23-6BF7-82AB-C1CF77D7649F" localFKIndex="3B79C8EA-722B-D720-497E-31810A3CDF68" name="ML_OZ_PAS_SPE_ML_OZ_SPE_FK">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-12 19:17:58 UTC</createdTime>
+<generatorID>83EAD4EF-56BC-D488-D949-84C0095543AA</generatorID>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<referredTableLongName>ML_OZ_SPE</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>61887C67-389C-375E-F911-51457AA4A90D</referredTableID>
+<keyObject>D532A423-F583-3F32-2BEB-D365E957671F</keyObject>
+<referredKeyID>D532A423-F583-3F32-2BEB-D365E957671F</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>REQUEST_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

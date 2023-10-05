@@ -1,0 +1,190 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="57C20E25-54AB-1C05-F3EB-B12BC2A0CFC4" name="ML_OZ_PASSENGER">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-05 15:16:31 UTC</createdTime>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<engineerTo>
+<item key="A15D2409-CEE6-726D-472B-7748C622E567" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<generateDiscrimColumn>true</generateDiscrimColumn>
+<discriminatorAttributeID>8544A759-5908-F527-4A46-F5A9704EEE0C</discriminatorAttributeID>
+<discriminatorValue>P</discriminatorValue>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="PASSENGER_ID" id="AD399E72-765B-BF4B-D110-20B2FD9ED61E">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-05 18:02:10 UTC</createdTime>
+<commentInRDBMS><![CDATA[THE UNIQUE NUMBER ASSIGNED TO EVERY PASSENGER]]></commentInRDBMS>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<engineerTo>
+<item key="A15D2409-CEE6-726D-472B-7748C622E567" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PASSENGER_TYPE" id="8544A759-5908-F527-4A46-F5A9704EEE0C">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-05 18:15:45 UTC</createdTime>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<engineerTo>
+<item key="A15D2409-CEE6-726D-472B-7748C622E567" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="FNAME" id="C8CC5927-527C-E839-675C-F98FD9A994FE">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-05 18:53:46 UTC</createdTime>
+<commentInRDBMS><![CDATA[FIRST NAME]]></commentInRDBMS>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<engineerTo>
+<item key="A15D2409-CEE6-726D-472B-7748C622E567" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="MNAME" id="2E3C4C87-D2E2-17E1-9D40-9BFD65F539FF">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-05 18:54:39 UTC</createdTime>
+<commentInRDBMS><![CDATA[MIDDLE NAME]]></commentInRDBMS>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<engineerTo>
+<item key="A15D2409-CEE6-726D-472B-7748C622E567" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="LNAME" id="97BA5956-A30C-FE10-6DE8-17C75B2AEFD4">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-05 18:54:56 UTC</createdTime>
+<commentInRDBMS><![CDATA[LASTNAME]]></commentInRDBMS>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<engineerTo>
+<item key="A15D2409-CEE6-726D-472B-7748C622E567" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="BIRTHDATE" id="C94C6FEF-D579-072D-7CE9-33E54430B616">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-05 18:55:15 UTC</createdTime>
+<commentInRDBMS><![CDATA[DATE OF BIRTH]]></commentInRDBMS>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<engineerTo>
+<item key="A15D2409-CEE6-726D-472B-7748C622E567" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="GENDER" id="3530710E-DACB-33A8-4D94-E7FFCF134B07">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-05 19:08:30 UTC</createdTime>
+<commentInRDBMS><![CDATA[GENDER, MALE OR FEMALE]]></commentInRDBMS>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<engineerTo>
+<item key="A15D2409-CEE6-726D-472B-7748C622E567" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NATIONALITY" id="7F997789-4481-C40E-D755-71E6355E3DB6">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-05 19:09:37 UTC</createdTime>
+<commentInRDBMS><![CDATA[PASSENGER'S NATIONALITY]]></commentInRDBMS>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<engineerTo>
+<item key="A15D2409-CEE6-726D-472B-7748C622E567" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PN" id="D62E0887-79FE-B126-8D0A-FF68A66960B2">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-05 19:10:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[PASSPORT NUMBER]]></commentInRDBMS>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<engineerTo>
+<item key="A15D2409-CEE6-726D-472B-7748C622E567" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>9</dataTypeSize>
+<ownDataTypeParameters>9,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PNED" id="0BB18CA5-BB00-CD46-5FC0-BE143A33640F">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-05 19:12:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[PASSPORT EXPIRY DATE]]></commentInRDBMS>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<engineerTo>
+<item key="A15D2409-CEE6-726D-472B-7748C622E567" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PLAN_ID" id="3EE9591A-7E41-387A-0817-B3244B507526">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-12 18:59:38 UTC</createdTime>
+<generatorID>F1126870-C15B-2F04-A2D7-738A16FED845</generatorID>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<engineerTo>
+<item key="A15D2409-CEE6-726D-472B-7748C622E567" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>7CF191D5-A3BC-D8A1-40D2-803D6BA9015C</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="7D82683A-4697-5893-5D16-E74CD774C6D3" name="ML_OZ_PASSENGER PK">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-05 18:04:04 UTC</createdTime>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="A15D2409-CEE6-726D-472B-7748C622E567" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>AD399E72-765B-BF4B-D110-20B2FD9ED61E</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

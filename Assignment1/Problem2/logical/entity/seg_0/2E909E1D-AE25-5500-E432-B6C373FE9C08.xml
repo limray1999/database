@@ -1,0 +1,103 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="2E909E1D-AE25-5500-E432-B6C373FE9C08" name="ML_INVOICE">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-15 22:51:14 UTC</createdTime>
+<ownerDesignName>Problem2</ownerDesignName>
+<engineerTo>
+<item key="C350CEC1-4798-643C-A192-397F210E4078" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="INVOICE_ID" id="244205AF-1740-61E3-283B-AE0C51160C8D">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-15 22:52:22 UTC</createdTime>
+<commentInRDBMS><![CDATA[THE UNIQUE NUMBER ASSIGNED TO EVERY INVOICE]]></commentInRDBMS>
+<ownerDesignName>Problem2</ownerDesignName>
+<engineerTo>
+<item key="C350CEC1-4798-643C-A192-397F210E4078" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="INVOICE_NO" id="56E6C125-50A5-1955-93DF-AECD7B1F7B70">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-15 22:57:29 UTC</createdTime>
+<commentInRDBMS><![CDATA[INVOICE NUMBER]]></commentInRDBMS>
+<ownerDesignName>Problem2</ownerDesignName>
+<engineerTo>
+<item key="C350CEC1-4798-643C-A192-397F210E4078" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<ownDataTypeParameters>,20,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="INVOICE_DATE" id="33C4AC5E-234C-46E1-CA98-E7C9BE7B5906">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-15 23:48:36 UTC</createdTime>
+<commentInRDBMS><![CDATA[INVOICE DATE]]></commentInRDBMS>
+<ownerDesignName>Problem2</ownerDesignName>
+<engineerTo>
+<item key="C350CEC1-4798-643C-A192-397F210E4078" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="INVOICE_AMOUNT" id="35C8BF6B-0983-E00A-3742-1102A9EBFC97">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-15 23:49:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[INVOICE AMOUNT]]></commentInRDBMS>
+<ownerDesignName>Problem2</ownerDesignName>
+<engineerTo>
+<item key="C350CEC1-4798-643C-A192-397F210E4078" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,5,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="UNIT_ID" id="F302E3E2-A979-01C8-753A-FCE933BEFFC0">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-15 23:55:22 UTC</createdTime>
+<generatorID>32AC82BA-16A2-9A2B-D720-98C045F2B8E7</generatorID>
+<ownerDesignName>Problem2</ownerDesignName>
+<engineerTo>
+<item key="C350CEC1-4798-643C-A192-397F210E4078" value="true"/>
+</engineerTo>
+<referedAttribute>F5AD144A-21F8-64DF-1033-C4C75B7ED47D</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="3575D680-C871-45DA-7C8F-91579E59D6EC" name="ML_INVOICE PK">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-15 22:52:32 UTC</createdTime>
+<ownerDesignName>Problem2</ownerDesignName>
+<engineerTo>
+<item key="C350CEC1-4798-643C-A192-397F210E4078" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>244205AF-1740-61E3-283B-AE0C51160C8D</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

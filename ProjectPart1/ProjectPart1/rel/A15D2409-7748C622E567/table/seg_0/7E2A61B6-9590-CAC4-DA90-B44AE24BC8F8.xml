@@ -1,0 +1,63 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7E2A61B6-9590-CAC4-DA90-B44AE24BC8F8" name="ML_OZ_INVOICE">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-12 19:17:58 UTC</createdTime>
+<generatorID>8BB74EC4-418E-6754-389F-E8F6126D57EF</generatorID>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="INVOICE_ID" id="B73C43CA-28F8-B409-4404-E59554AF40E1">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-12 19:17:58 UTC</createdTime>
+<generatorID>58CBD4EF-D1FF-FAD5-9AB5-B43D53F36A91</generatorID>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DATE" id="53656C42-D18D-D18A-EDC4-E910CA8DA427">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-12 19:17:58 UTC</createdTime>
+<generatorID>E6411E20-9D17-5CFC-2BE7-ADA657F167AF</generatorID>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AMOUNT" id="CBA55E51-B427-D7F2-EF8F-E01E98F290C3">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-12 19:17:58 UTC</createdTime>
+<commentInRDBMS><![CDATA[INVOICE AMOUNT]]></commentInRDBMS>
+<generatorID>7DE17BB8-E1DB-F784-060A-9B450348A0FF</generatorID>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="232B5820-771D-26AC-4B3D-AA0C19C901E4" name="ML_OZ_INVOICE_PK">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-12 19:17:58 UTC</createdTime>
+<generatorID>96440A97-CE68-862A-95E7-DE94A3E8D0BA</generatorID>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B73C43CA-28F8-B409-4404-E59554AF40E1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

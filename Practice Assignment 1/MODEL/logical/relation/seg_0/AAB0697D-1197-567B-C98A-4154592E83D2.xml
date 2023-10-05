@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK_DEPT_EMP" directorySegmentName="seg_0" id="AAB0697D-1197-567B-C98A-4154592E83D2">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-20 03:08:33 UTC</createdTime>
+<ownerDesignName>MODEL</ownerDesignName>
+<engineerTo>
+<item key="3191E134-CC4C-99BB-2D5E-D6DE5D2FF5E3" value="true"/>
+</engineerTo>
+<sourcePk>5D4046A5-9DA7-0AB9-EA5D-AE8D9ED3CFFB</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>B0FDB79D-FE33-2A6D-1D26-418743B54BA1</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>C4A74E0D-1019-D4C7-54D7-D8945D42CC2E</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,90 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="5C8EE5CE-E67B-6AF5-60FF-FAB505EABDB7" name="ORD">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-29 02:08:27 UTC</createdTime>
+<ownerDesignName>HW2Q2</ownerDesignName>
+<engineerTo>
+<item key="05A9960C-3525-046E-5657-E1A70028A3B0" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ORD_ID" id="DAF6F9F3-4186-1EAC-A5F8-A5FCB50687F2">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-29 02:12:24 UTC</createdTime>
+<commentInRDBMS><![CDATA[ORDER ID]]></commentInRDBMS>
+<ownerDesignName>HW2Q2</ownerDesignName>
+<engineerTo>
+<item key="05A9960C-3525-046E-5657-E1A70028A3B0" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<ownDataTypeParameters>,20,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ORD_DATE" id="A131D10A-D0EE-3EB3-667F-9A2FAC08E4FB">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-29 02:12:47 UTC</createdTime>
+<commentInRDBMS><![CDATA[ORDER DATE]]></commentInRDBMS>
+<ownerDesignName>HW2Q2</ownerDesignName>
+<engineerTo>
+<item key="05A9960C-3525-046E-5657-E1A70028A3B0" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CUS_ID" id="F1E507BF-A4FD-0629-0EFB-E935205E7302">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-29 02:24:02 UTC</createdTime>
+<generatorID>9CA75D40-148B-B5D1-0B85-C09FA89D8118</generatorID>
+<ownerDesignName>HW2Q2</ownerDesignName>
+<engineerTo>
+<item key="05A9960C-3525-046E-5657-E1A70028A3B0" value="true"/>
+</engineerTo>
+<referedAttribute>E1A326E2-9ED7-6AFE-A075-0D1B8D411E68</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="INVOICE_ID" id="4733E881-727E-DD39-75F7-0D640521F563">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-29 02:26:04 UTC</createdTime>
+<generatorID>AAA6193D-C731-F615-3EE9-6152C9576DFB</generatorID>
+<ownerDesignName>HW2Q2</ownerDesignName>
+<engineerTo>
+<item key="05A9960C-3525-046E-5657-E1A70028A3B0" value="true"/>
+</engineerTo>
+<referedAttribute>B148E4F1-D040-808C-1FAD-78D5196236F1</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="AEEF4D65-2266-21CA-F1B9-1AEBC9B883E2" name="ORD PK">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-29 02:12:40 UTC</createdTime>
+<ownerDesignName>HW2Q2</ownerDesignName>
+<engineerTo>
+<item key="05A9960C-3525-046E-5657-E1A70028A3B0" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>DAF6F9F3-4186-1EAC-A5F8-A5FCB50687F2</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

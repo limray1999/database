@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="A3743AF8-FBD9-DD7E-122D-9C122BF0DD5D" containerWithKeyObject="95FE0C7D-ADE3-37AC-48D7-1C12F853D996" localFKIndex="92B12DF6-0772-0FF5-31BB-998EB6904330" name="ML_OZ_PAYMENT_ML_OZ_INVOICE_FK">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-12 19:17:58 UTC</createdTime>
+<generatorID>B68AB4AE-09EC-9097-E14B-5187BD49D6E2</generatorID>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<referredTableLongName>ML_OZ_INVOICE</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>7E2A61B6-9590-CAC4-DA90-B44AE24BC8F8</referredTableID>
+<keyObject>232B5820-771D-26AC-4B3D-AA0C19C901E4</keyObject>
+<referredKeyID>232B5820-771D-26AC-4B3D-AA0C19C901E4</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>INVOICE_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

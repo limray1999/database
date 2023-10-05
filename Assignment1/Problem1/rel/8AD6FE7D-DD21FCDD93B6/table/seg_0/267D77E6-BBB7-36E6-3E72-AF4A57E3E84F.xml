@@ -1,0 +1,93 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="267D77E6-BBB7-36E6-3E72-AF4A57E3E84F" name="ML_PRO">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-11 17:45:03 UTC</createdTime>
+<generatorID>588E7B59-093F-9426-DAB2-91387A54B05C</generatorID>
+<ownerDesignName>Problem1</ownerDesignName>
+<ordsAlias>pro</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="pID" id="5629A770-53A6-CC23-1578-B6D428D973FE">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-11 17:45:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[The unique professorID number assigned to every professor]]></commentInRDBMS>
+<generatorID>BB6518F0-70B8-64A3-CCB0-03BBDD0F42A6</generatorID>
+<ownerDesignName>Problem1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pFNAME" id="CD854695-8F83-1D2C-56EF-C77A562E5BF5">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-11 17:45:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Professor's first name]]></commentInRDBMS>
+<generatorID>112C1899-0345-FE35-A815-2581BABA004E</generatorID>
+<ownerDesignName>Problem1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pSKILL" id="BC0CE216-573C-5F13-BC52-A499FFB3E777">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-11 17:45:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Professor's skill(s). Assume that each professor has at least one skill.]]></commentInRDBMS>
+<generatorID>54C571F2-035B-4F9A-D9B7-52867731619D</generatorID>
+<ownerDesignName>Problem1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pMNAME" id="E7E7AB9E-5394-4349-6DFE-F6237B9F99B5">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-12 23:09:52 UTC</createdTime>
+<commentInRDBMS><![CDATA[Professor's middle name]]></commentInRDBMS>
+<generatorID>A54F33AE-66A2-BEA8-5D86-43D8A2295D64</generatorID>
+<ownerDesignName>Problem1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pLNAME" id="42A17A44-236B-D41B-2D4F-774980D80553">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-12 23:09:52 UTC</createdTime>
+<commentInRDBMS><![CDATA[Professor's last name]]></commentInRDBMS>
+<generatorID>7EF96CD9-669D-C682-BAFD-A398480F90A0</generatorID>
+<ownerDesignName>Problem1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="0131B8C0-F964-5D06-777B-CDF92BC53285" name="PRO_PK">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-11 17:45:03 UTC</createdTime>
+<generatorID>D17A6592-E037-D9F2-87E4-1DD33FEA8708</generatorID>
+<ownerDesignName>Problem1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5629A770-53A6-CC23-1578-B6D428D973FE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

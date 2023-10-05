@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="8D0138D0-2CD8-9B86-5B1C-5CE3DB2ACCAF" containerWithKeyObject="303919B3-888A-3A84-9565-DCEC49ABF86B" localFKIndex="EAD9760E-23C3-8248-E12B-1D65E9B357EF" name="ML_OZ_PASSENGER_FLIGHT_ML_OZ_FLIGHT_FK">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-12 19:17:58 UTC</createdTime>
+<generatorID>708FA195-F53C-5E42-FC0C-4D327227F369</generatorID>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<referredTableLongName>ML_OZ_FLIGHT</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>B6FB2823-1C78-8D29-B30E-67A1A32C9285</referredTableID>
+<keyObject>F2CEA90B-F5B1-BF04-B821-0D4A49CD22C4</keyObject>
+<referredKeyID>F2CEA90B-F5B1-BF04-B821-0D4A49CD22C4</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>FLIGHT_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

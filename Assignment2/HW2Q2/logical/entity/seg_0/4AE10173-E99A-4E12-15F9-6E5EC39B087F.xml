@@ -1,0 +1,87 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="4AE10173-E99A-4E12-15F9-6E5EC39B087F" name="INVOICE">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-29 02:08:45 UTC</createdTime>
+<ownerDesignName>HW2Q2</ownerDesignName>
+<engineerTo>
+<item key="05A9960C-3525-046E-5657-E1A70028A3B0" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="INVOICE_ID" id="B148E4F1-D040-808C-1FAD-78D5196236F1">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-29 02:17:31 UTC</createdTime>
+<ownerDesignName>HW2Q2</ownerDesignName>
+<engineerTo>
+<item key="05A9960C-3525-046E-5657-E1A70028A3B0" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<ownDataTypeParameters>,20,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="INVOICE_DATE" id="CD41360D-B904-AF5B-3558-E38A707D6A2B">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-29 02:17:47 UTC</createdTime>
+<ownerDesignName>HW2Q2</ownerDesignName>
+<engineerTo>
+<item key="05A9960C-3525-046E-5657-E1A70028A3B0" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="INVOICE_AMOUNT" id="06222AB2-DA00-AD1F-E920-7445DDB603A4">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-29 02:18:16 UTC</createdTime>
+<ownerDesignName>HW2Q2</ownerDesignName>
+<engineerTo>
+<item key="05A9960C-3525-046E-5657-E1A70028A3B0" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>15</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,15,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ORD_ID" id="2B2BF694-FC69-1E94-2BC1-E5F765563B91">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-29 02:25:58 UTC</createdTime>
+<generatorID>AAA6193D-C731-F615-3EE9-6152C9576DFB</generatorID>
+<ownerDesignName>HW2Q2</ownerDesignName>
+<engineerTo>
+<item key="05A9960C-3525-046E-5657-E1A70028A3B0" value="true"/>
+</engineerTo>
+<referedAttribute>DAF6F9F3-4186-1EAC-A5F8-A5FCB50687F2</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<ownDataTypeParameters>,20,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="9063D081-6C90-8119-4684-ABBD076FCF18" name="INVOICE PK">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-29 02:17:44 UTC</createdTime>
+<ownerDesignName>HW2Q2</ownerDesignName>
+<engineerTo>
+<item key="05A9960C-3525-046E-5657-E1A70028A3B0" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>B148E4F1-D040-808C-1FAD-78D5196236F1</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

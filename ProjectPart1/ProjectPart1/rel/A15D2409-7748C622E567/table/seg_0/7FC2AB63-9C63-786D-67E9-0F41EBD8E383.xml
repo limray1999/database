@@ -1,0 +1,87 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7FC2AB63-9C63-786D-67E9-0F41EBD8E383" name="ML_OZ_AIRLINE">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-12 19:17:58 UTC</createdTime>
+<generatorID>9B106322-48FA-07F0-C47B-0CC5808D167E</generatorID>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="AIRLINE_ID" id="FEFF0E40-51F8-BC3F-3507-77DF2D1D174B">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-12 19:17:58 UTC</createdTime>
+<generatorID>11FEE7F5-EAA4-F8D2-A60A-FA040AC3B7ED</generatorID>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NAME" id="56B77F80-ABFC-BF0B-5828-FF429BE6F2B4">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-12 19:17:58 UTC</createdTime>
+<commentInRDBMS><![CDATA[AIRLINE NAME]]></commentInRDBMS>
+<generatorID>89BEA1AA-0920-E481-D1FF-419CC4C85BA6</generatorID>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MAIN_HUB" id="5579E11F-4677-2D2D-4D32-3C5706BDA02C">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-12 19:17:58 UTC</createdTime>
+<generatorID>71197FB2-E5F5-7F51-E673-CAF86877D295</generatorID>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="HEADQUARTER" id="B397719C-70EF-662B-E01E-15C706B368C0">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-12 19:17:58 UTC</createdTime>
+<generatorID>67A39941-5116-CFAA-6987-B0E55FAD5EF4</generatorID>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CONTRY" id="5B12A7C3-39CD-0542-D02F-DC176DBE45FB">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-12 19:17:58 UTC</createdTime>
+<generatorID>AEDA62FF-BC10-1E0A-F8C2-8753FF984C2D</generatorID>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7548E98E-3DB1-60CB-9C0C-9498206A09D2" name="ML_OZ_AIRLINE_PK">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-12 19:17:58 UTC</createdTime>
+<generatorID>3AFD5F19-A14F-DAB6-4E7C-F7A49FB22611</generatorID>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FEFF0E40-51F8-BC3F-3507-77DF2D1D174B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

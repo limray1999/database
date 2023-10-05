@@ -1,0 +1,130 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="35D60CC7-3E06-CA7D-1D81-DE736952F77D" name="ML_PAYMENT">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-15 22:43:30 UTC</createdTime>
+<ownerDesignName>Problem2</ownerDesignName>
+<engineerTo>
+<item key="C350CEC1-4798-643C-A192-397F210E4078" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="PAYMENT_ID" id="501763B3-3678-94AD-A457-C4391D33616F">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-15 22:51:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[THE UNIQUE NUMBER ASSIGNED TO EVERY PAYMENT]]></commentInRDBMS>
+<ownerDesignName>Problem2</ownerDesignName>
+<engineerTo>
+<item key="C350CEC1-4798-643C-A192-397F210E4078" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ACCOUNT_NAME" id="5DA3EC2B-58A7-90DB-41D6-D51324B3794A">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-15 23:57:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[ACCOUNT NAME]]></commentInRDBMS>
+<ownerDesignName>Problem2</ownerDesignName>
+<engineerTo>
+<item key="C350CEC1-4798-643C-A192-397F210E4078" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ACCOUNT_NO" id="FB4424C5-0E75-8FEA-15CC-D10374E06A65">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-15 22:55:13 UTC</createdTime>
+<commentInRDBMS><![CDATA[ACCOUNT NUMBER]]></commentInRDBMS>
+<ownerDesignName>Problem2</ownerDesignName>
+<engineerTo>
+<item key="C350CEC1-4798-643C-A192-397F210E4078" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PAYMENT_MODE" id="76ED68FC-2297-717C-EE38-35C8E9FB708C">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-15 22:55:29 UTC</createdTime>
+<commentInRDBMS><![CDATA[PAYMENT MODE, SUCH AS CASH, CREDIT, DEBIT, CHECK ETC.]]></commentInRDBMS>
+<ownerDesignName>Problem2</ownerDesignName>
+<engineerTo>
+<item key="C350CEC1-4798-643C-A192-397F210E4078" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PAYMENT_DATE" id="086CCFFD-F65C-A840-AABF-07CDC0154B96">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-15 22:56:47 UTC</createdTime>
+<ownerDesignName>Problem2</ownerDesignName>
+<engineerTo>
+<item key="C350CEC1-4798-643C-A192-397F210E4078" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PAYMENT_AMOUNT" id="789D9B7E-4911-A958-D560-A33D90AD0F7A">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-15 22:58:15 UTC</createdTime>
+<commentInRDBMS><![CDATA[PAYMENT AMOUNT IN THIS PAYMENT]]></commentInRDBMS>
+<ownerDesignName>Problem2</ownerDesignName>
+<engineerTo>
+<item key="C350CEC1-4798-643C-A192-397F210E4078" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,5,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="INVOICE_ID" id="96BB8FFB-B130-4B4D-982A-E7A8EDB687C6">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-15 23:56:18 UTC</createdTime>
+<generatorID>BA4F14E5-830E-E616-DF6D-15F18C4FAD48</generatorID>
+<ownerDesignName>Problem2</ownerDesignName>
+<engineerTo>
+<item key="C350CEC1-4798-643C-A192-397F210E4078" value="true"/>
+</engineerTo>
+<referedAttribute>244205AF-1740-61E3-283B-AE0C51160C8D</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="7A7376D9-F278-DADC-F7E8-9DC7B33E0084" name="ML_PAYMENT PK">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-15 22:52:15 UTC</createdTime>
+<ownerDesignName>Problem2</ownerDesignName>
+<engineerTo>
+<item key="C350CEC1-4798-643C-A192-397F210E4078" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>501763B3-3678-94AD-A457-C4391D33616F</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

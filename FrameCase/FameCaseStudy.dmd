@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="FameCaseStudy" id="C622AA9B-9477-8D89-38B6-C3905BBB4596" version="3.5">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-01 20:36:10 UTC</createdTime>
+<ownerDesignName>FameCaseStudy</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>C622AA9B-9477-8D89-38B6-C3905BBB4596</designId>
+</OSDM_Design>

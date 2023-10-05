@@ -1,0 +1,184 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="27284487-231F-B45C-9CEB-588D190AEA70" name="ML_UNIT">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-16 00:00:20 UTC</createdTime>
+<generatorID>4FC10D98-35A9-A02F-6CCA-CC1266868B86</generatorID>
+<ownerDesignName>Problem2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="BUILDING_ID" id="301A01EA-D1D7-9584-4AAE-8620AB292FAA">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-16 00:00:20 UTC</createdTime>
+<generatorID>8B8C8F9B-7E19-119F-6ED9-203059D1BC8D</generatorID>
+<ownerDesignName>Problem2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D941179B-D747-F1A6-6C61-0D04786F7151" referredColumn="5787AEB5-3434-CB9E-3678-1EFD4CFA5758"/>
+</associations>
+</Column>
+<Column name="UNIT_ID" id="C1292576-2CC5-56D3-257D-92E9E6274ACB">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-16 00:00:20 UTC</createdTime>
+<commentInRDBMS><![CDATA[THE UNIQUE UNIT NUMBER ASSIGNED TO EACH UNIT, SUCH AS 1A, 2B, 3E, 9P ECT.]]></commentInRDBMS>
+<generatorID>F5AD144A-21F8-64DF-1033-C4C75B7ED47D</generatorID>
+<ownerDesignName>Problem2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0FC35098-AE6C-5CA6-5FE0-CE1130DD5E68" referredColumn="B12AA095-CB77-4A05-D07B-0B050B3779C8"/>
+</associations>
+</Column>
+<Column name="FLOOR_NO" id="1BBA03A8-9298-4E75-AEE0-1A80A19EEC7A">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-16 00:00:20 UTC</createdTime>
+<commentInRDBMS><![CDATA[THE FLOOR NUMBER OF UNIT]]></commentInRDBMS>
+<generatorID>36953BC5-F041-527E-48A6-F5B55C4AFAA3</generatorID>
+<ownerDesignName>Problem2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CARPET_AREA" id="56EBEE09-02D2-A5C9-89EF-B98C901DE03B">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-16 00:00:20 UTC</createdTime>
+<commentInRDBMS><![CDATA[THE CARPET AREA OF UNIT, IN SQUARE METERS]]></commentInRDBMS>
+<generatorID>9D2CEC7C-6477-38D8-BBA4-7B8109B53826</generatorID>
+<ownerDesignName>Problem2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BATHROOM_NUM" id="173F8A22-850C-DE88-5F55-C9B2BB27F1DD">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-16 00:00:20 UTC</createdTime>
+<commentInRDBMS><![CDATA[NUMBER OF BATHROOM IN UNIT]]></commentInRDBMS>
+<generatorID>7CBF6CD8-1765-0403-5532-AA7FE798CE83</generatorID>
+<ownerDesignName>Problem2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BEDROOM_NUM" id="E499CC8A-4255-2433-72DC-16F4E3C6C144">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-16 00:00:20 UTC</createdTime>
+<commentInRDBMS><![CDATA[NUMBER OF BEDROOM IN UNIT]]></commentInRDBMS>
+<generatorID>8C5CE6BA-2C2B-5640-4C5B-83B21FB33016</generatorID>
+<ownerDesignName>Problem2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MAX_ALLOWED" id="F4F8A5F7-3A24-AA69-F91B-BB63A00CB887">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-16 00:00:20 UTC</createdTime>
+<commentInRDBMS><![CDATA[THE MAXIMUM NUMBER OF PEOPLE ALLOWED TO LIVE IN UNIT]]></commentInRDBMS>
+<generatorID>1BD03435-937F-383E-F24A-6FD8387FBCF9</generatorID>
+<ownerDesignName>Problem2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AVAILABLE" id="0A196790-42A7-3A27-8D7F-0313CB44314E">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-16 00:00:20 UTC</createdTime>
+<commentInRDBMS><![CDATA[THE AVAILIBILITY OF UNIT]]></commentInRDBMS>
+<generatorID>AB14952E-D4F2-4DF0-6FE1-2D2E361930E7</generatorID>
+<ownerDesignName>Problem2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AVI_DATE" id="0535F081-1E4D-DAAB-7E8A-6B4332AB55B1">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-16 00:00:20 UTC</createdTime>
+<commentInRDBMS><![CDATA[DATE OF AVAILIABILITY FOR UNIT]]></commentInRDBMS>
+<generatorID>47F4DAF0-8BCB-C4CE-7020-A9AE10CEEB25</generatorID>
+<ownerDesignName>Problem2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MONTHLY_PRICE" id="8E0CC963-36F1-929A-874B-0318B2A46E5B">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-16 00:00:20 UTC</createdTime>
+<commentInRDBMS><![CDATA[THE RENTAL PRICE PER MONTH, IN US DOLLAR]]></commentInRDBMS>
+<generatorID>9FEDBD92-114C-244F-26AD-C0518E81FFF1</generatorID>
+<ownerDesignName>Problem2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,5,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6108F1B7-4D00-DC23-4A00-1F20D6B89E6B" name="ML_UNIT_PK">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-16 00:00:20 UTC</createdTime>
+<generatorID>E3B9C2CE-C2EB-61F8-76FC-D313AF5D645E</generatorID>
+<ownerDesignName>Problem2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C1292576-2CC5-56D3-257D-92E9E6274ACB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DDD2A80F-C616-4E14-4729-D57CBDB40827" name="ML_UNIT_ML_UNIT_FEATURE_FK">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-16 00:00:20 UTC</createdTime>
+<generatorID>C215C353-4041-7C49-B977-81E76C9AE3D6</generatorID>
+<ownerDesignName>Problem2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C1292576-2CC5-56D3-257D-92E9E6274ACB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A77A0222-BD99-1F7F-9831-B99CDA248601" name="ML_UNIT_ML_BUILDING_FK">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-16 00:00:20 UTC</createdTime>
+<generatorID>CE2AC8B1-DD94-4357-A8E7-7C0F7CFE2361</generatorID>
+<ownerDesignName>Problem2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="301A01EA-D1D7-9584-4AAE-8620AB292FAA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

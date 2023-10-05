@@ -1,0 +1,142 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E7AACC7F-DC61-8286-CB35-D609CB6B4A09" name="ML_OZ_PURCHASE">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-12 19:17:58 UTC</createdTime>
+<generatorID>FCB34F8C-1401-5F3F-2880-C34887EE8DA5</generatorID>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="PURCHASE_ID" id="862DC2DD-3E55-DF96-C694-85AC1791ACF1">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-12 19:17:58 UTC</createdTime>
+<generatorID>87BE024E-6661-BEEA-7F3B-358537ED9E92</generatorID>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PLAN_ID" id="5AB495FD-04DB-0F44-0554-8A56121689D9">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-12 19:17:58 UTC</createdTime>
+<generatorID>2C4CF79A-650E-6437-C5E9-E1878B149970</generatorID>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ML_OZ_CUS_PASSENGER_ID" id="D25E0F07-247D-5D9D-3CFE-9369D0C0FF50">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-12 19:17:58 UTC</createdTime>
+<generatorID>56301FEA-E07E-0D23-5F5B-476207256DCC</generatorID>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9E4E9CF4-58A9-C215-348B-5FB4AD8AFDB7" referredColumn="7C8CBD57-FDC1-0C6C-7138-44FEF6B05146"/>
+</associations>
+</Column>
+<Column name="ML_OZ_INVOICE_INVOICE_ID" id="A982CD28-D07A-D53F-2CA9-D0D01ABC146B">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-12 19:17:58 UTC</createdTime>
+<generatorID>17C0ECDB-CDFA-F721-4AC7-2DFC9C24422F</generatorID>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F83EAF35-45F7-D9A4-94EB-8D76E1F8AF97" referredColumn="B73C43CA-28F8-B409-4404-E59554AF40E1"/>
+</associations>
+</Column>
+<Column name="ML_OZ_INSUR_PLAN_PLAN_ID" id="98FB1816-7B8A-DC5C-88C2-EC0F1AE41664">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-12 19:17:58 UTC</createdTime>
+<generatorID>DF838E52-174F-4C77-9649-886AF592E144</generatorID>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="198CCC78-3067-89EB-FD29-8B2261AB9CCC" referredColumn="38C9F5D3-1458-0C18-1B37-8900AB9D346E"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="CA7BB9E9-8DF6-7EBC-CBD4-4FBC00FEF52D" name="ML_OZ_PURCHASE_PK">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-12 19:17:58 UTC</createdTime>
+<generatorID>A7C82C39-565C-F4D6-EED0-C957A540C739</generatorID>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="862DC2DD-3E55-DF96-C694-85AC1791ACF1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9237D010-3006-E298-3FDA-3EEA3D14077C" name="ML_OZ_PURCHASE__IDX">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-12 19:17:58 UTC</createdTime>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>45879BB7-A557-6D37-354F-44E95A171E65</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="98FB1816-7B8A-DC5C-88C2-EC0F1AE41664"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8B2C450D-D0DC-AFFB-EC6A-C3E6B8F9107A" name="ML_OZ_PURCHASE_ML_OZ_CUS_FK">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-12 19:17:58 UTC</createdTime>
+<generatorID>444C860C-A1F6-3F40-5487-FBDAAF6F8CE4</generatorID>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D25E0F07-247D-5D9D-3CFE-9369D0C0FF50"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8392AFC5-024E-B180-5FA0-341869F27F74" name="ML_OZ_PURCHASE_ML_OZ_INSUR_PLAN_FK">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-12 19:17:58 UTC</createdTime>
+<generatorID>45879BB7-A557-6D37-354F-44E95A171E65</generatorID>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="98FB1816-7B8A-DC5C-88C2-EC0F1AE41664"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5B1E6B7F-10EF-177C-64B5-E83915BD8CA2" name="ML_OZ_PURCHASE_ML_OZ_INVOICE_FK">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-12 19:17:58 UTC</createdTime>
+<generatorID>19A2E551-6014-ECD9-39FB-3FE8C83430CE</generatorID>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A982CD28-D07A-D53F-2CA9-D0D01ABC146B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

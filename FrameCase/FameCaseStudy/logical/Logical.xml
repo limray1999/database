@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="C481E445-6326-71BC-AFE8-426B31DEDB8D" mainViewID="61901ED2-1581-8094-8555-489F18CFD66E">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-01 20:36:10 UTC</createdTime>
+<ownerDesignName>FameCaseStudy</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</LogicalDesign>

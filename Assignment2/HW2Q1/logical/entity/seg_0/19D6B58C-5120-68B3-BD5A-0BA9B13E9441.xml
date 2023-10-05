@@ -1,0 +1,106 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="19D6B58C-5120-68B3-BD5A-0BA9B13E9441" name="EMPLOYEE">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-27 14:26:42 UTC</createdTime>
+<ownerDesignName>HW2Q1</ownerDesignName>
+<engineerTo>
+<item key="74E892E6-6B91-4587-BE7D-498957C17D1E" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<hierarchicalParent>3D2BE446-25E8-6BCD-80A2-E9AFC7E1FFD7</hierarchicalParent>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<generateDiscrimColumn>true</generateDiscrimColumn>
+<discriminatorAttributeID>28E708DB-60BA-6A17-820C-1093AAA07885</discriminatorAttributeID>
+<discriminatorValue>EMP</discriminatorValue>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="EmployeeID" id="D2DA5C91-01F3-A4B1-DD9A-8AFBDB169E81">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-27 14:56:45 UTC</createdTime>
+<commentInRDBMS><![CDATA[The Unique Number Assigned to Each Employee]]></commentInRDBMS>
+<ownerDesignName>HW2Q1</ownerDesignName>
+<engineerTo>
+<item key="74E892E6-6B91-4587-BE7D-498957C17D1E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<ownDataTypeParameters>,20,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ETYPE" id="28E708DB-60BA-6A17-820C-1093AAA07885">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-27 15:03:53 UTC</createdTime>
+<commentInRDBMS><![CDATA[Employee Type]]></commentInRDBMS>
+<ownerDesignName>HW2Q1</ownerDesignName>
+<engineerTo>
+<item key="74E892E6-6B91-4587-BE7D-498957C17D1E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<ownDataTypeParameters>3,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="HireDate" id="621004ED-9EFA-BD1B-B56F-1D11A0FF3937">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-27 15:07:10 UTC</createdTime>
+<ownerDesignName>HW2Q1</ownerDesignName>
+<engineerTo>
+<item key="74E892E6-6B91-4587-BE7D-498957C17D1E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Salary" id="975097BC-6DB0-B2F7-3C8E-941CA2CA2771">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-27 15:07:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Monthly Salary in USD]]></commentInRDBMS>
+<ownerDesignName>HW2Q1</ownerDesignName>
+<engineerTo>
+<item key="74E892E6-6B91-4587-BE7D-498957C17D1E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,7,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DEPT" id="70035F89-A407-89ED-35D7-D61661255845">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-27 15:07:55 UTC</createdTime>
+<commentInRDBMS><![CDATA[Department]]></commentInRDBMS>
+<ownerDesignName>HW2Q1</ownerDesignName>
+<engineerTo>
+<item key="74E892E6-6B91-4587-BE7D-498957C17D1E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="F4E1BC2B-370A-0E71-9E6C-94BBD588BBCD" name="EMPLOYEE PK">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-27 14:57:04 UTC</createdTime>
+<ownerDesignName>HW2Q1</ownerDesignName>
+<engineerTo>
+<item key="74E892E6-6B91-4587-BE7D-498957C17D1E" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>D2DA5C91-01F3-A4B1-DD9A-8AFBDB169E81</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

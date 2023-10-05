@@ -1,0 +1,148 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F184D8F9-68BE-FA6F-64BF-A6FE0D450CBD" name="ML_OZ_FLIGHT">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-05 15:17:00 UTC</createdTime>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<engineerTo>
+<item key="A15D2409-CEE6-726D-472B-7748C622E567" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="AIRLINE_ID" id="AA4E45FE-AD19-87F1-6BC3-24374C593CC0">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-05 18:07:14 UTC</createdTime>
+<generatorID>7CC623C2-B94F-F779-B78A-F587F12EAC48</generatorID>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<engineerTo>
+<item key="A15D2409-CEE6-726D-472B-7748C622E567" value="true"/>
+</engineerTo>
+<referedAttribute>11FEE7F5-EAA4-F8D2-A60A-FA040AC3B7ED</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="FLIGHT_ID" id="A8C483D3-279B-AD6C-E783-F5F6B9E83075">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-05 18:07:27 UTC</createdTime>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<engineerTo>
+<item key="A15D2409-CEE6-726D-472B-7748C622E567" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="AIRPORT_CODE" id="23B1807C-C55D-95B8-5A7B-9A3840A626B2">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-05 19:45:06 UTC</createdTime>
+<generatorID>081BB60D-37D3-A275-0EDA-808C58E1DDD2</generatorID>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="A15D2409-CEE6-726D-472B-7748C622E567" value="false"/>
+</engineerTo>
+<referedAttribute>2CD6F6FD-D4AC-7CEC-B992-A0D4E858726F</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<ownDataTypeParameters>3,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="AIRPORT_CODE1" id="DDDEEB09-92F8-A497-27AF-A3D745D4BA06">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-05 19:45:16 UTC</createdTime>
+<generatorID>3DAFBDA7-87E0-4164-7553-33D4E5A46056</generatorID>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="A15D2409-CEE6-726D-472B-7748C622E567" value="false"/>
+</engineerTo>
+<referedAttribute>2CD6F6FD-D4AC-7CEC-B992-A0D4E858726F</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<ownDataTypeParameters>3,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DAIRPORT" id="596F242A-24CE-972D-DFCF-316154CA1537">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-11 02:50:56 UTC</createdTime>
+<commentInRDBMS><![CDATA[DEPARTURE AIPPORT CODE]]></commentInRDBMS>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<engineerTo>
+<item key="A15D2409-CEE6-726D-472B-7748C622E567" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<ownDataTypeParameters>3,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="AAIRPORT" id="71BAA42E-DB43-D733-F6C8-8590C5027B29">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-11 03:07:28 UTC</createdTime>
+<commentInRDBMS><![CDATA[ARRIVAL AIRPORT]]></commentInRDBMS>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<engineerTo>
+<item key="A15D2409-CEE6-726D-472B-7748C622E567" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DTIME" id="29F5C946-ADA3-FBE8-946B-F5431C51B200">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-11 03:07:57 UTC</createdTime>
+<commentInRDBMS><![CDATA[DEPARTURE TIME]]></commentInRDBMS>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<engineerTo>
+<item key="A15D2409-CEE6-726D-472B-7748C622E567" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT047</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ATIME" id="0DF7F821-A3C6-1AB8-6ABA-0495FD7644ED">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-11 03:09:16 UTC</createdTime>
+<commentInRDBMS><![CDATA[ARRIVAL TIME]]></commentInRDBMS>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<engineerTo>
+<item key="A15D2409-CEE6-726D-472B-7748C622E567" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT047</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="111478B5-24E6-813C-F09E-BBAE065D7073" name="ML_OZ_FLIGHT PK">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-05 18:07:48 UTC</createdTime>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="A15D2409-CEE6-726D-472B-7748C622E567" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>A8C483D3-279B-AD6C-E783-F5F6B9E83075</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

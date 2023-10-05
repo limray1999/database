@@ -1,0 +1,80 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="039A2917-D042-E273-4FD6-186E50191CB0" name="PRO">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-29 02:35:01 UTC</createdTime>
+<generatorID>CCE34DBB-6072-A627-9A47-3BA84A32247F</generatorID>
+<ownerDesignName>HW2Q2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="PRO_ID" id="62511434-89E0-1315-53BD-A7DD3FC86A8D">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-29 02:35:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[PRODUCT ID]]></commentInRDBMS>
+<generatorID>C5966FDB-9A98-CC8D-07F4-D941C061ECDC</generatorID>
+<ownerDesignName>HW2Q2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<ownDataTypeParameters>,20,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PRO_DES" id="5A32537E-5D19-D412-2DD9-E9911D3DC911">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-29 02:35:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[PRODUCT DESCRIPTION]]></commentInRDBMS>
+<generatorID>D29A671B-B393-FF1F-0EAC-CDB59CE9717D</generatorID>
+<ownerDesignName>HW2Q2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PRO_FIN" id="ABFA54B5-DC2F-3E6D-224B-CDDE0019CB6D">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-29 02:35:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[PRODUCT FINISH]]></commentInRDBMS>
+<generatorID>BAD87DF3-2F0E-70ED-4B8E-FCCF6C7D11F1</generatorID>
+<ownerDesignName>HW2Q2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PRO_PRI" id="3458A661-4F1C-DB12-8323-616726C4FAEA">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-29 02:35:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[PRODUCT STANDARD PRICE]]></commentInRDBMS>
+<generatorID>972A64E4-D24D-9498-C580-1F9E49254C08</generatorID>
+<ownerDesignName>HW2Q2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="AF2D10FF-6C95-C20F-1B06-84B858F2FDE2" name="PRO_PK">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-29 02:35:01 UTC</createdTime>
+<generatorID>AA0F8AA9-ADB6-E73D-B443-853B8790F9BB</generatorID>
+<ownerDesignName>HW2Q2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="62511434-89E0-1315-53BD-A7DD3FC86A8D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

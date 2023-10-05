@@ -1,0 +1,115 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="090B88C1-AA70-3A86-C293-B3CDF437F8B8" name="CUS">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-29 02:35:01 UTC</createdTime>
+<generatorID>119BC8CD-E80F-1FDE-C39D-5F5E2A36AF58</generatorID>
+<ownerDesignName>HW2Q2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CUS_ID" id="EE81C681-57E7-32BD-93D4-F7416DAD456C">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-29 02:35:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[CUSTOMER ID]]></commentInRDBMS>
+<generatorID>E1A326E2-9ED7-6AFE-A075-0D1B8D411E68</generatorID>
+<ownerDesignName>HW2Q2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<ownDataTypeParameters>,20,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CUS_FNAME" id="067C31D4-FD6E-FCAA-4CD4-8A883C27E05E">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-29 02:35:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[CUSTOMER FIRST NAME]]></commentInRDBMS>
+<generatorID>EA024980-91BB-0B3B-979B-7D46B5E00FCA</generatorID>
+<ownerDesignName>HW2Q2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CUS_MNAME" id="C5D4F63B-4141-C587-9265-CC1F11FAFDA4">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-29 02:35:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[CUSTOMER MIDDLE NAME]]></commentInRDBMS>
+<generatorID>F98CD836-610A-C21F-E03C-DDCA7E01D7FF</generatorID>
+<ownerDesignName>HW2Q2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CUS_LNAME" id="DFBADBF1-9CF7-BFBB-A555-79EC009C496B">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-29 02:35:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[CUSTOMER LAST NAME]]></commentInRDBMS>
+<generatorID>EEE05704-19E9-CCB0-39EC-5085858773A5</generatorID>
+<ownerDesignName>HW2Q2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CITY" id="CFD1432E-41D4-5CAF-2AC7-27865DAE5952">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-29 02:35:01 UTC</createdTime>
+<generatorID>E889DF9B-A2A5-BA8C-BF95-870D46B263F5</generatorID>
+<ownerDesignName>HW2Q2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="STATE" id="9F1FFFAD-C00E-FAB8-E457-C86486877FD4">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-29 02:35:01 UTC</createdTime>
+<generatorID>856BDE46-F041-0E5E-F169-67E6CE361142</generatorID>
+<ownerDesignName>HW2Q2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COUNTRY" id="F6E867D1-FF6E-3660-BC96-541D313717C7">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-29 02:35:01 UTC</createdTime>
+<generatorID>EB344ECC-41E9-DB25-D3CC-45D17DF44C37</generatorID>
+<ownerDesignName>HW2Q2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7B32AEF9-7EBF-925E-F574-D8ECBF369E48" name="CUS_PK">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-29 02:35:01 UTC</createdTime>
+<generatorID>C8FCCA07-8AFA-F419-D0C5-E9FC30C04ED0</generatorID>
+<ownerDesignName>HW2Q2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EE81C681-57E7-32BD-93D4-F7416DAD456C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

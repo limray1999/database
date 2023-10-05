@@ -1,0 +1,34 @@
+CREATE TABLE ml_flight (
+    flight_id VARCHAR2(4) NOT NULL,
+    node_id   VARCHAR2(3) NOT NULL,
+    status    VARCHAR2(3) NOT NULL,
+	schedule  TIMESTAMP(0) NOT NULL
+);
+
+ALTER TABLE ml_flight ADD CONSTRAINT ml_flight_pk PRIMARY KEY ( flight_id,
+                                                                schedule );
+
+CREATE TABLE ml_size (
+    flight_id   VARCHAR2(4) NOT NULL,
+    flight_type VARCHAR2(3) NOT NULL,
+    capacity    NUMBER(5) NOT NULL
+);
+
+ALTER TABLE ml_size ADD CONSTRAINT ml_size_pk PRIMARY KEY ( flight_id );
+
+ALTER TABLE ml_flight
+    ADD CONSTRAINT ml_flight_ml_size_fk FOREIGN KEY ( flight_id )
+        REFERENCES ml_size ( flight_id );
+		
+insert into ml_size (flight_id, flight_type, capacity) values ('A123', '767', 10000);
+insert into ml_size (flight_id, flight_type, capacity) values ('A234', '737', 7000);
+
+insert into ml_flight (flight_id, node_id, status, schedule) values ('A123', 'SEA', 'DEP', TIMESTAMP '2019-10-1 07:00:00' );
+insert into ml_flight (flight_id, node_id, status, schedule) values ('A123', 'MIA', 'ARR', TIMESTAMP '2019-10-1 11:00:00' );
+insert into ml_flight (flight_id, node_id, status, schedule) values ('A123', 'MIA', 'DEP', TIMESTAMP '2019-10-2 08:00:00' );
+insert into ml_flight (flight_id, node_id, status, schedule) values ('A123', 'LAX', 'ARR', TIMESTAMP '2019-10-2 12:00:00' );
+insert into ml_flight (flight_id, node_id, status, schedule) values ('A234', 'SEA', 'DEP', TIMESTAMP '2019-10-1 11:00:00' );
+insert into ml_flight (flight_id, node_id, status, schedule) values ('A234', 'MIA', 'ARR', TIMESTAMP '2019-10-1 14:00:00' );
+
+
+

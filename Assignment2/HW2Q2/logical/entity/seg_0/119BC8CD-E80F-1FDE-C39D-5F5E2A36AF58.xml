@@ -1,0 +1,129 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="119BC8CD-E80F-1FDE-C39D-5F5E2A36AF58" name="CUS">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-29 02:08:17 UTC</createdTime>
+<ownerDesignName>HW2Q2</ownerDesignName>
+<engineerTo>
+<item key="05A9960C-3525-046E-5657-E1A70028A3B0" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="CUS_ID" id="E1A326E2-9ED7-6AFE-A075-0D1B8D411E68">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-29 02:09:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[CUSTOMER ID]]></commentInRDBMS>
+<ownerDesignName>HW2Q2</ownerDesignName>
+<engineerTo>
+<item key="05A9960C-3525-046E-5657-E1A70028A3B0" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<ownDataTypeParameters>,20,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CUS_FNAME" id="EA024980-91BB-0B3B-979B-7D46B5E00FCA">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-29 02:09:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[CUSTOMER FIRST NAME]]></commentInRDBMS>
+<ownerDesignName>HW2Q2</ownerDesignName>
+<engineerTo>
+<item key="05A9960C-3525-046E-5657-E1A70028A3B0" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CUS_MNAME" id="F98CD836-610A-C21F-E03C-DDCA7E01D7FF">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-29 02:10:16 UTC</createdTime>
+<commentInRDBMS><![CDATA[CUSTOMER MIDDLE NAME]]></commentInRDBMS>
+<ownerDesignName>HW2Q2</ownerDesignName>
+<engineerTo>
+<item key="05A9960C-3525-046E-5657-E1A70028A3B0" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CUS_LNAME" id="EEE05704-19E9-CCB0-39EC-5085858773A5">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-29 02:10:37 UTC</createdTime>
+<commentInRDBMS><![CDATA[CUSTOMER LAST NAME]]></commentInRDBMS>
+<ownerDesignName>HW2Q2</ownerDesignName>
+<engineerTo>
+<item key="05A9960C-3525-046E-5657-E1A70028A3B0" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CITY" id="E889DF9B-A2A5-BA8C-BF95-870D46B263F5">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-29 02:11:00 UTC</createdTime>
+<ownerDesignName>HW2Q2</ownerDesignName>
+<engineerTo>
+<item key="05A9960C-3525-046E-5657-E1A70028A3B0" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="STATE" id="856BDE46-F041-0E5E-F169-67E6CE361142">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-29 02:11:40 UTC</createdTime>
+<ownerDesignName>HW2Q2</ownerDesignName>
+<engineerTo>
+<item key="05A9960C-3525-046E-5657-E1A70028A3B0" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="COUNTRY" id="EB344ECC-41E9-DB25-D3CC-45D17DF44C37">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-29 02:11:54 UTC</createdTime>
+<ownerDesignName>HW2Q2</ownerDesignName>
+<engineerTo>
+<item key="05A9960C-3525-046E-5657-E1A70028A3B0" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="C8FCCA07-8AFA-F419-D0C5-E9FC30C04ED0" name="CUS PK">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-29 02:09:46 UTC</createdTime>
+<ownerDesignName>HW2Q2</ownerDesignName>
+<engineerTo>
+<item key="05A9960C-3525-046E-5657-E1A70028A3B0" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>E1A326E2-9ED7-6AFE-A075-0D1B8D411E68</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

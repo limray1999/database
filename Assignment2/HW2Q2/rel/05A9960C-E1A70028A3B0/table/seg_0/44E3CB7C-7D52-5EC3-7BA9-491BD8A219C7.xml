@@ -1,0 +1,114 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="44E3CB7C-7D52-5EC3-7BA9-491BD8A219C7" name="PAYMENT">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-29 02:35:01 UTC</createdTime>
+<generatorID>B7FEF6B7-06BA-F1FA-06D7-4E75AF8028EF</generatorID>
+<ownerDesignName>HW2Q2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="PAY_ID" id="7781178E-22BE-CFEC-A686-A0F7F1CE827E">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-29 02:35:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[PAYMENT ID]]></commentInRDBMS>
+<generatorID>8F7C893A-A5D6-49FA-35B3-A4085155E8E5</generatorID>
+<ownerDesignName>HW2Q2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<ownDataTypeParameters>,20,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PAYMENT_DATE" id="BB811F95-EE5D-654E-A1AA-AB5CBEF3E27C">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-29 02:35:01 UTC</createdTime>
+<generatorID>D30E38D0-3B3B-05DD-3211-3C30F4751CD5</generatorID>
+<ownerDesignName>HW2Q2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PAYMENT_AMOUNT" id="A7D055D5-77A7-3BA3-AF78-7FFAB85C5CA6">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-29 02:35:01 UTC</createdTime>
+<generatorID>7F02BF06-473D-9B30-A1B9-EDD2C3F8FB2A</generatorID>
+<ownerDesignName>HW2Q2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>15</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,15,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PAYMENT_METHOD" id="BA05B545-9C21-0A55-3DA3-8A465E936B92">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-29 02:35:01 UTC</createdTime>
+<generatorID>7747BB59-ED5B-993C-A1FA-4A6B1B189392</generatorID>
+<ownerDesignName>HW2Q2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ACCOUNT_NAME" id="C995F0C3-47B1-944C-E5F4-14E336962126">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-29 02:35:01 UTC</createdTime>
+<generatorID>68A3D438-E0EC-7C90-E789-819F378E0476</generatorID>
+<ownerDesignName>HW2Q2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="INVOICE_ID" id="106E328F-15BC-8B86-CA4B-D91D2AB37D0A">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-29 02:35:01 UTC</createdTime>
+<generatorID>887E2DA6-AA34-64BB-F4B6-D61F11184FB6</generatorID>
+<ownerDesignName>HW2Q2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="842C020A-0C37-2AB4-228E-10BC8ECE2835" referredColumn="D04CDA74-AA4E-3C3F-4656-F7C24000A902"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2A40B605-310E-8706-135F-75DDC33D15E7" name="PAYMENT_PK">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-29 02:35:01 UTC</createdTime>
+<generatorID>8EA9C8F0-620B-CF35-1283-BBC056EFE637</generatorID>
+<ownerDesignName>HW2Q2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7781178E-22BE-CFEC-A686-A0F7F1CE827E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4AD68B16-FEBE-D9A2-E0B0-10003722E8C2" name="PAYMENT_INVOICE_FK">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-29 02:35:01 UTC</createdTime>
+<generatorID>B6C5C1D9-E17B-13D5-8BA6-985DB584B7CA</generatorID>
+<ownerDesignName>HW2Q2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="106E328F-15BC-8B86-CA4B-D91D2AB37D0A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

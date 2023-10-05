@@ -1,0 +1,81 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9153C4E4-1D23-6BF7-82AB-C1CF77D7649F" name="ML_OZ_PAS_SPE">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-12 19:17:58 UTC</createdTime>
+<generatorID>F130C2CE-0636-2F72-0207-8EC1DA761993</generatorID>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ML_OZ_PASSENGER_PASSENGER_ID" id="9AB92FA8-A1EE-7315-6426-AC9E2DA53D1B">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-12 19:17:58 UTC</createdTime>
+<generatorID>C15BF282-F854-1037-7BA2-806BB6836DC2</generatorID>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2B3350CD-3560-DF8D-A33E-72DF497A49FA" referredColumn="56E31C10-3911-3BC8-89B8-BF73CFF970C9"/>
+</associations>
+</Column>
+<Column name="ML_OZ_SPE_REQUEST_ID" id="CF319622-EFEA-A9D1-3A80-6447D3F322BD">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-12 19:17:58 UTC</createdTime>
+<generatorID>95872746-4DB0-92B0-6C13-A4784A812852</generatorID>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D3934C18-DF77-F036-3507-EB554233F666" referredColumn="A9B59C18-D423-8FF8-1F9F-782238E137F3"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="CCD8D9F9-98E6-EB7A-0F10-2FB1A5A8D7F6" name="ML_OZ_PAS_SPE_PK">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-12 19:17:58 UTC</createdTime>
+<generatorID>69F9A64A-CC94-996E-EF80-4059EF47E5E0</generatorID>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9AB92FA8-A1EE-7315-6426-AC9E2DA53D1B"/>
+<colUsage columnID="CF319622-EFEA-A9D1-3A80-6447D3F322BD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EABDD39A-729A-0C66-FACC-6EA724B70C06" name="ML_OZ_PAS_SPE_ML_OZ_PASSENGER_FK">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-12 19:17:58 UTC</createdTime>
+<generatorID>1E3316A2-A74F-DAC5-50D6-621268A9D956</generatorID>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9AB92FA8-A1EE-7315-6426-AC9E2DA53D1B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3B79C8EA-722B-D720-497E-31810A3CDF68" name="ML_OZ_PAS_SPE_ML_OZ_SPE_FK">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-12 19:17:58 UTC</createdTime>
+<generatorID>83EAD4EF-56BC-D488-D949-84C0095543AA</generatorID>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CF319622-EFEA-A9D1-3A80-6447D3F322BD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

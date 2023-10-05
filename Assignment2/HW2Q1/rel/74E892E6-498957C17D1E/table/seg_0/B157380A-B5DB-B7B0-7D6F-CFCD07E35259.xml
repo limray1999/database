@@ -1,0 +1,199 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B157380A-B5DB-B7B0-7D6F-CFCD07E35259" name="INDIVIDUAL">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-28 00:48:33 UTC</createdTime>
+<generatorID>3D2BE446-25E8-6BCD-80A2-E9AFC7E1FFD7</generatorID>
+<ownerDesignName>HW2Q1</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="IndividualID" id="CBE7D7EB-8927-DAFA-48EC-7261445744DD">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-28 00:48:33 UTC</createdTime>
+<commentInRDBMS><![CDATA[The Unique Number Assigned to Everyone]]></commentInRDBMS>
+<generatorID>AF3984E8-FF4E-62F8-03BB-0B027044E473</generatorID>
+<ownerDesignName>HW2Q1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<ownDataTypeParameters>,20,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Itype" id="368626AD-A9E0-1616-D6B6-6D9E9B1EA6EB">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-28 00:48:33 UTC</createdTime>
+<generatorID>5FEB08CA-8F9D-BE01-581A-DD3ECF18D291</generatorID>
+<ownerDesignName>HW2Q1</ownerDesignName>
+<constraintName>CH_INH_INDIVIDUAL</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<listOfValues>
+<valueDef value="ALU" description="entity ALUMNUS"/>
+<valueDef value="EMP" description="entity EMPLOYEE"/>
+<valueDef value="STU" description="entity STUDENT"/>
+</listOfValues>
+<ownDataTypeParameters>3,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isDiscriminatorColumn>true</isDiscriminatorColumn>
+</Column>
+<Column name="FNAME" id="50D35453-2F48-58D4-5E15-4162D7223113">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-28 00:48:33 UTC</createdTime>
+<commentInRDBMS><![CDATA[First Name]]></commentInRDBMS>
+<generatorID>4D9B08B2-31B4-E457-D369-1B31D30D7C90</generatorID>
+<ownerDesignName>HW2Q1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MNAME" id="63B40B84-B990-931E-3960-DC54BF5B40A3">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-28 00:48:33 UTC</createdTime>
+<commentInRDBMS><![CDATA[Middle Name]]></commentInRDBMS>
+<generatorID>A66286A9-8BEE-6E3F-28BD-D1AD5B7703DC</generatorID>
+<ownerDesignName>HW2Q1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LNAME" id="CBA06AAE-23D2-7810-E7E4-EE174C2AFED1">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-28 00:48:33 UTC</createdTime>
+<commentInRDBMS><![CDATA[Last Name]]></commentInRDBMS>
+<generatorID>5F4EA01F-923F-E842-5668-6B2C57A376A3</generatorID>
+<ownerDesignName>HW2Q1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Gender" id="1B6A753F-6374-AA9B-92A7-5CF4C9D0FA3C">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-28 00:48:33 UTC</createdTime>
+<generatorID>5EEE19B7-3D09-EA55-FA97-1EE31197F488</generatorID>
+<ownerDesignName>HW2Q1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BirthDate" id="6221E869-92D4-EF96-25B8-CBFAF25FA403">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-28 00:48:33 UTC</createdTime>
+<generatorID>A38E67B6-7551-D822-A69B-F87A3F666A47</generatorID>
+<ownerDesignName>HW2Q1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Email" id="9751FAE0-D3ED-01AC-12D6-ED2644615B0B">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-28 00:48:33 UTC</createdTime>
+<generatorID>91BFDB18-9AF8-85AD-8833-14355F7A7F47</generatorID>
+<ownerDesignName>HW2Q1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ContactNumber" id="01AC81F3-805D-B37D-B0B6-B7F8D11CB5FA">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-28 00:48:33 UTC</createdTime>
+<generatorID>7E38A4B3-62DB-E1BA-AE51-DCF143FDED11</generatorID>
+<ownerDesignName>HW2Q1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<ownDataTypeParameters>,20,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SSN" id="64573951-1B8B-A91A-E7D1-5593151EB398">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-28 00:48:33 UTC</createdTime>
+<commentInRDBMS><![CDATA[Person's SSN number, an individual may not have SSN number.]]></commentInRDBMS>
+<generatorID>A295D2BC-03E5-4772-5513-09F89412E1C4</generatorID>
+<ownerDesignName>HW2Q1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<ownDataTypeParameters>,9,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="State" id="9865B3F5-7D60-F885-0ED1-4FCC87D6616D">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-28 00:48:33 UTC</createdTime>
+<commentInRDBMS><![CDATA[Individual's Address]]></commentInRDBMS>
+<generatorID>82D34F1F-C41F-885B-27C0-4B1DA88D774C</generatorID>
+<ownerDesignName>HW2Q1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="City" id="2AAD8AF8-7BE4-59D4-47D3-AEC97302BC1E">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-28 00:48:33 UTC</createdTime>
+<commentInRDBMS><![CDATA[Individual's Address]]></commentInRDBMS>
+<generatorID>774169B3-3893-BF1B-E1F0-EFEB1427B565</generatorID>
+<ownerDesignName>HW2Q1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Street" id="DBD10C8A-BCF4-7C89-C90C-440069689D5C">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-28 00:48:33 UTC</createdTime>
+<commentInRDBMS><![CDATA[Individual's Address]]></commentInRDBMS>
+<generatorID>05236F63-3044-C89C-4C91-C9B8FD315E52</generatorID>
+<ownerDesignName>HW2Q1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D7673A10-079D-AB43-7FB3-E2EBE3BFE443" name="INDIVIDUAL_PK">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-28 00:48:33 UTC</createdTime>
+<generatorID>1E93DE9D-74F3-B89A-925F-70B6776AFEE9</generatorID>
+<ownerDesignName>HW2Q1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CBE7D7EB-8927-DAFA-48EC-7261445744DD"/>
+<colUsage columnID="368626AD-A9E0-1616-D6B6-6D9E9B1EA6EB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

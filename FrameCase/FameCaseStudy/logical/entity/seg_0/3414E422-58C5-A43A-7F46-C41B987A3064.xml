@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="3414E422-58C5-A43A-7F46-C41B987A3064" name="COSTUMER">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-01 20:50:54 UTC</createdTime>
+<ownerDesignName>FameCaseStudy</ownerDesignName>
+<engineerTo>
+<item key="1F5B8CF1-FDDE-D215-30E3-F8EA8E4867AB" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+</Entity>

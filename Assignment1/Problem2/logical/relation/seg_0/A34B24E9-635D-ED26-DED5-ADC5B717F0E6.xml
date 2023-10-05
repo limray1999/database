@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK_UNIT_LEASE" directorySegmentName="seg_0" id="A34B24E9-635D-ED26-DED5-ADC5B717F0E6">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-14 17:21:08 UTC</createdTime>
+<ownerDesignName>Problem2</ownerDesignName>
+<engineerTo>
+<item key="C350CEC1-4798-643C-A192-397F210E4078" value="true"/>
+</engineerTo>
+<sourcePk>E3B9C2CE-C2EB-61F8-76FC-D313AF5D645E</sourcePk>
+<targetPk>4B1CA1C1-3145-4712-C1DF-7D5DB97E7562</targetPk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>4FC10D98-35A9-A02F-6CCA-CC1266868B86</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>F4D17AD4-36FD-FBBC-463B-A7261282C1D6</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

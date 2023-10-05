@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<ProcessModel class="oracle.dbtools.crest.model.design.process.ProcessModel" name="Process Model" id="B9409321-BADF-7FE9-9290-E09A3DF0DF07">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-27 14:07:31 UTC</createdTime>
+<ownerDesignName>HW2Q1</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</ProcessModel>

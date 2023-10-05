@@ -1,0 +1,144 @@
+-- ml_oz_passenger
+alter table ml_oz_passenger add constraint c_passengerid check (passengerid between 100000 and 999999);
+alter table ml_oz_passenger add constraint c_passengergender check (pgender in ('M', 'F'));
+alter table ml_oz_passenger add constraint c_pfname check (pfname = initcap(pfname));
+alter table ml_oz_passenger add constraint c_pname check (plname = initcap(plname));
+
+-- ml_oz_customer
+alter table ml_oz_customer add constraint c_efname check (efname = initcap(efname));
+alter table ml_oz_customer add constraint c_elname check (elname = initcap(elname));
+
+-- ml_oz_purchase
+alter table ml_oz_purchase add constraint c_purchaseid check (purchaseid between 100000 and 999999);
+alter table ml_oz_purchase add constraint c_passengerid_pur check (passengerid between 100000 and 999999);
+alter table ml_oz_purchase add constraint c_flightid_pur check (flightid between 100000 and 999999);
+alter table ml_oz_purchase add constraint c_invoicenumber_pur check (invoicenumber between 100000 and 999999);
+
+-- ml_oz_insuranceplan
+alter table ml_oz_insuranceplan add constraint c_planid check (planid between 100000 and 999999);
+
+-- ml_oz_passenger_request
+alter table ml_oz_passenger_request add constraint c_passengerid_pq check (passengerid between 100000 and 999999);
+alter table ml_oz_passenger_request add constraint c_sq_sq check (specialrequestid between 100000 and 999999);
+
+-- ml_oz_passenger_flight
+alter table ml_oz_passenger_flight add constraint c_passengerid_pf check (passengerid between 100000 and 999999);
+alter table ml_oz_passenger_flight add constraint c_flightid_pf check (flightid between 100000 and 999999);
+
+-- ml_oz_invoice
+alter table ml_oz_invoice add constraint c_invoicenumber check (invoicenumber betweeneen 100000 and 999999);
+
+-- ml_oz_specialrequest
+alter table ml_oz_specialrequest add constraint c_specialrequestid check (specialrequestid between 100000 and 999999);
+
+-- ml_oz_payment
+alter table ml_oz_payment add constraint c_paymentid check (paymentid between 100000 and 999999);
+alter table ml_oz_payment add constraint c_invoicenumber_pay check (invoicenumber between 100000 and 999999);
+
+-- ml_oz_flight
+alter table ml_oz_flight add constraint c_flightid check (flightid between 100000 and 999999);
+alter table ml_oz_flight add constraint c_airid_flight check (airid between 100000 and 999999);
+
+-- ml_oz_airline
+alter table ml_oz_airline add constraint c_airid check (airid between 100000 and 999999);
+
+-- ml_oz_airline_model
+alter table ml_oz_airline_model add constraint c_airid_am check (airid between 100000 and 999999);
+alter table ml_oz_airline_model add constraint c_modelid_am check (modelid between 100000 and 999999);
+
+-- ml_oz_airmodel
+alter table ml_oz_airmodel add constraint c_modelid check (modelid between 100000 and 999999);
+
+
+
+
+
+
+
+
+
+-- insert into ml_oz_airline
+insert into ml_oz_airline (airid, airlinename, mainhub, headquarter, aircountry) values (100001, 'Emirates Airline', 'Dubai International Airport', 'Dubai', 'United Arab Emirates');
+insert into ml_oz_airline (airid, airlinename, mainhub, headquarter, aircountry) values ( , '', '', '', '');
+
+
+-- insert into ml_oz_airmodel
+insert into ml_oz_airmodel (modelid, modelname, manufacturer, numofengines, numoffleet) values (100001, '737-800', 'Boeing', 2,826);
+insert into ml_oz_airmodel (modelid, modelname, manufacturer, numofengines, numoffleet) values (100002, '737-700', 'Boeing', 2,579);
+insert into ml_oz_airmodel (modelid, modelname, manufacturer, numofengines, numoffleet) values ( , '', , ,);
+
+-- insert into ml_oz_airline_model
+insert into ml_oz_airline_model (qty, airid, modelid) values (100, 100001, 100001);
+
+
+--insert into ml_oz_airport
+insert into ml_oz_airport (airportcode, airportname, airportcity, airportcountry, airporttype) values ('JAC', 'Jackson Hole', 'Jackson', 'United States', 'Medium');
+insert into ml_oz_airport (airportcode, airportname, airportcity, airportcountry, airporttype) values ('JAG', 'Shahbaz Air Base', 'Jacobabad', 'Pakistan', 'Medium');
+
+
+-- insert into ml_oz_flight
+insert into ml_oz_flight(flightid, dairport, aairport, departuretime, arrivaltime, airid) values (100001, 'JAC', 'JAG', TIMESTAMP '2021-01-31 09:26:56.66 +02:00', TIMESTAMP '2021-01-31 04:23:32.66 +05:00', 100001);
+
+
+-- insert into ml_oz_insuranceplan
+insert into ml_oz_insuranceplan (planid, planname, description, cost) values (100001, 'Plan A', 'xxx', 1234.92);
+insert into ml_oz_insuranceplan (planid, planname, description, cost) values (100002 , 'Plan B', 'xxx', 923.12);
+
+-- insert into ml_oz_purchase
+insert into ml_oz_purchase (purchaseid, coveragefname, coveragelname, planid, invoicenumber, flightid, passengerid) values ();
+
+-- insert into ml_oz_passenger
+insert into ml_oz_passenger (passengerid, pfname, plname, pbirthdate, pnationality, pgender, passportnumber, pexpirydate, passengertype)
+values (100001, 'Peter', 'Parker', DATE '1998-12-25', 'United States', 'M', 'abcd12345', DATE '2026-12-25', 'P');
+
+insert into ml_oz_passenger (passengerid, pfname, plname, pbirthdate, pnationality, pgender, passportnumber, pexpirydate, passengertype)
+values (100006, 'Peter', 'Parker', DATE '1998-12-25', 'United States', 'M', 'abcd12345', DATE '2026-12-25', 'P');
+
+insert into ml_oz_passenger (passengerid, pfname, plname, pbirthdate, pnationality, pgender, passportnumber, pexpirydate, passengertype)
+values (100007, 'Tony', 'Kim', DATE '2001-2-5', 'United States', 'M', 'abrd12567', DATE '2026-9-20', 'C');
+
+insert into ml_oz_passenger (passengerid, pfname, plname, pbirthdate, pnationality, pgender, passportnumber, pexpirydate, passengertype)
+values (100008, 'Amy', 'Smith', DATE '1994-3-9', 'United States', 'F', 'eras2312', DATE '2022-12-20', 'C');
+
+insert into ml_oz_passenger (passengerid, pfname, plname, pbirthdate, pnationality, pgender, passportnumber, pexpirydate, passengertype)
+values (100009, 'Mike', 'Anderson', DATE '1988-6-6', 'Scotland', 'M', 'ebrd34567', DATE '20223-3-27', 'C');
+
+-- insert into ml_oz_customer
+insert into ml_oz_customer (passengerid, street, city, state, zipcode, country, email, contactnumber, numofpassenger, efname, elname, econtact, customertype)
+values (100006, 'a', 'b', 'c', 111111, 'e', 'email', '2323-423', 2, 'harry', 'porter', '1212-3224', 'C');
+
+insert into ml_oz_customer (passengerid, street, city, state, zipcode, country, email, contactnumber, numofpassenger, efname, elname, econtact, customertype)
+values (100007, '100Ave', 'Boston', 'Massachusetts', 02215, 'United States', '100007@gmail.com', '+1 000-0000-001', 3, 'Lily', 'Anderson', '+1 123', 'M');
+
+-- insert into ml_oz_ba
+insert into ml_oz_ba(passengerid, bname, webaddress, phonenumber) values ();
+
+-- insert into ml_oz_member
+insert into ml_oz_ba (passengerid, membershipname, assocaitedairline, mstartdate, menfdate) values ();
+
+
+
+
+-- count
+select count (*) from ml_oz_airline;
+select count (*) from ml_oz_passenger;
+select count (*) from ml_oz_customer;
+select count (*) from ml_oz_member;
+select count (*) from ml_oz_ba;
+select count (*) from ml_oz_passenger_request;
+select count (*) from ml_oz_specialrequest;
+select count (*) from ml_oz_passenger_flight;
+select count (*) from ml_oz_airport;
+select count (*) from ml_oz_flight;
+select count (*) from ml_oz_airline_model;
+select count (*) from ml_oz_airmodel;
+select count (*) from ml_oz_insuranceplan;
+select count (*) from ml_oz_purchase;
+select count (*) from ml_oz_invoice;
+select count (*) from ml_oz_payment;
+
+
+
+-- data dictionary queries
+select * from user_cons_columns;
+select * from ALL_TAB_COLUMNS;

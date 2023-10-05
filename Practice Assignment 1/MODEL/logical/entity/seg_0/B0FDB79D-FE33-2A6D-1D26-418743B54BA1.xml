@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="B0FDB79D-FE33-2A6D-1D26-418743B54BA1" name="ML_DEPT">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-20 02:59:43 UTC</createdTime>
+<ownerDesignName>MODEL</ownerDesignName>
+<engineerTo>
+<item key="3191E134-CC4C-99BB-2D5E-D6DE5D2FF5E3" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="DEPTNO" id="DCD11DCE-567C-D56A-339A-AC52E9231633">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-20 02:59:56 UTC</createdTime>
+<commentInRDBMS><![CDATA[DEPARTMENT ID NUMBER]]></commentInRDBMS>
+<ownerDesignName>MODEL</ownerDesignName>
+<engineerTo>
+<item key="3191E134-CC4C-99BB-2D5E-D6DE5D2FF5E3" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DNAME" id="1B1DEEDC-6EC0-7645-0AEC-2510E1A35172">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-20 03:00:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[DEPARTMENT NAME]]></commentInRDBMS>
+<ownerDesignName>MODEL</ownerDesignName>
+<engineerTo>
+<item key="3191E134-CC4C-99BB-2D5E-D6DE5D2FF5E3" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="LOC" id="625BF1DF-1D01-41CD-A3E5-638E3DBC48E5">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-20 03:00:38 UTC</createdTime>
+<commentInRDBMS><![CDATA[LOCATION CITY OF THE DEPARTMENT]]></commentInRDBMS>
+<ownerDesignName>MODEL</ownerDesignName>
+<engineerTo>
+<item key="3191E134-CC4C-99BB-2D5E-D6DE5D2FF5E3" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="5D4046A5-9DA7-0AB9-EA5D-AE8D9ED3CFFB" name="ML_DEPT PK">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-20 03:00:21 UTC</createdTime>
+<ownerDesignName>MODEL</ownerDesignName>
+<engineerTo>
+<item key="3191E134-CC4C-99BB-2D5E-D6DE5D2FF5E3" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>DCD11DCE-567C-D56A-339A-AC52E9231633</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

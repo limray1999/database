@@ -1,0 +1,200 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="4A968E06-3504-1CEC-7BAB-E60C8535F817" name="ML_OZ_CUS">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-05 15:14:43 UTC</createdTime>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<engineerTo>
+<item key="A15D2409-CEE6-726D-472B-7748C622E567" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<hierarchicalParent>57C20E25-54AB-1C05-F3EB-B12BC2A0CFC4</hierarchicalParent>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<generateDiscrimColumn>true</generateDiscrimColumn>
+<discriminatorAttributeID>6A16E835-6404-8F59-7943-E4D9DD1FF34B</discriminatorAttributeID>
+<discriminatorValue>C</discriminatorValue>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="CUSTOMER_TYPE" id="6A16E835-6404-8F59-7943-E4D9DD1FF34B">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-05 18:18:28 UTC</createdTime>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<engineerTo>
+<item key="A15D2409-CEE6-726D-472B-7748C622E567" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="EMAIL" id="C858BCC2-D6F5-334E-6E36-1325210BE4F5">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-05 19:15:30 UTC</createdTime>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<engineerTo>
+<item key="A15D2409-CEE6-726D-472B-7748C622E567" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NOFP" id="4329A5BE-F511-FF0F-51AD-404BA7EF475E">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-11 02:00:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[NUMBER OF PASSENGERS TRAVELLING ]]></commentInRDBMS>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<engineerTo>
+<item key="A15D2409-CEE6-726D-472B-7748C622E567" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="EFNAME" id="59C4168C-D5F7-00CE-6C92-3762D665F103">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-11 02:01:33 UTC</createdTime>
+<commentInRDBMS><![CDATA[EMERGENCY CONTACT FIRST NAME]]></commentInRDBMS>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<engineerTo>
+<item key="A15D2409-CEE6-726D-472B-7748C622E567" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ELNAME" id="B444D69C-0452-6DDD-6750-BE484A0E7649">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-11 02:03:30 UTC</createdTime>
+<commentInRDBMS><![CDATA[EMERGENCY CONTACT LAST NAME]]></commentInRDBMS>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<engineerTo>
+<item key="A15D2409-CEE6-726D-472B-7748C622E567" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ECONTAC" id="6E24AE47-41C7-7747-6D6D-3B914D23840E">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-11 02:03:52 UTC</createdTime>
+<commentInRDBMS><![CDATA[EMERGENCY CONTACT NUMBER]]></commentInRDBMS>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<engineerTo>
+<item key="A15D2409-CEE6-726D-472B-7748C622E567" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CONTACT_NUMBER" id="E9AFBD93-9E76-32C6-BB68-509F6F39316E">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-11 02:10:58 UTC</createdTime>
+<commentInRDBMS><![CDATA[CONTACT NUMBER WITH COUNTRY CODE]]></commentInRDBMS>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<engineerTo>
+<item key="A15D2409-CEE6-726D-472B-7748C622E567" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="COUNTRY" id="2D93422F-61B7-FBE3-4F80-A6D139EA5362">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-11 02:11:38 UTC</createdTime>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<engineerTo>
+<item key="A15D2409-CEE6-726D-472B-7748C622E567" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="STATE" id="64FEB4FC-0F15-7DEE-8133-6D10B5B2A1CD">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-11 02:12:05 UTC</createdTime>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<engineerTo>
+<item key="A15D2409-CEE6-726D-472B-7748C622E567" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CITY" id="42F92CEF-B55C-F8FF-0342-FB50C8184F32">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-11 02:12:28 UTC</createdTime>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<engineerTo>
+<item key="A15D2409-CEE6-726D-472B-7748C622E567" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="STREET" id="1413A095-EA6C-0710-A094-6246D452D9B0">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-11 02:12:42 UTC</createdTime>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<engineerTo>
+<item key="A15D2409-CEE6-726D-472B-7748C622E567" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ZIPCODE" id="618056B7-3C04-7D72-6664-B21483064262">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-11 02:12:53 UTC</createdTime>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<engineerTo>
+<item key="A15D2409-CEE6-726D-472B-7748C622E567" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT035</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PLAN_ID" id="C31C6D20-B486-2AB0-D4B3-700D4FC5BC2E">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-12 18:59:18 UTC</createdTime>
+<generatorID>F1126870-C15B-2F04-A2D7-738A16FED845</generatorID>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<engineerTo>
+<item key="A15D2409-CEE6-726D-472B-7748C622E567" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>7CF191D5-A3BC-D8A1-40D2-803D6BA9015C</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>

@@ -1,0 +1,103 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7CBB9258-504F-DA03-A8AC-CC80A809E2B6" name="ML_OZ_BA">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-12 19:17:58 UTC</createdTime>
+<generatorID>2A63DC72-5B22-9896-7AB2-631A8C44C640</generatorID>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="PASSENGER_ID" id="97D20211-7F2E-FFDB-CE41-BE35AE3E6005">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-12 19:17:58 UTC</createdTime>
+<commentInRDBMS><![CDATA[THE UNIQUE NUMBER ASSIGNED TO EVERY PASSENGER]]></commentInRDBMS>
+<generatorID>AD399E72-765B-BF4B-D110-20B2FD9ED61E</generatorID>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="36FE909C-AA7B-656F-4B91-80A01DE79C22" referredColumn="7C8CBD57-FDC1-0C6C-7138-44FEF6B05146"/>
+</associations>
+</Column>
+<Column name="MEMBERSHIP_NAME" id="DBC3773F-1F00-D717-3C6E-3A845BFAF311">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-12 19:17:58 UTC</createdTime>
+<generatorID>E1DB07E8-B0EE-D0B4-B3D6-22787F0708A5</generatorID>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ASSOCIATED_AIRLINE" id="B232B551-7633-E205-E550-E507BA48CE6E">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-12 19:17:58 UTC</createdTime>
+<commentInRDBMS><![CDATA[THE ASSOCIATED AIRLINE ID]]></commentInRDBMS>
+<generatorID>A93EDE49-0F19-CE5A-B047-BA96C521452E</generatorID>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="START_DATE" id="B41D64EA-5E40-C9E7-B956-418447C918FF">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-12 19:17:58 UTC</createdTime>
+<commentInRDBMS><![CDATA[MEMBERSHIP START DATE]]></commentInRDBMS>
+<generatorID>C18752A4-05A5-00FF-0D81-BECF2E658522</generatorID>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="END_DATE" id="9226BE12-4544-A89F-A490-2C47164240CB">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-12 19:17:58 UTC</createdTime>
+<commentInRDBMS><![CDATA[MEMBERSHIP END DATE]]></commentInRDBMS>
+<generatorID>B5596B5D-D5B4-D238-8B15-1B4C28FE189C</generatorID>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2E5D60C2-0118-7AC6-5BE3-369E8EEF1A8F" name="ML_OZ_BA_PK">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-12 19:17:58 UTC</createdTime>
+<generatorID>7D82683A-4697-5893-5D16-E74CD774C6D3</generatorID>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="97D20211-7F2E-FFDB-CE41-BE35AE3E6005"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="35FF3DF1-68FE-4601-67DC-905FE15A0383" name="ML_OZ_BA_ML_OZ_CUS_FK">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-12 19:17:58 UTC</createdTime>
+<generatorID>E9C49C1F-9DB3-A2BD-9603-69640BEAB3E0</generatorID>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="97D20211-7F2E-FFDB-CE41-BE35AE3E6005"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

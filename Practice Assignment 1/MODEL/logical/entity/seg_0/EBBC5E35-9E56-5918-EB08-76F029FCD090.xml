@@ -1,0 +1,88 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="EBBC5E35-9E56-5918-EB08-76F029FCD090" name="ML_PROJECT">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-20 03:03:04 UTC</createdTime>
+<ownerDesignName>MODEL</ownerDesignName>
+<engineerTo>
+<item key="3191E134-CC4C-99BB-2D5E-D6DE5D2FF5E3" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="PROJID" id="8AEAF2D7-E6A1-94C6-F44A-2F7319ABD165">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-20 03:03:21 UTC</createdTime>
+<commentInRDBMS><![CDATA[PROJECT ID NUMBER]]></commentInRDBMS>
+<ownerDesignName>MODEL</ownerDesignName>
+<engineerTo>
+<item key="3191E134-CC4C-99BB-2D5E-D6DE5D2FF5E3" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PNAME" id="7ACA90D5-A04F-4C16-9D28-2BDC9C8ACDBE">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-20 03:03:44 UTC</createdTime>
+<commentInRDBMS><![CDATA[NAME OF THE PROJECT]]></commentInRDBMS>
+<ownerDesignName>MODEL</ownerDesignName>
+<engineerTo>
+<item key="3191E134-CC4C-99BB-2D5E-D6DE5D2FF5E3" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="STARTDATE" id="17524CE8-0259-A8AC-E507-F776E9A39C57">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-20 03:04:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[START DATE OF THE PEOJECT]]></commentInRDBMS>
+<ownerDesignName>MODEL</ownerDesignName>
+<engineerTo>
+<item key="3191E134-CC4C-99BB-2D5E-D6DE5D2FF5E3" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ENDDATE" id="E37F0B22-749A-FF0B-3D89-C164A22BB069">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-20 03:04:21 UTC</createdTime>
+<commentInRDBMS><![CDATA[END DATE OF THE PROJECT]]></commentInRDBMS>
+<ownerDesignName>MODEL</ownerDesignName>
+<engineerTo>
+<item key="3191E134-CC4C-99BB-2D5E-D6DE5D2FF5E3" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="A120D7F0-1456-46E6-D304-026DF19D0140" name="ML_PROJECT PK">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-20 03:03:34 UTC</createdTime>
+<ownerDesignName>MODEL</ownerDesignName>
+<engineerTo>
+<item key="3191E134-CC4C-99BB-2D5E-D6DE5D2FF5E3" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>8AEAF2D7-E6A1-94C6-F44A-2F7319ABD165</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

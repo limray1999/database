@@ -1,0 +1,664 @@
+-- SQLINES DEMO *** le SQL Developer Data Modeler 21.2.0.183.1957
+-- SQLINES DEMO *** -11-12 15:24:17 EST
+-- SQLINES DEMO *** le Database 11g
+-- SQLINES DEMO *** le Database 11g
+
+
+
+-- SQLINES DEMO *** no DDL - MDSYS.SDO_GEOMETRY
+
+-- SQLINES DEMO *** no DDL - XMLTYPE
+
+-- SQLINES LICENSE FOR EVALUATION USE ONLY
+CREATE TABLE ml_oz_airline (
+    airid       INT NOT NULL COMMENT 'UNique ID assigned to each airline',
+    airlinename VARCHAR(30) NOT NULL COMMENT 'the name of the airline',
+    mainhub     VARCHAR(50) NOT NULL COMMENT 'the main hub of the airlines',
+    headquarter VARCHAR(30) NOT NULL COMMENT 'the headquarter city of the airlines',
+    aircountry  VARCHAR(30) NOT NULL COMMENT 'the country of the airlines main hub'
+);
+
+/* Moved to CREATE TABLE
+COMMENT ON COLUMN ml_oz_airline.airld IS
+    'UNique ID assigned to each airline'; */
+
+/* Moved to CREATE TABLE
+COMMENT ON COLUMN ml_oz_airline.airlinename IS
+    'the name of the airline'; */
+
+/* Moved to CREATE TABLE
+COMMENT ON COLUMN ml_oz_airline.mainhub IS
+    'the main hub of the airlines'; */
+
+/* Moved to CREATE TABLE
+COMMENT ON COLUMN ml_oz_airline.headquarter IS
+    'the headquarter city of the airlines'; */
+
+/* Moved to CREATE TABLE
+COMMENT ON COLUMN ml_oz_airline.aircountry IS
+    'the country of the airlines main hub'; */
+
+ALTER TABLE ml_oz_airline ADD CONSTRAINT ml_oz_airline_pk PRIMARY KEY ( airld );
+
+-- SQLINES LICENSE FOR EVALUATION USE ONLY
+CREATE TABLE ml_oz_airline_model (
+    qty     SMALLINT NOT NULL COMMENT 'The Quantity airplanes model that ariline have',
+    airid   INT NOT NULL,
+    modelid INT NOT NULL
+);
+
+/* Moved to CREATE TABLE
+COMMENT ON COLUMN ml_oz_airline_model.qty IS
+    'The Quantity airplanes model that ariline have'; */
+
+ALTER TABLE ml_oz_airline_model ADD CONSTRAINT ml_oz_airline_model_pk PRIMARY KEY ( airld,
+                                                                                    modelid );
+
+-- SQLINES LICENSE FOR EVALUATION USE ONLY
+CREATE TABLE ml_oz_airmodel (
+    modelid      INT NOT NULL COMMENT 'unique ID assigned to each model',
+    modelname    VARCHAR(20) NOT NULL COMMENT 'the model of the aircraft',
+    manufacturer VARCHAR(30) NOT NULL COMMENT 'the manufacturer of the air craft',
+    numofengines TINYINT NOT NULL COMMENT 'the number of the engines in the aircraft',
+    numoffleet   SMALLINT NOT NULL COMMENT 'the number of the fleets'
+);
+
+/* Moved to CREATE TABLE
+COMMENT ON COLUMN ml_oz_airmodel.modelid IS
+    'unique ID assigned to each model'; */
+
+/* Moved to CREATE TABLE
+COMMENT ON COLUMN ml_oz_airmodel.modelname IS
+    'the model of the aircraft'; */
+
+/* Moved to CREATE TABLE
+COMMENT ON COLUMN ml_oz_airmodel.manufacturer IS
+    'the manufacturer of the air craft'; */
+
+/* Moved to CREATE TABLE
+COMMENT ON COLUMN ml_oz_airmodel.numofengines IS
+    'the number of the engines in the aircraft'; */
+
+/* Moved to CREATE TABLE
+COMMENT ON COLUMN ml_oz_airmodel.numoffleet IS
+    'the number of the fleets'; */
+
+ALTER TABLE ml_oz_airmodel ADD CONSTRAINT ml_oz_airmodel_pk PRIMARY KEY ( modelid );
+
+-- SQLINES LICENSE FOR EVALUATION USE ONLY
+CREATE TABLE ml_oz_airport (
+    airportcode    CHAR(3) NOT NULL COMMENT 'the aircode of the airport',
+    airportname    VARCHAR(30) NOT NULL COMMENT 'the name of the airport',
+    airportcity    VARCHAR(30) NOT NULL COMMENT 'the city of the airport',
+    airportcountry VARCHAR(30) NOT NULL COMMENT 'the country of the airport',
+    airporttype    VARCHAR(30) NOT NULL COMMENT 'type of the airport'
+);
+
+/* Moved to CREATE TABLE
+COMMENT ON COLUMN ml_oz_airport.airportcode IS
+    'the aircode of the airport'; */
+
+/* Moved to CREATE TABLE
+COMMENT ON COLUMN ml_oz_airport.airportname IS
+    'the name of the airport'; */
+
+/* Moved to CREATE TABLE
+COMMENT ON COLUMN ml_oz_airport.airportcity IS
+    'the city of the airport'; */
+
+/* Moved to CREATE TABLE
+COMMENT ON COLUMN ml_oz_airport.airportcountry IS
+    'the country of the airport'; */
+
+/* Moved to CREATE TABLE
+COMMENT ON COLUMN ml_oz_airport.airporttype IS
+    'type of the airport'; */
+
+ALTER TABLE ml_oz_airport ADD CONSTRAINT ml_oz_airport_pk PRIMARY KEY ( airportcode );
+
+-- SQLINES LICENSE FOR EVALUATION USE ONLY
+CREATE TABLE ml_oz_ba (
+    passengerid INT NOT NULL COMMENT 'the unqiue ID assigned to each passenger ',
+    baid        INT NOT NULL COMMENT 'Unique ID assigned to each booking agent',
+    baname      VARCHAR(30) NOT NULL COMMENT 'The name of the  booking agent'
+);
+
+/* Moved to CREATE TABLE
+COMMENT ON COLUMN ml_oz_ba.passengerid IS
+    'the unqiue ID assigned to each passenger '; */
+
+/* Moved to CREATE TABLE
+COMMENT ON COLUMN ml_oz_ba.baid IS
+    'Unique ID assigned to each booking agent'; */
+
+/* Moved to CREATE TABLE
+COMMENT ON COLUMN ml_oz_ba.baname IS
+    'The name of the  booking agent'; */
+
+ALTER TABLE ml_oz_ba ADD CONSTRAINT ml_oz_ba_pk PRIMARY KEY ( passengerid );
+
+ALTER TABLE ml_oz_ba ADD CONSTRAINT ml_oz_ba_pkv1 UNIQUE ( baid );
+
+-- SQLINES LICENSE FOR EVALUATION USE ONLY
+CREATE TABLE ml_oz_customer (
+    passengerid    INT NOT NULL COMMENT 'the unqiue ID assigned to each passenger ',
+    cid            BIGINT NOT NULL COMMENT 'Unique ID assigned to each customer ',
+    street         VARCHAR(50) NOT NULL COMMENT 'street and apartment number of the customers'' address',
+    city           VARCHAR(30) NOT NULL COMMENT 'Customers'' address city name',
+    state          VARCHAR(20) NOT NULL COMMENT 'State name of the customer''s address',
+    zipcode        BIGINT NOT NULL COMMENT 'zip code of the customer adress.',
+    country        VARCHAR(30) NOT NULL COMMENT 'The country of the customers'' address',
+    email          VARCHAR(50) NOT NULL COMMENT 'the email of customer',
+    conatctnumber  VARCHAR(22) NOT NULL COMMENT 'customer''s contact number including country code',
+    numofpassenger SMALLINT NOT NULL COMMENT 'number of passenger that customer travel with including her(him)self',
+    efname         VARCHAR(30) NOT NULL COMMENT 'customer emergency contact first name',
+    elname         VARCHAR(30) NOT NULL COMMENT 'customer emergency contact last name',
+    econatct       VARCHAR(22) NOT NULL COMMENT 'customer emergency contact number',
+    customertype   CHAR(1) NOT NULL
+);
+
+ALTER TABLE ml_oz_customer
+    ADD CONSTRAINT ch_inh_ml_oz_customer CHECK ( customertype IN ( 'B', 'C', 'M' ) );
+
+/* Moved to CREATE TABLE
+COMMENT ON COLUMN ml_oz_customer.passengerid IS
+    'the unqiue ID assigned to each passenger '; */
+
+/* Moved to CREATE TABLE
+COMMENT ON COLUMN ml_oz_customer.cid IS
+    'Unique ID assigned to each customer '; */
+
+/* Moved to CREATE TABLE
+COMMENT ON COLUMN ml_oz_customer.street IS
+    'street and apartment number of the customers'' address'; */
+
+/* Moved to CREATE TABLE
+COMMENT ON COLUMN ml_oz_customer.city IS
+    'Customers'' address city name'; */
+
+/* Moved to CREATE TABLE
+COMMENT ON COLUMN ml_oz_customer.state IS
+    'State name of the customer''s address'; */
+
+/* Moved to CREATE TABLE
+COMMENT ON COLUMN ml_oz_customer.zipcode IS
+    'zip code of the customer adress.'; */
+
+/* Moved to CREATE TABLE
+COMMENT ON COLUMN ml_oz_customer.country IS
+    'The country of the customers'' address'; */
+
+/* Moved to CREATE TABLE
+COMMENT ON COLUMN ml_oz_customer.email IS
+    'the email of customer'; */
+
+/* Moved to CREATE TABLE
+COMMENT ON COLUMN ml_oz_customer.conatctnumber IS
+    'customer''s contact number including country code'; */
+
+/* Moved to CREATE TABLE
+COMMENT ON COLUMN ml_oz_customer.numofpassenger IS
+    'number of passenger that customer travel with including her(him)self'; */
+
+/* Moved to CREATE TABLE
+COMMENT ON COLUMN ml_oz_customer.efname IS
+    'customer emergency contact first name'; */
+
+/* Moved to CREATE TABLE
+COMMENT ON COLUMN ml_oz_customer.elname IS
+    'customer emergency contact last name'; */
+
+/* Moved to CREATE TABLE
+COMMENT ON COLUMN ml_oz_customer.econatct IS
+    'customer emergency contact number'; */
+
+ALTER TABLE ml_oz_customer ADD CONSTRAINT ml_oz_customer_pk PRIMARY KEY ( passengerid );
+
+ALTER TABLE ml_oz_customer ADD CONSTRAINT ml_oz_customer_pkv1 UNIQUE ( cid );
+
+-- SQLINES LICENSE FOR EVALUATION USE ONLY
+CREATE TABLE ml_oz_flight (
+    flightid      INT NOT NULL COMMENT 'the unqiue ID assigned to each flight',
+    dairport      CHAR(3) NOT NULL COMMENT 'flight departure airport',
+    aairport      CHAR(3) NOT NULL COMMENT 'flight Arrival Airport',
+    departuretime DATETIME NOT NULL COMMENT 'departure time of the flight ',
+    dtimezone     DATETIME(6) NOT NULL COMMENT 'the flight departure time zone',
+    arrivaltime   DATETIME NOT NULL COMMENT 'flight arrival time',
+    atimezone     DATETIME(6) NOT NULL COMMENT 'the flight arrival time zone',
+    airld         INT NOT NULL
+);
+
+/* Moved to CREATE TABLE
+COMMENT ON COLUMN ml_oz_flight.flightid IS
+    'the unqiue ID assigned to each flight'; */
+
+/* Moved to CREATE TABLE
+COMMENT ON COLUMN ml_oz_flight.dairport IS
+    'flight departure airport'; */
+
+/* Moved to CREATE TABLE
+COMMENT ON COLUMN ml_oz_flight.aairport IS
+    'flight Arrival Airport'; */
+
+/* Moved to CREATE TABLE
+COMMENT ON COLUMN ml_oz_flight.departuretime IS
+    'departure time of the flight '; */
+
+/* Moved to CREATE TABLE
+COMMENT ON COLUMN ml_oz_flight.dtimezone IS
+    'the flight departure time zone'; */
+
+/* Moved to CREATE TABLE
+COMMENT ON COLUMN ml_oz_flight.arrivaltime IS
+    'flight arrival time'; */
+
+/* Moved to CREATE TABLE
+COMMENT ON COLUMN ml_oz_flight.atimezone IS
+    'the flight arrival time zone'; */
+
+ALTER TABLE ml_oz_flight ADD CONSTRAINT ml_oz_flight_pk PRIMARY KEY ( flightid );
+
+-- SQLINES LICENSE FOR EVALUATION USE ONLY
+CREATE TABLE ml_oz_insuranceplan (
+    planid      INT NOT NULL COMMENT 'Unique id assigned to each plan',
+    planname    VARCHAR(30) NOT NULL COMMENT 'the name of the insurance plan',
+    description VARCHAR(200) NOT NULL COMMENT 'the description of the insurance plan',
+    cost        DECIMAL(7, 2) NOT NULL COMMENT 'the cost of the insurance plan'
+);
+
+/* Moved to CREATE TABLE
+COMMENT ON COLUMN ml_oz_insuranceplan.planid IS
+    'Unique id assigned to each plan'; */
+
+/* Moved to CREATE TABLE
+COMMENT ON COLUMN ml_oz_insuranceplan.planname IS
+    'the name of the insurance plan'; */
+
+/* Moved to CREATE TABLE
+COMMENT ON COLUMN ml_oz_insuranceplan.description IS
+    'the description of the insurance plan'; */
+
+/* Moved to CREATE TABLE
+COMMENT ON COLUMN ml_oz_insuranceplan.cost IS
+    'the cost of the insurance plan'; */
+
+ALTER TABLE ml_oz_insuranceplan ADD CONSTRAINT ml_oz_insuranceplan_pk PRIMARY KEY ( planid );
+
+-- SQLINES LICENSE FOR EVALUATION USE ONLY
+CREATE TABLE ml_oz_invoice (
+    invoicenumber INT NOT NULL COMMENT 'the unique invoice number assigned to each invoice',
+    inovicedate   DATETIME NOT NULL COMMENT 'the date of the invoice start',
+    invoiceamount DECIMAL(8, 2) NOT NULL COMMENT 'the invoice amount of the invoice'
+);
+
+/* Moved to CREATE TABLE
+COMMENT ON COLUMN ml_oz_invoice.invoicenumber IS
+    'the unique invoice number assigned to each invoice'; */
+
+/* Moved to CREATE TABLE
+COMMENT ON COLUMN ml_oz_invoice.inovicedate IS
+    'the date of the invoice start'; */
+
+/* Moved to CREATE TABLE
+COMMENT ON COLUMN ml_oz_invoice.invoiceamount IS
+    'the invoice amount of the invoice'; */
+
+ALTER TABLE ml_oz_invoice ADD CONSTRAINT ml_oz_invoice_pk PRIMARY KEY ( invoicenumber );
+
+-- SQLINES LICENSE FOR EVALUATION USE ONLY
+CREATE TABLE ml_oz_member (
+    passengerid    INT NOT NULL COMMENT 'the unqiue ID assigned to each passenger ',
+    membershipid   INT NOT NULL COMMENT 'the unique ID assigned to each membership',
+    membershipname VARCHAR(30) NOT NULL COMMENT 'the name of the membership'
+);
+
+/* Moved to CREATE TABLE
+COMMENT ON COLUMN ml_oz_member.passengerid IS
+    'the unqiue ID assigned to each passenger '; */
+
+/* Moved to CREATE TABLE
+COMMENT ON COLUMN ml_oz_member.membershipid IS
+    'the unique ID assigned to each membership'; */
+
+/* Moved to CREATE TABLE
+COMMENT ON COLUMN ml_oz_member.membershipname IS
+    'the name of the membership'; */
+
+ALTER TABLE ml_oz_member ADD CONSTRAINT ml_oz_member_pk PRIMARY KEY ( passengerid );
+
+ALTER TABLE ml_oz_member ADD CONSTRAINT ml_oz_member_pkv1 UNIQUE ( membershipid );
+
+-- SQLINES LICENSE FOR EVALUATION USE ONLY
+CREATE TABLE ml_oz_passenger (
+    passengerid    INT NOT NULL COMMENT 'the unqiue ID assigned to each passenger ',
+    pfname         VARCHAR(30) NOT NULL COMMENT 'passenger first name',
+    plname         VARCHAR(30) NOT NULL COMMENT 'the last name of the passenger ',
+    pbirthdate     DATETIME NOT NULL COMMENT 'passenger birthday',
+    pnationality   VARCHAR(30) NOT NULL COMMENT 'the nationality of the passenger',
+    pgender        CHAR(1) NOT NULL COMMENT 'the gender of the passenger, enter F for female, enter M for male',
+    passportnumber VARCHAR(9) NOT NULL,
+    pexpirydate    DATETIME NOT NULL COMMENT 'the expiration date of the passport',
+    planid         INT,
+    passengertype  CHAR(1) NOT NULL
+);
+
+ALTER TABLE ml_oz_passenger
+    ADD CONSTRAINT ch_inh_ml_oz_passenger CHECK ( passengertype IN ( 'B', 'C', 'M', 'P' ) );
+
+/* Moved to CREATE TABLE
+COMMENT ON COLUMN ml_oz_passenger.passengerid IS
+    'the unqiue ID assigned to each passenger '; */
+
+/* Moved to CREATE TABLE
+COMMENT ON COLUMN ml_oz_passenger.pfname IS
+    'passenger first name'; */
+
+/* Moved to CREATE TABLE
+COMMENT ON COLUMN ml_oz_passenger.plname IS
+    'the last name of the passenger '; */
+
+/* Moved to CREATE TABLE
+COMMENT ON COLUMN ml_oz_passenger.pbirthdate IS
+    'passenger birthday'; */
+
+/* Moved to CREATE TABLE
+COMMENT ON COLUMN ml_oz_passenger.pnationality IS
+    'the nationality of the passenger'; */
+
+/* Moved to CREATE TABLE
+COMMENT ON COLUMN ml_oz_passenger.pgender IS
+    'the gender of the passenger, enter F for female, enter M for male'; */
+
+/* Moved to CREATE TABLE
+COMMENT ON COLUMN ml_oz_passenger.pexpirydate IS
+    'the expiration date of the passport'; */
+
+ALTER TABLE ml_oz_passenger ADD CONSTRAINT ml_oz_passenger_pk PRIMARY KEY ( passengerid );
+
+-- SQLINES LICENSE FOR EVALUATION USE ONLY
+CREATE TABLE ml_oz_passenger_flight (
+    mealplan    VARCHAR(30) NOT NULL COMMENT 'passenger meal plan choice',
+    cabinclass  VARCHAR(30) NOT NULL COMMENT 'passenger cabin class for the flight',
+    passengerid INT NOT NULL,
+    flightid    INT NOT NULL
+);
+
+/* Moved to CREATE TABLE
+COMMENT ON COLUMN ml_oz_passenger_flight.mealplan IS
+    'passenger meal plan choice'; */
+
+/* Moved to CREATE TABLE
+COMMENT ON COLUMN ml_oz_passenger_flight.cabinclass IS
+    'passenger cabin class for the flight'; */
+
+ALTER TABLE ml_oz_passenger_flight ADD CONSTRAINT ml_oz_passenger_flight_pk PRIMARY KEY ( passengerid,
+                                                                                          flightid );
+
+-- SQLINES LICENSE FOR EVALUATION USE ONLY
+CREATE TABLE ml_oz_passenger_request (
+    passengerid      INT NOT NULL,
+    specialrequestid INT NOT NULL
+);
+
+ALTER TABLE ml_oz_passenger_request ADD CONSTRAINT ml_oz_passenger_request_pk PRIMARY KEY ( passengerid,
+                                                                                            specialrequestid );
+
+-- SQLINES LICENSE FOR EVALUATION USE ONLY
+CREATE TABLE ml_oz_payment (
+    paymentid      INT NOT NULL COMMENT 'the unique ID assigned to each payment',
+    paymentamount  DECIMAL(8, 2) NOT NULL COMMENT 'the payment amount of the payment',
+    paymentmethod  VARCHAR(30) NOT NULL COMMENT 'the method of the payment(credit card etc)',
+    cardnumber     BIGINT NOT NULL COMMENT 'the card number of the payment card',
+    fnameonc       VARCHAR(30) NOT NULL COMMENT 'first name of the cardholder',
+    lnameonc       VARCHAR(30) NOT NULL COMMENT 'the last name of the card holder',
+    expirationdate DATETIME NOT NULL COMMENT 'expiration date of the card',
+    invoicenumber  INT NOT NULL
+);
+
+/* Moved to CREATE TABLE
+COMMENT ON COLUMN ml_oz_payment.paymentid IS
+    'the unique ID assigned to each payment'; */
+
+/* Moved to CREATE TABLE
+COMMENT ON COLUMN ml_oz_payment.paymentamount IS
+    'the payment amount of the payment'; */
+
+/* Moved to CREATE TABLE
+COMMENT ON COLUMN ml_oz_payment.paymentmethod IS
+    'the method of the payment(credit card etc)'; */
+
+/* Moved to CREATE TABLE
+COMMENT ON COLUMN ml_oz_payment.cardnumber IS
+    'the card number of the payment card'; */
+
+/* Moved to CREATE TABLE
+COMMENT ON COLUMN ml_oz_payment.fnameonc IS
+    'first name of the cardholder'; */
+
+/* Moved to CREATE TABLE
+COMMENT ON COLUMN ml_oz_payment.lnameonc IS
+    'the last name of the card holder'; */
+
+/* Moved to CREATE TABLE
+COMMENT ON COLUMN ml_oz_payment.expirationdate IS
+    'expiration date of the card'; */
+
+ALTER TABLE ml_oz_payment ADD CONSTRAINT ml_oz_payment_pk PRIMARY KEY ( paymentid );
+
+-- SQLINES LICENSE FOR EVALUATION USE ONLY
+CREATE TABLE ml_oz_purchase (
+    purchaseid   INT NOT NULL COMMENT 'THE UNIQUE ID assigned to each customer',
+    cid           BIGINT NOT NULL,
+    coveragefname VARCHAR(30) NOT NULL COMMENT 'the first name of the coverge passenger',
+    coveragelname VARCHAR(30) NOT NULL COMMENT 'the last name of the coverage passenger',
+    planid        INT NOT NULL,
+    invoicenumber INT NOT NULL,
+	flightid
+);
+
+/* Moved to CREATE TABLE
+COMMENT ON COLUMN ml_oz_purchase.purchase_id IS
+    'THE UNIQUE ID assigned to each customer'; */
+
+/* Moved to CREATE TABLE
+COMMENT ON COLUMN ml_oz_purchase.coveragefname IS
+    'the first name of the coverge passenger'; */
+
+/* Moved to CREATE TABLE
+COMMENT ON COLUMN ml_oz_purchase.coveragelname IS
+    'the last name of the coverage passenger'; */
+
+-- SQLINES LICENSE FOR EVALUATION USE ONLY
+CREATE UNIQUE INDEX ml_oz_purchase__idx ON
+    ml_oz_purchase (
+        planid
+    ASC );
+
+ALTER TABLE ml_oz_purchase ADD CONSTRAINT ml_oz_purchase_pk PRIMARY KEY ( purchase_id );
+
+-- SQLINES LICENSE FOR EVALUATION USE ONLY
+CREATE TABLE ml_oz_specialrequest (
+    specialrequestid   INT NOT NULL COMMENT 'the unique ID assigned to each special request',
+    specialrequestname VARCHAR(30) NOT NULL COMMENT 'the name of the special request'
+);
+
+/* Moved to CREATE TABLE
+COMMENT ON COLUMN ml_oz_specialrequest.specialrequestid IS
+    'the unique ID assigned to each special request'; */
+
+/* Moved to CREATE TABLE
+COMMENT ON COLUMN ml_oz_specialrequest.specialrequestname IS
+    'the name of the special request'; */
+
+ALTER TABLE ml_oz_specialrequest ADD CONSTRAINT ml_oz_specialrequest_pk PRIMARY KEY ( specialrequestid );
+
+ALTER TABLE ml_oz_airline_model
+    ADD CONSTRAINT fk_airline_model_airline FOREIGN KEY ( airld )
+        REFERENCES ml_oz_airline ( airld );
+
+ALTER TABLE ml_oz_airline_model
+    ADD CONSTRAINT fk_airline_model_airmodel FOREIGN KEY ( modelid )
+        REFERENCES ml_oz_airmodel ( modelid );
+
+ALTER TABLE ml_oz_ba
+    ADD CONSTRAINT fk_ba_customer FOREIGN KEY ( passengerid )
+        REFERENCES ml_oz_customer ( passengerid );
+
+ALTER TABLE ml_oz_customer
+    ADD CONSTRAINT fk_customer_passenger FOREIGN KEY ( passengerid )
+        REFERENCES ml_oz_passenger ( passengerid );
+
+ALTER TABLE ml_oz_flight
+    ADD CONSTRAINT fk_flight__arrivalairport FOREIGN KEY ( dairport )
+        REFERENCES ml_oz_airport ( airportcode );
+
+ALTER TABLE ml_oz_flight
+    ADD CONSTRAINT fk_flight_airline FOREIGN KEY ( airld )
+        REFERENCES ml_oz_airline ( airld );
+
+ALTER TABLE ml_oz_flight
+    ADD CONSTRAINT fk_flight_departureairport FOREIGN KEY ( aairport )
+        REFERENCES ml_oz_airport ( airportcode );
+
+ALTER TABLE ml_oz_passenger_flight
+    ADD CONSTRAINT fk_flight_passenger FOREIGN KEY ( passengerid )
+        REFERENCES ml_oz_passenger ( passengerid );
+
+ALTER TABLE ml_oz_member
+    ADD CONSTRAINT fk_member_customer FOREIGN KEY ( passengerid )
+        REFERENCES ml_oz_customer ( passengerid );
+
+ALTER TABLE ml_oz_passenger_flight
+    ADD CONSTRAINT fk_passenger_flight FOREIGN KEY ( flightid )
+        REFERENCES ml_oz_flight ( flightid );
+
+ALTER TABLE ml_oz_passenger
+    ADD CONSTRAINT fk_passenger_insuranceplan FOREIGN KEY ( planid )
+        REFERENCES ml_oz_insuranceplan ( planid );
+
+ALTER TABLE ml_oz_passenger_request
+    ADD CONSTRAINT fk_passenger_request FOREIGN KEY ( specialrequestid )
+        REFERENCES ml_oz_specialrequest ( specialrequestid );
+
+ALTER TABLE ml_oz_payment
+    ADD CONSTRAINT fk_payment_invoice FOREIGN KEY ( invoicenumber )
+        REFERENCES ml_oz_invoice ( invoicenumber );
+
+ALTER TABLE ml_oz_purchase
+    ADD CONSTRAINT fk_purchase_customer FOREIGN KEY ( cid )
+        REFERENCES ml_oz_customer ( cid );
+
+ALTER TABLE ml_oz_purchase
+    ADD CONSTRAINT fk_purchase_insuranceplan FOREIGN KEY ( planid )
+        REFERENCES ml_oz_insuranceplan ( planid );
+
+ALTER TABLE ml_oz_purchase
+    ADD CONSTRAINT fk_purchase_invoice FOREIGN KEY ( invoicenumber )
+        REFERENCES ml_oz_invoice ( invoicenumber );
+
+ALTER TABLE ml_oz_passenger_request
+    ADD CONSTRAINT fk_request_passenger FOREIGN KEY ( passengerid )
+        REFERENCES ml_oz_passenger ( passengerid );
+
+CREATE OR REPLACE TRIGGER arc_fkarc_3_ml_oz_member BEFORE
+    INSERT OR UPDATE OF passengerid ON ml_oz_member
+    FOR EACH ROW
+    DECLARE d CHAR(1);
+BEGIN
+    -- SQLINES LICENSE FOR EVALUATION USE ONLY
+    SELECT
+        a.customertype
+    INTO d
+    FROM
+        ml_oz_customer a
+    WHERE
+        a.passengerid = :new.passengerid;
+
+    IF ( d IS NULL OR d <> 'M' ) THEN
+        raise_application_error(-20223,
+                               'FK FK_MEMBER_CUSTOMER in Table ML_OZ_MEMBER violates Arc constraint on Table ML_OZ_CUSTOMER - discriminator column CustomerType doesn''t have value ''M''');
+    END IF;
+
+    DECLARE EXIT HANDLER FOR not found BEGIN
+        NULL;
+    END;
+    DECLARE EXIT HANDLER FOR SQLEXCEPTION BEGIN
+        RESIGNAL;
+    END;
+END;
+/
+
+CREATE OR REPLACE TRIGGER arc_fkarc_3_ml_oz_ba BEFORE
+    INSERT OR UPDATE OF passengerid ON ml_oz_ba
+    FOR EACH ROW
+    DECLARE d CHAR(1);
+BEGIN
+    -- SQLINES LICENSE FOR EVALUATION USE ONLY
+    SELECT
+        a.customertype
+    INTO d
+    FROM
+        ml_oz_customer a
+    WHERE
+        a.passengerid = :new.passengerid;
+
+    IF ( d IS NULL OR d <> 'B' ) THEN
+        raise_application_error(-20223,
+                               'FK FK_BA_CUSTOMER in Table ML_OZ_BA violates Arc constraint on Table ML_OZ_CUSTOMER - discriminator column CustomerType doesn''t have value ''B''');
+    END IF;
+
+    DECLARE EXIT HANDLER FOR not found BEGIN
+        NULL;
+    END;
+    DECLARE EXIT HANDLER FOR SQLEXCEPTION BEGIN
+        RESIGNAL;
+    END;
+END;
+/
+
+
+
+-- SQLINES DEMO *** per Data Modeler Summary Report: 
+-- 
+-- SQLINES DEMO ***                        16
+-- SQLINES DEMO ***                         1
+-- SQLINES DEMO ***                        38
+-- SQLINES DEMO ***                         0
+-- SQLINES DEMO ***                         0
+-- SQLINES DEMO ***                         0
+-- SQLINES DEMO *** DY                      0
+-- SQLINES DEMO ***                         0
+-- SQLINES DEMO ***                         0
+-- SQLINES DEMO ***                         2
+-- SQLINES DEMO ***                         0
+-- SQLINES DEMO ***  TYPE                   0
+-- SQLINES DEMO ***  TYPE                   0
+-- SQLINES DEMO ***  TYPE BODY              0
+-- SQLINES DEMO ***                         0
+-- SQLINES DEMO ***                         0
+-- SQLINES DEMO ***                         0
+-- SQLINES DEMO ***                         0
+-- SQLINES DEMO ***                         0
+-- SQLINES DEMO ***                         0
+-- SQLINES DEMO ***                         0
+-- SQLINES DEMO *** EGMENT                  0
+-- SQLINES DEMO ***                         0
+-- SQLINES DEMO *** ED VIEW                 0
+-- SQLINES DEMO *** ED VIEW LOG             0
+-- SQLINES DEMO ***                         0
+-- SQLINES DEMO ***                         0
+-- SQLINES DEMO ***                         0
+-- 
+-- SQLINES DEMO ***                         0
+-- SQLINES DEMO ***                         0
+-- 
+-- SQLINES DEMO ***                         0
+-- 
+-- SQLINES DEMO ***                         0
+-- SQLINES DEMO *** A                       0
+-- SQLINES DEMO *** T                       0
+-- 
+-- SQLINES DEMO ***                         0
+-- SQLINES DEMO ***                         0
+
+

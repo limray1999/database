@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK_MGE_EMP" directorySegmentName="seg_0" id="DBF484FE-62DD-2841-C4F7-9F924ABBB2A3">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-24 04:07:45 UTC</createdTime>
+<ownerDesignName>MODEL</ownerDesignName>
+<engineerTo>
+<item key="3191E134-CC4C-99BB-2D5E-D6DE5D2FF5E3" value="true"/>
+</engineerTo>
+<targetPk>6668B901-010A-4BF6-C44E-134C90FB73A9</targetPk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>C4A74E0D-1019-D4C7-54D7-D8945D42CC2E</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>C4A74E0D-1019-D4C7-54D7-D8945D42CC2E</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

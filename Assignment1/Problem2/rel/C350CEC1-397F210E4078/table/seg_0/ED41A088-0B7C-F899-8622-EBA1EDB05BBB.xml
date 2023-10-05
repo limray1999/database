@@ -1,0 +1,194 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="ED41A088-0B7C-F899-8622-EBA1EDB05BBB" name="ML_BUILDING_ACCESSIBILITY">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-16 00:00:20 UTC</createdTime>
+<generatorID>AE617215-90F6-E159-A893-0B1A203F791C</generatorID>
+<ownerDesignName>Problem2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="BUILDING_ID" id="C78320C1-C2E2-2E1A-4A83-F42A59328511">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-16 00:00:20 UTC</createdTime>
+<generatorID>387E87B7-709F-5693-6524-9F71CEC2C2CC</generatorID>
+<ownerDesignName>Problem2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SCHOOL" id="1FC88B0C-E8FE-1AB3-1B40-D2986FB5E077">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-16 00:00:20 UTC</createdTime>
+<commentInRDBMS><![CDATA[THE NUMBER OF SCHOOL WITHIN 5 MILES]]></commentInRDBMS>
+<generatorID>3B9CF33F-08E5-6638-AF10-1B4CE062F642</generatorID>
+<ownerDesignName>Problem2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CHILDREN_PART" id="49265112-0488-E065-6939-80BE2C6EBC03">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-16 00:00:20 UTC</createdTime>
+<commentInRDBMS><![CDATA[NUMBER OF CHILDREN PARK WTHIN 5 MILES]]></commentInRDBMS>
+<generatorID>93414A9D-6B5E-76BC-F7E4-4A7CF001C091</generatorID>
+<ownerDesignName>Problem2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BANK" id="3E181355-F56C-46B4-773F-1B25C4FF804E">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-16 00:00:20 UTC</createdTime>
+<commentInRDBMS><![CDATA[NUMBER OF BANK WITHIN 5 MILES]]></commentInRDBMS>
+<generatorID>FB5D6AFD-2AE5-3BCC-34A3-F37A7746699E</generatorID>
+<ownerDesignName>Problem2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="GROCERY_STORE" id="9CE9029B-4D8C-F373-D9E7-D65428FFB4DC">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-16 00:00:20 UTC</createdTime>
+<commentInRDBMS><![CDATA[NUMBER OF GROCERY STORE WITH 5 MILES]]></commentInRDBMS>
+<generatorID>B3EE9633-8CBF-3555-4D85-A470D40EC79B</generatorID>
+<ownerDesignName>Problem2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ATM" id="95EA7E03-1DAC-85AC-C375-22AF2665F765">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-16 00:00:20 UTC</createdTime>
+<commentInRDBMS><![CDATA[NUMBER OF ATM WITHIN 5 MILES]]></commentInRDBMS>
+<generatorID>B0F3795D-2AE9-2CE5-8BDA-654C257C4217</generatorID>
+<ownerDesignName>Problem2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SUBWAY_STATION" id="0D680B6B-65A2-3A49-F5D0-60B7771F07BD">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-16 00:00:20 UTC</createdTime>
+<commentInRDBMS><![CDATA[NUMBER OF SUBWAY STATION WITHIN 5 MILES]]></commentInRDBMS>
+<generatorID>7F49B192-6B87-5994-2700-34EC8642B6BC</generatorID>
+<ownerDesignName>Problem2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BUS_STATION" id="34BE21CB-91BF-357F-0EF6-C536B1A6F221">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-16 00:00:20 UTC</createdTime>
+<commentInRDBMS><![CDATA[NUMBER OF BUS STATION WITHIN 5 MILES]]></commentInRDBMS>
+<generatorID>10BBBE87-A5BE-FA41-C86F-B74307036947</generatorID>
+<ownerDesignName>Problem2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RAILROAD_STATION" id="51F0AEA8-B7E3-EBBF-9337-66246F4143F5">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-16 00:00:20 UTC</createdTime>
+<commentInRDBMS><![CDATA[NUMBER OF RAILROAD STATION WITHIN 5 MILES]]></commentInRDBMS>
+<generatorID>1D644181-A035-F6E0-CE24-F6C65247404B</generatorID>
+<ownerDesignName>Problem2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PHARMACY" id="8CD27D57-41FA-84ED-78A3-3C4375123DCF">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-16 00:00:20 UTC</createdTime>
+<commentInRDBMS><![CDATA[NUMBER OF PHARAMACY WITHIN 5 MILES]]></commentInRDBMS>
+<generatorID>E92DA074-BE70-B4F2-E6D8-F55651AF689D</generatorID>
+<ownerDesignName>Problem2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="HOSPITAL" id="ED4D58F3-F7ED-BB26-97C6-354243BEA5D8">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-16 00:00:20 UTC</createdTime>
+<commentInRDBMS><![CDATA[NUMBER OF HOSPITALS WITHIN 5 MILES]]></commentInRDBMS>
+<generatorID>2A4052E7-0B8A-1560-2B54-358B9D4C924C</generatorID>
+<ownerDesignName>Problem2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RESTAURANTS" id="7D0A9BFA-AE03-0095-48DC-D212D883E868">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-16 00:00:20 UTC</createdTime>
+<commentInRDBMS><![CDATA[NUMBER OF RESTAURANTS WITHIN 5 MILES]]></commentInRDBMS>
+<generatorID>3BC903C7-7761-B858-911C-8D9F0B988F00</generatorID>
+<ownerDesignName>Problem2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COFFEE_SHOP" id="A0158396-BDF9-0DC9-857B-09D0F2000C07">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-16 00:00:20 UTC</createdTime>
+<commentInRDBMS><![CDATA[NUMBER OF COFFEE SHOPS WITHIN 5 MILES]]></commentInRDBMS>
+<generatorID>F9FB0DE0-49C2-A7E2-7A25-8653B55591CF</generatorID>
+<ownerDesignName>Problem2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="71EF8810-FE85-7E25-FDEB-7ED7572D0D1C" name="ML_BUILDING_ACCESSIBILITY_PK">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-16 00:00:20 UTC</createdTime>
+<generatorID>20912A7C-2263-CD57-6EF3-8ED1FFE56604</generatorID>
+<ownerDesignName>Problem2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C78320C1-C2E2-2E1A-4A83-F42A59328511"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

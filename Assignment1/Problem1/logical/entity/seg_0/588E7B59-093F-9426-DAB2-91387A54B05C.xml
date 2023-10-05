@@ -1,0 +1,91 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="588E7B59-093F-9426-DAB2-91387A54B05C" name="ML_PRO">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-11 14:25:40 UTC</createdTime>
+<ownerDesignName>Problem1</ownerDesignName>
+<engineerTo>
+<item key="8AD6FE7D-827F-8906-0AE7-DD21FCDD93B6" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="pID" id="BB6518F0-70B8-64A3-CCB0-03BBDD0F42A6">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-11 14:59:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[The unique professorID number assigned to every professor]]></commentInRDBMS>
+<ownerDesignName>Problem1</ownerDesignName>
+<engineerTo>
+<item key="8AD6FE7D-827F-8906-0AE7-DD21FCDD93B6" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="pFNAME" id="112C1899-0345-FE35-A815-2581BABA004E">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-11 14:59:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[Professor's first name]]></commentInRDBMS>
+<ownerDesignName>Problem1</ownerDesignName>
+<engineerTo>
+<item key="8AD6FE7D-827F-8906-0AE7-DD21FCDD93B6" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="pMNAME" id="A54F33AE-66A2-BEA8-5D86-43D8A2295D64">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-12 23:05:24 UTC</createdTime>
+<commentInRDBMS><![CDATA[Professor's middle name]]></commentInRDBMS>
+<ownerDesignName>Problem1</ownerDesignName>
+<engineerTo>
+<item key="8AD6FE7D-827F-8906-0AE7-DD21FCDD93B6" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="pLNAME" id="7EF96CD9-669D-C682-BAFD-A398480F90A0">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-12 23:05:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Professor's last name]]></commentInRDBMS>
+<ownerDesignName>Problem1</ownerDesignName>
+<engineerTo>
+<item key="8AD6FE7D-827F-8906-0AE7-DD21FCDD93B6" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="D17A6592-E037-D9F2-87E4-1DD33FEA8708" name="PRO PK">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-11 14:59:15 UTC</createdTime>
+<ownerDesignName>Problem1</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="8AD6FE7D-827F-8906-0AE7-DD21FCDD93B6" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>BB6518F0-70B8-64A3-CCB0-03BBDD0F42A6</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

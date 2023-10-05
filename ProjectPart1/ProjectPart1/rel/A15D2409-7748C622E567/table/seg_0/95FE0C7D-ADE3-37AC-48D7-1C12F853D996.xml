@@ -1,0 +1,142 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="95FE0C7D-ADE3-37AC-48D7-1C12F853D996" name="ML_OZ_PAYMENT">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-12 19:17:58 UTC</createdTime>
+<generatorID>9D0F79AB-8247-ADFA-67F3-B57E82187E00</generatorID>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="PAYMENT_ID" id="DEB3CBCF-5CF6-E9F0-FB74-43DD920A60C4">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-12 19:17:58 UTC</createdTime>
+<generatorID>F1D4B024-544B-65D2-F644-801AC1D8A996</generatorID>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DATE" id="19C29C2D-3407-B3DE-5151-223F8E92B2BA">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-12 19:17:58 UTC</createdTime>
+<commentInRDBMS><![CDATA[PAYMENT DATE]]></commentInRDBMS>
+<generatorID>075CE781-0422-B7F6-ECCE-04879C014E4D</generatorID>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AMOUNT" id="A93FB52E-D951-C9C5-3E3B-B6FDFDA01E12">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-12 19:17:58 UTC</createdTime>
+<commentInRDBMS><![CDATA[PAYMENT AMOUNT]]></commentInRDBMS>
+<generatorID>EB6991A5-B29D-1467-2733-999EF009ACF1</generatorID>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="METHOD" id="7A53C55F-CB13-75D5-3734-E3DD232DD2AA">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-12 19:17:58 UTC</createdTime>
+<commentInRDBMS><![CDATA[PAYMENT METHOD]]></commentInRDBMS>
+<generatorID>9353ADBE-0A1D-942E-2F4E-C555D139F226</generatorID>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CARD_NUM" id="33B09B60-B71A-17C8-ED7B-798824BC3048">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-12 19:17:58 UTC</createdTime>
+<commentInRDBMS><![CDATA[CARD NUMBER]]></commentInRDBMS>
+<generatorID>E4D2EC1C-2849-18FA-410A-8656D673C817</generatorID>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<ownDataTypeParameters>,20,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NAME_ON_CARD" id="818B41DE-2F60-66AA-C564-E2A24303CEA5">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-12 19:17:58 UTC</createdTime>
+<commentInRDBMS><![CDATA[NAME ON CARD]]></commentInRDBMS>
+<generatorID>DFFCD230-6B63-EE4D-BF03-49C914045325</generatorID>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EDATE" id="A39E7A35-5ECF-6C70-C3F5-5535402545C0">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-12 19:17:58 UTC</createdTime>
+<commentInRDBMS><![CDATA[EXPIRY DATE]]></commentInRDBMS>
+<generatorID>D534DA86-9C8F-E72D-5C12-FEBF5CC44212</generatorID>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ML_OZ_INVOICE_INVOICE_ID" id="B94552C8-47D2-E3CD-0905-F0E08608FFB4">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-12 19:17:58 UTC</createdTime>
+<generatorID>1F4C81AC-2048-52F2-8C22-E4FEC4C220CD</generatorID>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A3743AF8-FBD9-DD7E-122D-9C122BF0DD5D" referredColumn="B73C43CA-28F8-B409-4404-E59554AF40E1"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7AE03624-EAF6-E772-363B-AF1F02337EF9" name="ML_OZ_PAYMENT_PK">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-12 19:17:58 UTC</createdTime>
+<generatorID>8646B686-9BFE-D027-C1BB-097FE2C9A816</generatorID>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DEB3CBCF-5CF6-E9F0-FB74-43DD920A60C4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="92B12DF6-0772-0FF5-31BB-998EB6904330" name="ML_OZ_PAYMENT_ML_OZ_INVOICE_FK">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-12 19:17:58 UTC</createdTime>
+<generatorID>B68AB4AE-09EC-9097-E14B-5187BD49D6E2</generatorID>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B94552C8-47D2-E3CD-0905-F0E08608FFB4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

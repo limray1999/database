@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK_INVOICE_ORD" directorySegmentName="seg_0" id="AAA6193D-C731-F615-3EE9-6152C9576DFB">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-29 02:25:36 UTC</createdTime>
+<ownerDesignName>HW2Q2</ownerDesignName>
+<engineerTo>
+<item key="05A9960C-3525-046E-5657-E1A70028A3B0" value="true"/>
+</engineerTo>
+<sourcePk>9063D081-6C90-8119-4684-ABBD076FCF18</sourcePk>
+<targetPk>AEEF4D65-2266-21CA-F1B9-1AEBC9B883E2</targetPk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>4AE10173-E99A-4E12-15F9-6E5EC39B087F</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>5C8EE5CE-E67B-6AF5-60FF-FAB505EABDB7</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

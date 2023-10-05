@@ -1,0 +1,91 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="AD2387B4-D7CF-7B2C-C8DA-14CDC70883AE" name="ML_OZ_MEMBER">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-12 19:17:58 UTC</createdTime>
+<generatorID>C7D5A8D1-A68A-5310-2604-1DE7F0CEF4C4</generatorID>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="PASSENGER_ID" id="D177E531-8E8F-0E00-90A6-B552FE6EEB19">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-12 19:17:58 UTC</createdTime>
+<commentInRDBMS><![CDATA[THE UNIQUE NUMBER ASSIGNED TO EVERY PASSENGER]]></commentInRDBMS>
+<generatorID>AD399E72-765B-BF4B-D110-20B2FD9ED61E</generatorID>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3EAB80F2-B917-BEEF-45CC-FD175C17AB0D" referredColumn="7C8CBD57-FDC1-0C6C-7138-44FEF6B05146"/>
+</associations>
+</Column>
+<Column name="BA_NAME" id="1675BF1B-FDD6-0077-9CB2-BE8B2C3A7142">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-12 19:17:58 UTC</createdTime>
+<commentInRDBMS><![CDATA[THE NAME OF BOOKING AGENT]]></commentInRDBMS>
+<generatorID>FA720EC5-B21C-1996-EFCD-03DFF3329F48</generatorID>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="WEB" id="FA43ED69-B78C-FB8B-2812-E91B36F19FC3">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-12 19:17:58 UTC</createdTime>
+<commentInRDBMS><![CDATA[THE WEB ADDRESS OF BOOKING AGENT]]></commentInRDBMS>
+<generatorID>84E257C2-A12D-3A5E-B1DE-D2ACDE3FA42A</generatorID>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PHONE_NUMBER" id="452593BB-31FA-875B-B31A-977242F6AC9C">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-12 19:17:58 UTC</createdTime>
+<generatorID>C096F6D1-6397-7B11-9CFE-7CB35F2F7CE6</generatorID>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D749D06E-FE2E-B3AF-A1F9-8938E6E67069" name="ML_OZ_MEMBER_PK">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-12 19:17:58 UTC</createdTime>
+<generatorID>7D82683A-4697-5893-5D16-E74CD774C6D3</generatorID>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D177E531-8E8F-0E00-90A6-B552FE6EEB19"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="25082B12-D4CB-EA8F-743F-D3D9682E1114" name="ML_OZ_MEMBER_ML_OZ_CUS_FK">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-12 19:17:58 UTC</createdTime>
+<generatorID>03A634B0-E6C8-EB1F-D27F-4D60F5BCA5CB</generatorID>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D177E531-8E8F-0E00-90A6-B552FE6EEB19"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,83 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F536F618-5287-57B2-EDBA-3476B5780815" name="STAFF">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-28 00:48:33 UTC</createdTime>
+<generatorID>FE54893A-9D1A-9A13-D40B-40F911D61D45</generatorID>
+<ownerDesignName>HW2Q1</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="IndividualID" id="F9D951FC-E1BD-815C-2A07-26468932DDC4">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-28 00:48:33 UTC</createdTime>
+<commentInRDBMS><![CDATA[The Unique Number Assigned to Everyone]]></commentInRDBMS>
+<generatorID>AF3984E8-FF4E-62F8-03BB-0B027044E473</generatorID>
+<ownerDesignName>HW2Q1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<ownDataTypeParameters>,20,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4176A5F5-AC37-A899-4F60-7B4BABAC2E22" referredColumn="D296003D-5CA7-BA7E-1936-FEC7A33F2916"/>
+</associations>
+</Column>
+<Column name="Itype" id="0217A383-D73C-BFC5-072F-05D2DDECCD44">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-28 00:48:33 UTC</createdTime>
+<generatorID>5FEB08CA-8F9D-BE01-581A-DD3ECF18D291</generatorID>
+<ownerDesignName>HW2Q1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4176A5F5-AC37-A899-4F60-7B4BABAC2E22" referredColumn="377A4F75-86C1-C31D-D3B3-5BD4FB8E8E9D"/>
+</associations>
+</Column>
+<Column name="Position" id="60A6FFA9-CACB-4DA4-E978-726353F702BD">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-28 00:48:33 UTC</createdTime>
+<commentInRDBMS><![CDATA[Staff's Job Title such as Manager, Administrator, Director, Analyst etc.]]></commentInRDBMS>
+<generatorID>2C676865-0A0B-A7D1-0BFE-DC143B54E9D6</generatorID>
+<ownerDesignName>HW2Q1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="20EC9A29-ED97-26BF-E162-E8FFC291F4C5" name="STAFF_PK">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-28 00:48:33 UTC</createdTime>
+<generatorID>1E93DE9D-74F3-B89A-925F-70B6776AFEE9</generatorID>
+<ownerDesignName>HW2Q1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F9D951FC-E1BD-815C-2A07-26468932DDC4"/>
+<colUsage columnID="0217A383-D73C-BFC5-072F-05D2DDECCD44"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="01F6207E-92BF-F103-683D-F6E487F380C0" name="STAFF_EMPLOYEE_FK">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-28 00:48:34 UTC</createdTime>
+<generatorID>AE8BE48D-714D-92B0-4A27-4E95122C1AA0</generatorID>
+<ownerDesignName>HW2Q1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F9D951FC-E1BD-815C-2A07-26468932DDC4"/>
+<colUsage columnID="0217A383-D73C-BFC5-072F-05D2DDECCD44"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

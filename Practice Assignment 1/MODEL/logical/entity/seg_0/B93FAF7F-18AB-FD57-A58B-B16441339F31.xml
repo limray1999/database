@@ -1,0 +1,77 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="B93FAF7F-18AB-FD57-A58B-B16441339F31" name="ML_SALGRADE">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-20 03:04:45 UTC</createdTime>
+<ownerDesignName>MODEL</ownerDesignName>
+<engineerTo>
+<item key="3191E134-CC4C-99BB-2D5E-D6DE5D2FF5E3" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="GRADE" id="0B6DCC03-073F-105D-B0DD-3179844A3491">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-20 03:05:13 UTC</createdTime>
+<commentInRDBMS><![CDATA[SALARY GRADE OF EMPLOYEE]]></commentInRDBMS>
+<ownerDesignName>MODEL</ownerDesignName>
+<engineerTo>
+<item key="3191E134-CC4C-99BB-2D5E-D6DE5D2FF5E3" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="HISAL" id="7B45CC25-BEDC-9EC8-3E71-AD7AEC4C26E3">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-20 03:05:56 UTC</createdTime>
+<commentInRDBMS><![CDATA[HIGH SALARY VALUE]]></commentInRDBMS>
+<ownerDesignName>MODEL</ownerDesignName>
+<engineerTo>
+<item key="3191E134-CC4C-99BB-2D5E-D6DE5D2FF5E3" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,7,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="LOSAL" id="C4B3EACC-23F7-0A1A-1657-D72E1AE2BB84">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-20 03:06:14 UTC</createdTime>
+<commentInRDBMS><![CDATA[LOW SALARY VALUE]]></commentInRDBMS>
+<ownerDesignName>MODEL</ownerDesignName>
+<engineerTo>
+<item key="3191E134-CC4C-99BB-2D5E-D6DE5D2FF5E3" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,7,2</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="44F748C3-E915-C559-D58F-7D24A3320724" name="ML_SALGRADE PK">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-20 03:05:42 UTC</createdTime>
+<ownerDesignName>MODEL</ownerDesignName>
+<engineerTo>
+<item key="3191E134-CC4C-99BB-2D5E-D6DE5D2FF5E3" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>0B6DCC03-073F-105D-B0DD-3179844A3491</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

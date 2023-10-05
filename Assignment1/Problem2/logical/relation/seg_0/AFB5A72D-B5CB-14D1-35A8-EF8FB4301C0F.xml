@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK_BUILDING_ACCESSIBILITY" directorySegmentName="seg_0" id="AFB5A72D-B5CB-14D1-35A8-EF8FB4301C0F">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-15 17:38:40 UTC</createdTime>
+<ownerDesignName>Problem2</ownerDesignName>
+<engineerTo>
+<item key="C350CEC1-4798-643C-A192-397F210E4078" value="true"/>
+</engineerTo>
+<sourcePk>90287695-BB55-1698-6353-31AF562B5996</sourcePk>
+<targetPk>20912A7C-2263-CD57-6EF3-8ED1FFE56604</targetPk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>13B2DEF0-0A88-AB1A-9992-2F06911BD8A9</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>AE617215-90F6-E159-A893-0B1A203F791C</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

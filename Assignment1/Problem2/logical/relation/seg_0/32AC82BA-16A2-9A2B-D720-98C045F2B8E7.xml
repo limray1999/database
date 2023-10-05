@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK_UNIT_INVOICE" directorySegmentName="seg_0" id="32AC82BA-16A2-9A2B-D720-98C045F2B8E7">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-15 23:54:52 UTC</createdTime>
+<ownerDesignName>Problem2</ownerDesignName>
+<engineerTo>
+<item key="C350CEC1-4798-643C-A192-397F210E4078" value="true"/>
+</engineerTo>
+<sourcePk>E3B9C2CE-C2EB-61F8-76FC-D313AF5D645E</sourcePk>
+<targetPk>3575D680-C871-45DA-7C8F-91579E59D6EC</targetPk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>4FC10D98-35A9-A02F-6CCA-CC1266868B86</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>2E909E1D-AE25-5500-E432-B6C373FE9C08</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

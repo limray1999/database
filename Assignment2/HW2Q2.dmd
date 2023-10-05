@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="HW2Q2" id="EF047C70-91F8-FE85-FC2F-820CB83F3474" version="3.5">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-29 01:58:13 UTC</createdTime>
+<ownerDesignName>HW2Q2</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>EF047C70-91F8-FE85-FC2F-820CB83F3474</designId>
+</OSDM_Design>

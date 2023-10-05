@@ -1,0 +1,105 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="303919B3-888A-3A84-9565-DCEC49ABF86B" name="ML_OZ_PASSENGER_FLIGHT">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-12 19:17:58 UTC</createdTime>
+<generatorID>0AD0B471-E5CE-FF1D-CCD3-1ECC2F1611A8</generatorID>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ML_OZ_PASSENGER_PASSENGER_ID" id="CC3294B0-9B3A-171A-F478-42319405F0D0">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-12 19:17:58 UTC</createdTime>
+<generatorID>6BDB7E29-923C-A55E-8B31-8832B0D07500</generatorID>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="EE080572-0D9B-C373-4E0C-17B9746529B0" referredColumn="56E31C10-3911-3BC8-89B8-BF73CFF970C9"/>
+</associations>
+</Column>
+<Column name="ML_OZ_FLIGHT_FLIGHT_ID" id="47A456A9-88EB-2121-9E90-2F7952695534">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-12 19:17:58 UTC</createdTime>
+<generatorID>F20167CD-BA14-0692-D8C2-D5F7BF77FE14</generatorID>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8D0138D0-2CD8-9B86-5B1C-5CE3DB2ACCAF" referredColumn="D4289603-BAE6-2694-AC46-C3A523596C12"/>
+</associations>
+</Column>
+<Column name="MEAL_PLAN" id="B7145B7D-DEBF-F10E-BA4D-EE71F1F7DAAC">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-12 19:17:58 UTC</createdTime>
+<generatorID>9363D4D5-7375-360C-EAD2-21E552F8959B</generatorID>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CIBIN_CLASS" id="4344B792-5EC1-EF2E-D87E-D545291C2CE9">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-12 19:17:58 UTC</createdTime>
+<generatorID>B3E057BF-CDCA-9B6E-DE3F-0BFB5F4209D2</generatorID>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="72C24A0D-22F0-1260-DA67-14A62D69DE3F" name="ML_OZ_PASSENGER_FLIGHT_PK">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-12 19:17:58 UTC</createdTime>
+<generatorID>1A4988B7-7E02-AE09-AFB5-A7BF8AFF1251</generatorID>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CC3294B0-9B3A-171A-F478-42319405F0D0"/>
+<colUsage columnID="47A456A9-88EB-2121-9E90-2F7952695534"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0062B76E-1AA6-6EB8-A5E2-1AE3CE4769D8" name="ML_OZ_PASSENGER_FLIGHT_ML_OZ_PASSENGER_FK">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-12 19:17:58 UTC</createdTime>
+<generatorID>CD39EDA2-A1AE-FA92-86DA-8B29C50412C7</generatorID>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CC3294B0-9B3A-171A-F478-42319405F0D0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EAD9760E-23C3-8248-E12B-1D65E9B357EF" name="ML_OZ_PASSENGER_FLIGHT_ML_OZ_FLIGHT_FK">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-12 19:17:58 UTC</createdTime>
+<generatorID>708FA195-F53C-5E42-FC0C-4D327227F369</generatorID>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="47A456A9-88EB-2121-9E90-2F7952695534"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

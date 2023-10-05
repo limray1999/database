@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="D313DD9E-4ED5-7732-75E2-4252D2033D7E" containerWithKeyObject="0408C977-4F04-9DD8-B1AF-58BCD618ACAD" localFKIndex="62CC5018-0131-85C5-501B-8E027BF2ABA7" name="FK_PAS_PLAN">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-12 19:17:58 UTC</createdTime>
+<generatorID>F1126870-C15B-2F04-A2D7-738A16FED845</generatorID>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<referredTableLongName>ML_OZ_INSUR_PLAN</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>99461A96-A39D-4BE4-E102-B10AFB258653</referredTableID>
+<keyObject>0900C67D-501D-570E-8927-A1EA7BA01B5D</keyObject>
+<referredKeyID>0900C67D-501D-570E-8927-A1EA7BA01B5D</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>PLAN_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

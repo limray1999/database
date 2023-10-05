@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="FD991F24-BA7B-4E2D-9035-CDAB3DD856DE" name="ML_OZ_AIRLINE_MODEL">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-05 20:22:54 UTC</createdTime>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<engineerTo>
+<item key="A15D2409-CEE6-726D-472B-7748C622E567" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="QUANTITY" id="8E88C9E9-4456-FED0-0D78-009FBBDFCD19">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-05 20:23:18 UTC</createdTime>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<engineerTo>
+<item key="A15D2409-CEE6-726D-472B-7748C622E567" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="AIRLINE_ID" id="DA42DA1B-A734-F669-4E2F-76CE72D6C6C8">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-05 20:24:52 UTC</createdTime>
+<generatorID>E6064C09-B83B-8DAD-B782-A0C0B329E9E6</generatorID>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<engineerTo>
+<item key="A15D2409-CEE6-726D-472B-7748C622E567" value="true"/>
+</engineerTo>
+<referedAttribute>11FEE7F5-EAA4-F8D2-A60A-FA040AC3B7ED</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="MODEL_ID" id="805D66F8-AA04-B773-EC04-481A29BF1D0A">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-05 20:25:21 UTC</createdTime>
+<generatorID>58714B46-264E-AAE1-B9E7-C8ABDCD55950</generatorID>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<engineerTo>
+<item key="A15D2409-CEE6-726D-472B-7748C622E567" value="true"/>
+</engineerTo>
+<referedAttribute>D681978F-767C-4352-4FB8-B36C906CBCD4</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="28D97E88-266B-3777-873F-9487F282CAC7" name="ML_OZ_AIRLINE_MODEL PK">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-12 19:11:33 UTC</createdTime>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<engineerTo>
+<item key="A15D2409-CEE6-726D-472B-7748C622E567" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>DA42DA1B-A734-F669-4E2F-76CE72D6C6C8</attributeRef>
+<attributeRef>805D66F8-AA04-B773-EC04-481A29BF1D0A</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,91 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="0AD0B471-E5CE-FF1D-CCD3-1ECC2F1611A8" name="ML_OZ_PASSENGER_FLIGHT">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-05 16:34:18 UTC</createdTime>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<engineerTo>
+<item key="A15D2409-CEE6-726D-472B-7748C622E567" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="PASSENGER_ID" id="6BDB7E29-923C-A55E-8B31-8832B0D07500">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-05 18:04:05 UTC</createdTime>
+<generatorID>CD39EDA2-A1AE-FA92-86DA-8B29C50412C7</generatorID>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<engineerTo>
+<item key="A15D2409-CEE6-726D-472B-7748C622E567" value="true"/>
+</engineerTo>
+<referedAttribute>AD399E72-765B-BF4B-D110-20B2FD9ED61E</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="FLIGHT_ID" id="F20167CD-BA14-0692-D8C2-D5F7BF77FE14">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-05 18:07:51 UTC</createdTime>
+<generatorID>708FA195-F53C-5E42-FC0C-4D327227F369</generatorID>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<engineerTo>
+<item key="A15D2409-CEE6-726D-472B-7748C622E567" value="true"/>
+</engineerTo>
+<referedAttribute>A8C483D3-279B-AD6C-E783-F5F6B9E83075</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="MEAL_PLAN" id="9363D4D5-7375-360C-EAD2-21E552F8959B">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-12 18:34:06 UTC</createdTime>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<engineerTo>
+<item key="A15D2409-CEE6-726D-472B-7748C622E567" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CIBIN_CLASS" id="B3E057BF-CDCA-9B6E-DE3F-0BFB5F4209D2">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-12 18:34:23 UTC</createdTime>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<engineerTo>
+<item key="A15D2409-CEE6-726D-472B-7748C622E567" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="1A4988B7-7E02-AE09-AFB5-A7BF8AFF1251" name="ML_OZ_PASSENGER_FLIGHT PK">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-11 03:49:48 UTC</createdTime>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="A15D2409-CEE6-726D-472B-7748C622E567" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>6BDB7E29-923C-A55E-8B31-8832B0D07500</attributeRef>
+<attributeRef>F20167CD-BA14-0692-D8C2-D5F7BF77FE14</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

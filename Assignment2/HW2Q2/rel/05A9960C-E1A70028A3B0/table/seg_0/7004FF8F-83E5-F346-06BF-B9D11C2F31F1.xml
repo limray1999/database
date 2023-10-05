@@ -1,0 +1,100 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7004FF8F-83E5-F346-06BF-B9D11C2F31F1" name="INVOICE">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-29 02:35:01 UTC</createdTime>
+<generatorID>4AE10173-E99A-4E12-15F9-6E5EC39B087F</generatorID>
+<ownerDesignName>HW2Q2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="INVOICE_ID" id="D04CDA74-AA4E-3C3F-4656-F7C24000A902">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-29 02:35:01 UTC</createdTime>
+<generatorID>B148E4F1-D040-808C-1FAD-78D5196236F1</generatorID>
+<ownerDesignName>HW2Q2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<ownDataTypeParameters>,20,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="INVOICE_DATE" id="D5E6C274-618D-D14F-302C-3F0669B7A4FC">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-29 02:35:01 UTC</createdTime>
+<generatorID>CD41360D-B904-AF5B-3558-E38A707D6A2B</generatorID>
+<ownerDesignName>HW2Q2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="INVOICE_AMOUNT" id="D6543618-2B21-A149-3AE0-2065A953AB4D">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-29 02:35:01 UTC</createdTime>
+<generatorID>06222AB2-DA00-AD1F-E920-7445DDB603A4</generatorID>
+<ownerDesignName>HW2Q2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>15</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,15,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ORD_ID" id="0F2BCA82-EE81-25D8-87D3-25A5AA0627DA">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-29 02:35:01 UTC</createdTime>
+<generatorID>2B2BF694-FC69-1E94-2BC1-E5F765563B91</generatorID>
+<ownerDesignName>HW2Q2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FFC9B986-0D59-9DA0-0EFF-A36587BE94CC" referredColumn="193D9706-EDF8-15C0-9F1F-BD80BB8B6E45"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A101DF50-1AA2-BB6B-F4BE-B7D76FB5636A" name="INVOICE_PK">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-29 02:35:01 UTC</createdTime>
+<generatorID>9063D081-6C90-8119-4684-ABBD076FCF18</generatorID>
+<ownerDesignName>HW2Q2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D04CDA74-AA4E-3C3F-4656-F7C24000A902"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BEE8C47F-3CBA-7A3D-CB61-84D5E8B5E8D7" name="INVOICE__IDX">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-29 02:35:01 UTC</createdTime>
+<ownerDesignName>HW2Q2</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>AAA6193D-C731-F615-3EE9-6152C9576DFB</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="0F2BCA82-EE81-25D8-87D3-25A5AA0627DA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6F90B452-9B27-DC4D-3953-236D1EB856CE" name="INVOICE_ORD_FK">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-29 02:35:01 UTC</createdTime>
+<generatorID>AAA6193D-C731-F615-3EE9-6152C9576DFB</generatorID>
+<ownerDesignName>HW2Q2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0F2BCA82-EE81-25D8-87D3-25A5AA0627DA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

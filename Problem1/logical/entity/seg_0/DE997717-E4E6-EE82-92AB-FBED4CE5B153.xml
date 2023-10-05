@@ -1,0 +1,91 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="DE997717-E4E6-EE82-92AB-FBED4CE5B153" name="COURSE">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-11 14:25:32 UTC</createdTime>
+<ownerDesignName>Problem1</ownerDesignName>
+<engineerTo>
+<item key="8AD6FE7D-827F-8906-0AE7-DD21FCDD93B6" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="cID" id="596354B4-235E-CE8B-8E84-8EF76D752A8B">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-11 14:56:37 UTC</createdTime>
+<commentInRDBMS><![CDATA[Course ID]]></commentInRDBMS>
+<ownerDesignName>Problem1</ownerDesignName>
+<engineerTo>
+<item key="8AD6FE7D-827F-8906-0AE7-DD21FCDD93B6" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cName" id="58658C78-436A-9C7F-F734-4718F27BE47C">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-11 14:56:58 UTC</createdTime>
+<commentInRDBMS><![CDATA[Course name]]></commentInRDBMS>
+<ownerDesignName>Problem1</ownerDesignName>
+<engineerTo>
+<item key="8AD6FE7D-827F-8906-0AE7-DD21FCDD93B6" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cCredit" id="393B8BA5-B032-BD31-F752-6CFCB0EAAD78">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-11 14:58:05 UTC</createdTime>
+<commentInRDBMS><![CDATA[Course credits]]></commentInRDBMS>
+<ownerDesignName>Problem1</ownerDesignName>
+<engineerTo>
+<item key="8AD6FE7D-827F-8906-0AE7-DD21FCDD93B6" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Section" id="5FA58B4B-511D-C152-64BA-9A04AD8BA2A0">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-11 18:46:28 UTC</createdTime>
+<commentInRDBMS><![CDATA[Section of this course, such as A, B, C etc.]]></commentInRDBMS>
+<ownerDesignName>Problem1</ownerDesignName>
+<engineerTo>
+<item key="8AD6FE7D-827F-8906-0AE7-DD21FCDD93B6" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="7EC14C6C-C18C-F735-D369-1E7367617802" name="COURSE PK">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-11 14:56:49 UTC</createdTime>
+<ownerDesignName>Problem1</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="8AD6FE7D-827F-8906-0AE7-DD21FCDD93B6" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>596354B4-235E-CE8B-8E84-8EF76D752A8B</attributeRef>
+<attributeRef>5FA58B4B-511D-C152-64BA-9A04AD8BA2A0</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

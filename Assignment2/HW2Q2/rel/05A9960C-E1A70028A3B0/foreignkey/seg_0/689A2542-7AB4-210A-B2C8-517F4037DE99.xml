@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="689A2542-7AB4-210A-B2C8-517F4037DE99" containerWithKeyObject="008EA6F4-CB9C-953D-5593-0F3CD90C2538" localFKIndex="764D08CA-58B5-9E3D-8CB1-01EF5B9FE916" name="ORD_CUS_FK">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-29 02:35:01 UTC</createdTime>
+<generatorID>9CA75D40-148B-B5D1-0B85-C09FA89D8118</generatorID>
+<ownerDesignName>HW2Q2</ownerDesignName>
+<referredTableLongName>CUS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>090B88C1-AA70-3A86-C293-B3CDF437F8B8</referredTableID>
+<keyObject>7B32AEF9-7EBF-925E-F574-D8ECBF369E48</keyObject>
+<referredKeyID>7B32AEF9-7EBF-925E-F574-D8ECBF369E48</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>CUS_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

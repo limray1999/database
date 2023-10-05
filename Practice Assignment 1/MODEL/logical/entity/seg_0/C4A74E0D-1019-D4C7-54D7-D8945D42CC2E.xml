@@ -1,0 +1,179 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="C4A74E0D-1019-D4C7-54D7-D8945D42CC2E" name="ML_EMP">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-20 02:53:46 UTC</createdTime>
+<ownerDesignName>MODEL</ownerDesignName>
+<engineerTo>
+<item key="3191E134-CC4C-99BB-2D5E-D6DE5D2FF5E3" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="EMPNO" id="42F5F292-CB9C-B124-284C-E81FFA32133A">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-20 02:57:13 UTC</createdTime>
+<commentInRDBMS><![CDATA[EMPLOYEE ID NUMBER]]></commentInRDBMS>
+<ownerDesignName>MODEL</ownerDesignName>
+<engineerTo>
+<item key="3191E134-CC4C-99BB-2D5E-D6DE5D2FF5E3" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="EFNAME" id="8392E098-4F7C-AC27-EF31-067E6C14794D">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-20 02:57:35 UTC</createdTime>
+<commentInRDBMS><![CDATA[EMPLOYEE FIRST NAME]]></commentInRDBMS>
+<ownerDesignName>MODEL</ownerDesignName>
+<engineerTo>
+<item key="3191E134-CC4C-99BB-2D5E-D6DE5D2FF5E3" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ELNAME" id="A4B48E51-4F5E-0065-CA15-44303DF50D84">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-20 02:57:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[EMPLOYEE LAST NAME]]></commentInRDBMS>
+<ownerDesignName>MODEL</ownerDesignName>
+<engineerTo>
+<item key="3191E134-CC4C-99BB-2D5E-D6DE5D2FF5E3" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="IOB" id="00D27E7F-F42A-0E27-BDE9-AA6FB92AFA71">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-20 02:58:09 UTC</createdTime>
+<commentInRDBMS><![CDATA[RMPLOYEE FUNCTIONAL ROLE]]></commentInRDBMS>
+<ownerDesignName>MODEL</ownerDesignName>
+<engineerTo>
+<item key="3191E134-CC4C-99BB-2D5E-D6DE5D2FF5E3" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="MGR" id="1F02AB13-4DBD-E7C4-D849-8AA046CB84C6">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-20 02:58:24 UTC</createdTime>
+<commentInRDBMS><![CDATA[EMPLOYEE MANAGER ID]]></commentInRDBMS>
+<ownerDesignName>MODEL</ownerDesignName>
+<engineerTo>
+<item key="3191E134-CC4C-99BB-2D5E-D6DE5D2FF5E3" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="HIREDATE" id="816CD45E-A47A-F887-51D9-924F1FB1FBCD">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-20 02:58:41 UTC</createdTime>
+<commentInRDBMS><![CDATA[EMPLOYEE JOIN DATE]]></commentInRDBMS>
+<ownerDesignName>MODEL</ownerDesignName>
+<engineerTo>
+<item key="3191E134-CC4C-99BB-2D5E-D6DE5D2FF5E3" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="SAL" id="F128EC14-678F-88B7-F98E-92CC9CE41621">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-20 02:58:55 UTC</createdTime>
+<commentInRDBMS><![CDATA[EMPLOYEE MONTHLY SALARY IN USD]]></commentInRDBMS>
+<ownerDesignName>MODEL</ownerDesignName>
+<engineerTo>
+<item key="3191E134-CC4C-99BB-2D5E-D6DE5D2FF5E3" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,7,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="COMM" id="3E992D5A-7E56-017A-3344-D25B6F5C64DD">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-20 02:59:10 UTC</createdTime>
+<commentInRDBMS><![CDATA[EMPLOYEE COMMISSION]]></commentInRDBMS>
+<ownerDesignName>MODEL</ownerDesignName>
+<engineerTo>
+<item key="3191E134-CC4C-99BB-2D5E-D6DE5D2FF5E3" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,7,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DEPTNO" id="0EC68FC4-E6D6-4169-7EE4-DCE81700DE86">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-20 03:08:46 UTC</createdTime>
+<generatorID>AAB0697D-1197-567B-C98A-4154592E83D2</generatorID>
+<ownerDesignName>MODEL</ownerDesignName>
+<engineerTo>
+<item key="3191E134-CC4C-99BB-2D5E-D6DE5D2FF5E3" value="true"/>
+</engineerTo>
+<referedAttribute>DCD11DCE-567C-D56A-339A-AC52E9231633</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="EMPNO1" id="1548B5B9-21A2-FD19-B0C2-F65A2BFE8969">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-24 04:09:00 UTC</createdTime>
+<generatorID>DBF484FE-62DD-2841-C4F7-9F924ABBB2A3</generatorID>
+<ownerDesignName>MODEL</ownerDesignName>
+<engineerTo>
+<item key="3191E134-CC4C-99BB-2D5E-D6DE5D2FF5E3" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>42F5F292-CB9C-B124-284C-E81FFA32133A</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="6668B901-010A-4BF6-C44E-134C90FB73A9" name="ML_EMP PK">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-20 02:57:50 UTC</createdTime>
+<ownerDesignName>MODEL</ownerDesignName>
+<engineerTo>
+<item key="3191E134-CC4C-99BB-2D5E-D6DE5D2FF5E3" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>42F5F292-CB9C-B124-284C-E81FFA32133A</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

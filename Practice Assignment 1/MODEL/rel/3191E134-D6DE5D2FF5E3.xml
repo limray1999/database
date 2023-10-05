@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<relationalModel class="oracle.dbtools.crest.model.design.relational.RelationalDesign" name="Relational_1" id="3191E134-CC4C-99BB-2D5E-D6DE5D2FF5E3" mainViewID="8E19A36C-C3B1-AF5B-349B-9B0F57089B60">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-20 02:51:39 UTC</createdTime>
+<ownerDesignName>MODEL</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+<selectedRDBMSSite>32076570-2523-435C-2E92-BF29817DFF70</selectedRDBMSSite>
+</relationalModel>

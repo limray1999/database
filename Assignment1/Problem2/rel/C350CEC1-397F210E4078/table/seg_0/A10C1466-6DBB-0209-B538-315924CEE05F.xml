@@ -1,0 +1,166 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A10C1466-6DBB-0209-B538-315924CEE05F" name="ML_UNIT_FEATURE">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-16 00:00:20 UTC</createdTime>
+<generatorID>12120FC9-D8EA-6BB7-6D6D-EE88A7B955FD</generatorID>
+<ownerDesignName>Problem2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="UNIT_ID" id="B12AA095-CB77-4A05-D07B-0B050B3779C8">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-16 00:00:20 UTC</createdTime>
+<generatorID>CDF1662F-3865-FD54-C925-C06766909B0C</generatorID>
+<ownerDesignName>Problem2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<ownDataTypeParameters>3,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="C_AC" id="09B2A10F-08D7-C35B-AEB6-5E23E9D093E2">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-16 00:00:20 UTC</createdTime>
+<generatorID>4A422E6F-2975-F52D-730B-933D3D096509</generatorID>
+<ownerDesignName>Problem2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="I_AC" id="88967408-804A-7AA1-B901-AD160709B77F">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-16 00:00:20 UTC</createdTime>
+<generatorID>29250552-ED10-EC12-A0D7-CBA12A194F59</generatorID>
+<ownerDesignName>Problem2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NUM_OF_PARKING" id="034158BD-EC48-D52E-5416-1BB738CFE8BD">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-16 00:00:20 UTC</createdTime>
+<commentInRDBMS><![CDATA[NUMBER OF ASSIGNED PARKING]]></commentInRDBMS>
+<generatorID>27EDAC48-A9D0-499D-9F66-00FD69A09C15</generatorID>
+<ownerDesignName>Problem2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CARPET" id="BD4EDCDC-D160-EC9F-0FE1-79432416B2C4">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-16 00:00:20 UTC</createdTime>
+<commentInRDBMS><![CDATA[HAS CARPET OR NOT]]></commentInRDBMS>
+<generatorID>6DAADFC2-208B-BAF8-1A1B-0026246E9CE9</generatorID>
+<ownerDesignName>Problem2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="HARDWOOD_FLOOR" id="A76EE037-8B08-918E-D6A2-E34649E122F3">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-16 00:00:20 UTC</createdTime>
+<commentInRDBMS><![CDATA[HAS HARDWOOD FLOOR OR NOT]]></commentInRDBMS>
+<generatorID>D28EF3BF-6D3E-95D4-F239-54F9D2AEA890</generatorID>
+<ownerDesignName>Problem2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BALCONY" id="AED99C06-CDE1-E28D-94B1-4AC9EBC2CBF2">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-16 00:00:20 UTC</createdTime>
+<commentInRDBMS><![CDATA[HAS BALCONY OR NOT]]></commentInRDBMS>
+<generatorID>C5ADFB69-A049-6F58-0A97-1197E9E5DB79</generatorID>
+<ownerDesignName>Problem2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FIREPLACE" id="C232659D-5E81-209C-AEE7-62BD14163B50">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-16 00:00:20 UTC</createdTime>
+<commentInRDBMS><![CDATA[HAS FIREPLACE OR NOT]]></commentInRDBMS>
+<generatorID>0D9FF0BB-9391-F9C7-CD5C-32FE959A81AB</generatorID>
+<ownerDesignName>Problem2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="GARDEN_VIEW" id="34E6D8C7-1672-FDA3-D50A-B5BA068D8991">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-16 00:00:20 UTC</createdTime>
+<commentInRDBMS><![CDATA[HAS GARDEN VIEW OR NOT]]></commentInRDBMS>
+<generatorID>0EC1D695-79A1-6C9A-0409-5D566A78C94F</generatorID>
+<ownerDesignName>Problem2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CITY_VIEW" id="442D2024-1A0C-985F-4ECE-A3500163D3BF">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-16 00:00:20 UTC</createdTime>
+<commentInRDBMS><![CDATA[HAS CITY VIEW OR NOT]]></commentInRDBMS>
+<generatorID>220E15C9-61C4-6EEE-A121-A07F95CCAF3B</generatorID>
+<ownerDesignName>Problem2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PET_ALLOWED" id="E662022C-3BAC-B706-30F9-FF0FB4CEB728">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-16 00:00:20 UTC</createdTime>
+<commentInRDBMS><![CDATA[IS PET ALLOWED]]></commentInRDBMS>
+<generatorID>E72FBDED-C884-B54A-22FF-E83F8040D394</generatorID>
+<ownerDesignName>Problem2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="21D8247B-38A8-1116-8A81-97F8FDE7CEBF" name="ML_UNIT_FEATURE_PK">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-16 00:00:20 UTC</createdTime>
+<generatorID>E94EF7A5-EE8D-0630-E5AF-F4C12627FA6B</generatorID>
+<ownerDesignName>Problem2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B12AA095-CB77-4A05-D07B-0B050B3779C8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

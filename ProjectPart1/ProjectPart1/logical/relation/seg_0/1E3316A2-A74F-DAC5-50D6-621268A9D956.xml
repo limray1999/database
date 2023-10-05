@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK_PAS_SPE" directorySegmentName="seg_0" id="1E3316A2-A74F-DAC5-50D6-621268A9D956">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-12 18:57:53 UTC</createdTime>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<engineerTo>
+<item key="A15D2409-CEE6-726D-472B-7748C622E567" value="true"/>
+</engineerTo>
+<sourcePk>7D82683A-4697-5893-5D16-E74CD774C6D3</sourcePk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>57C20E25-54AB-1C05-F3EB-B12BC2A0CFC4</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>F130C2CE-0636-2F72-0207-8EC1DA761993</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

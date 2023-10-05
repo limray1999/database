@@ -1,0 +1,187 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="11268424-F63A-E4FD-4339-87B2EFF118EF" name="ML_STUDENT">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-11 14:24:47 UTC</createdTime>
+<ownerDesignName>Problem1</ownerDesignName>
+<engineerTo>
+<item key="8AD6FE7D-827F-8906-0AE7-DD21FCDD93B6" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="sID" id="A82F319C-B806-9B37-1783-CB5533ACF3F4">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-11 14:46:39 UTC</createdTime>
+<commentInRDBMS><![CDATA[The unique studentId number assigned to every students]]></commentInRDBMS>
+<ownerDesignName>Problem1</ownerDesignName>
+<engineerTo>
+<item key="8AD6FE7D-827F-8906-0AE7-DD21FCDD93B6" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="sFNAME" id="602176E0-AD10-AFD1-2EA9-85C748AB50FD">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-12 23:01:06 UTC</createdTime>
+<commentInRDBMS><![CDATA[STUDENT'S FIRST]]></commentInRDBMS>
+<ownerDesignName>Problem1</ownerDesignName>
+<engineerTo>
+<item key="8AD6FE7D-827F-8906-0AE7-DD21FCDD93B6" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="sMNAME" id="0AED9737-8529-6219-9F67-C3B8B5EDE1AD">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-12 23:02:14 UTC</createdTime>
+<commentInRDBMS><![CDATA[STUDENT'S MIDDLE NAME]]></commentInRDBMS>
+<ownerDesignName>Problem1</ownerDesignName>
+<engineerTo>
+<item key="8AD6FE7D-827F-8906-0AE7-DD21FCDD93B6" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="sLNAME" id="58F222B8-D575-0122-A546-5C4F9FDD9046">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-11 14:47:17 UTC</createdTime>
+<commentInRDBMS><![CDATA[STUDENT'S LAST NAME]]></commentInRDBMS>
+<ownerDesignName>Problem1</ownerDesignName>
+<engineerTo>
+<item key="8AD6FE7D-827F-8906-0AE7-DD21FCDD93B6" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="sMAJOR" id="4ACCC1B4-8B5E-0962-E098-C109379884B8">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-11 14:54:26 UTC</createdTime>
+<commentInRDBMS><![CDATA[STUDENT'S MAJOR]]></commentInRDBMS>
+<ownerDesignName>Problem1</ownerDesignName>
+<engineerTo>
+<item key="8AD6FE7D-827F-8906-0AE7-DD21FCDD93B6" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="sGENDER" id="E096E6A6-5A62-FD6D-7942-BCF496E6EE86">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-11 14:55:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[STUDENT'S GENDER]]></commentInRDBMS>
+<ownerDesignName>Problem1</ownerDesignName>
+<engineerTo>
+<item key="8AD6FE7D-827F-8906-0AE7-DD21FCDD93B6" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="sBIRTHDATE" id="9E70DD90-B020-49CA-75CA-2D935B87009B">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-11 14:55:26 UTC</createdTime>
+<commentInRDBMS><![CDATA[STUDENT'S BIRTHDATE]]></commentInRDBMS>
+<ownerDesignName>Problem1</ownerDesignName>
+<engineerTo>
+<item key="8AD6FE7D-827F-8906-0AE7-DD21FCDD93B6" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="sSTREET" id="A575AAA7-F2EE-5ED2-2747-A75450C8A770">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-13 01:56:08 UTC</createdTime>
+<commentInRDBMS><![CDATA[THE STREET WHERE STUDENT LIVES]]></commentInRDBMS>
+<ownerDesignName>Problem1</ownerDesignName>
+<engineerTo>
+<item key="8AD6FE7D-827F-8906-0AE7-DD21FCDD93B6" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="sCITY" id="89E5E8DF-286E-78C0-1BD8-3398C430B745">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-13 01:56:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[THE CITY WHERE STUDENT LIVES]]></commentInRDBMS>
+<ownerDesignName>Problem1</ownerDesignName>
+<engineerTo>
+<item key="8AD6FE7D-827F-8906-0AE7-DD21FCDD93B6" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="sState" id="3D4BA5C3-5204-5515-03EF-CCEF605AEC11">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-14 00:45:08 UTC</createdTime>
+<ownerDesignName>Problem1</ownerDesignName>
+<engineerTo>
+<item key="8AD6FE7D-827F-8906-0AE7-DD21FCDD93B6" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="sZIPCODE" id="0A9F628E-C72B-9F2E-44EA-594257F5BB7B">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-13 01:58:07 UTC</createdTime>
+<commentInRDBMS><![CDATA[THE ZIPCODE OF STUDENT'S ADDRESS]]></commentInRDBMS>
+<ownerDesignName>Problem1</ownerDesignName>
+<engineerTo>
+<item key="8AD6FE7D-827F-8906-0AE7-DD21FCDD93B6" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="F35E3630-04E1-1C22-413E-77185129D137" name="STUDENT PK">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-11 14:46:54 UTC</createdTime>
+<ownerDesignName>Problem1</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="8AD6FE7D-827F-8906-0AE7-DD21FCDD93B6" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>A82F319C-B806-9B37-1783-CB5533ACF3F4</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

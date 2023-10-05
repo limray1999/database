@@ -1,0 +1,35 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="1E232B90-16D5-0914-E5CC-2D0B55CB6A6A" name="UNDERGRADUATE">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-27 16:57:54 UTC</createdTime>
+<ownerDesignName>HW2Q1</ownerDesignName>
+<engineerTo>
+<item key="74E892E6-6B91-4587-BE7D-498957C17D1E" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<hierarchicalParent>AE3E0D9C-74E0-2D57-0FFE-0E6E57C6C860</hierarchicalParent>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<discriminatorValue>UND</discriminatorValue>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="HS_Diploma_Year" id="EBC4D7B8-71F7-11E7-D1E8-D079B97DFF67">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-27 16:58:16 UTC</createdTime>
+<commentInRDBMS><![CDATA[High School Diploma Year]]></commentInRDBMS>
+<ownerDesignName>HW2Q1</ownerDesignName>
+<engineerTo>
+<item key="74E892E6-6B91-4587-BE7D-498957C17D1E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>

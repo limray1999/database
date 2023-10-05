@@ -1,0 +1,78 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="008EA6F4-CB9C-953D-5593-0F3CD90C2538" name="ORD">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-29 02:35:01 UTC</createdTime>
+<generatorID>5C8EE5CE-E67B-6AF5-60FF-FAB505EABDB7</generatorID>
+<ownerDesignName>HW2Q2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ORD_ID" id="193D9706-EDF8-15C0-9F1F-BD80BB8B6E45">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-29 02:35:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[ORDER ID]]></commentInRDBMS>
+<generatorID>DAF6F9F3-4186-1EAC-A5F8-A5FCB50687F2</generatorID>
+<ownerDesignName>HW2Q2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<ownDataTypeParameters>,20,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ORD_DATE" id="D3ED2DD1-2AD9-7B6A-7B81-DA8C1B3DA8D3">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-29 02:35:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[ORDER DATE]]></commentInRDBMS>
+<generatorID>A131D10A-D0EE-3EB3-667F-9A2FAC08E4FB</generatorID>
+<ownerDesignName>HW2Q2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CUS_ID" id="7D4E48F2-E592-9AFC-DD6F-52EC9D5983A2">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-29 02:35:01 UTC</createdTime>
+<generatorID>F1E507BF-A4FD-0629-0EFB-E935205E7302</generatorID>
+<ownerDesignName>HW2Q2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="689A2542-7AB4-210A-B2C8-517F4037DE99" referredColumn="EE81C681-57E7-32BD-93D4-F7416DAD456C"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="0905CF31-348F-96BE-CC0A-9CD83A6F4FFA" name="ORD_PK">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-29 02:35:01 UTC</createdTime>
+<generatorID>AEEF4D65-2266-21CA-F1B9-1AEBC9B883E2</generatorID>
+<ownerDesignName>HW2Q2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="193D9706-EDF8-15C0-9F1F-BD80BB8B6E45"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="764D08CA-58B5-9E3D-8CB1-01EF5B9FE916" name="ORD_CUS_FK">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-29 02:35:01 UTC</createdTime>
+<generatorID>9CA75D40-148B-B5D1-0B85-C09FA89D8118</generatorID>
+<ownerDesignName>HW2Q2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7D4E48F2-E592-9AFC-DD6F-52EC9D5983A2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

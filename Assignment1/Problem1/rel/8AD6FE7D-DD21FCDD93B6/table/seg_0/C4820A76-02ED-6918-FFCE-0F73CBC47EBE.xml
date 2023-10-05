@@ -1,0 +1,181 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C4820A76-02ED-6918-FFCE-0F73CBC47EBE" name="ML_STUDENT">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-11 17:45:03 UTC</createdTime>
+<generatorID>11268424-F63A-E4FD-4339-87B2EFF118EF</generatorID>
+<ownerDesignName>Problem1</ownerDesignName>
+<ordsAlias>student</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="sID" id="31D80E2D-0CC7-F0C4-50C1-E59CD3885220">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-11 17:45:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[The unique studentId number assigned to every students]]></commentInRDBMS>
+<generatorID>A82F319C-B806-9B37-1783-CB5533ACF3F4</generatorID>
+<ownerDesignName>Problem1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="sLNAME" id="D2044BA1-F045-7B7A-BB04-3F4B9195555E">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-11 17:45:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[STUDENT'S LAST NAME]]></commentInRDBMS>
+<generatorID>58F222B8-D575-0122-A546-5C4F9FDD9046</generatorID>
+<ownerDesignName>Problem1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="sADDRESS" id="C607D6EA-E488-9D18-914C-6E404452B300">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-11 17:45:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[STUDENT'S ADDRESS]]></commentInRDBMS>
+<generatorID>A212D457-F662-8CD0-4FCA-DFDFB96CE3C8</generatorID>
+<ownerDesignName>Problem1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="sMAJOR" id="A021F9B1-49E2-EBA9-3377-6C59060BFEB6">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-11 17:45:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[STUDENT'S MAJOR]]></commentInRDBMS>
+<generatorID>4ACCC1B4-8B5E-0962-E098-C109379884B8</generatorID>
+<ownerDesignName>Problem1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="sGENDER" id="827747C5-7B15-C4BF-4C5C-E765B0B48426">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-11 17:45:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[STUDENT'S GENDER]]></commentInRDBMS>
+<generatorID>E096E6A6-5A62-FD6D-7942-BCF496E6EE86</generatorID>
+<ownerDesignName>Problem1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="sBIRTHDATE" id="0A371BE8-63E2-FACA-A3BA-4F52B809F23B">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-11 17:45:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[STUDENT'S BIRTHDATE]]></commentInRDBMS>
+<generatorID>9E70DD90-B020-49CA-75CA-2D935B87009B</generatorID>
+<ownerDesignName>Problem1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="sFNAME" id="8A25F756-9631-7E94-99E8-70224B8D7C4B">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-12 23:09:52 UTC</createdTime>
+<commentInRDBMS><![CDATA[STUDENT'S FIRST]]></commentInRDBMS>
+<generatorID>602176E0-AD10-AFD1-2EA9-85C748AB50FD</generatorID>
+<ownerDesignName>Problem1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="sMNAME" id="11D1EC5D-9DB7-81A6-E915-0D87DF479C95">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-12 23:09:52 UTC</createdTime>
+<commentInRDBMS><![CDATA[STUDENT'S MIDDLE NAME]]></commentInRDBMS>
+<generatorID>0AED9737-8529-6219-9F67-C3B8B5EDE1AD</generatorID>
+<ownerDesignName>Problem1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="sSTREET" id="1D51F623-94A2-601C-AD19-1B2863916930">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-13 02:10:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[THE STREET WHERE STUDENT LIVES]]></commentInRDBMS>
+<generatorID>A575AAA7-F2EE-5ED2-2747-A75450C8A770</generatorID>
+<ownerDesignName>Problem1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="sCITY" id="54D329E5-D91A-6F0C-FFF3-A606E8C802D2">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-13 02:10:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[THE CITY WHERE STUDENT LIVES]]></commentInRDBMS>
+<generatorID>89E5E8DF-286E-78C0-1BD8-3398C430B745</generatorID>
+<ownerDesignName>Problem1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="sState" id="A9B2A7E1-315E-810D-ED6B-FBB47CAA5B09">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-14 00:45:58 UTC</createdTime>
+<ownerDesignName>Problem1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="sZIPCODE" id="57457621-BD55-67AA-F412-8DE3006580D5">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-13 02:10:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[THE ZIPCODE OF STUDENT'S ADDRESS]]></commentInRDBMS>
+<generatorID>0A9F628E-C72B-9F2E-44EA-594257F5BB7B</generatorID>
+<ownerDesignName>Problem1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="22F80CF8-58B6-E166-CD29-43B2A7E46D97" name="STUDENT_PK">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-11 17:45:03 UTC</createdTime>
+<generatorID>F35E3630-04E1-1C22-413E-77185129D137</generatorID>
+<ownerDesignName>Problem1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="31D80E2D-0CC7-F0C4-50C1-E59CD3885220"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

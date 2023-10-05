@@ -1,0 +1,181 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0B3A704B-6C1B-EE3B-0E3B-F590140E86C1" name="STUDENT">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-28 00:48:33 UTC</createdTime>
+<generatorID>AE3E0D9C-74E0-2D57-0FFE-0E6E57C6C860</generatorID>
+<ownerDesignName>HW2Q1</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="IndividualID" id="BEFCA04E-0711-58FA-C299-43916FA0A18D">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-28 00:48:33 UTC</createdTime>
+<commentInRDBMS><![CDATA[The Unique Number Assigned to Everyone]]></commentInRDBMS>
+<generatorID>AF3984E8-FF4E-62F8-03BB-0B027044E473</generatorID>
+<ownerDesignName>HW2Q1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D0DAF9EE-FF1F-37CA-AE0D-61202F4BEB8B" referredColumn="CBE7D7EB-8927-DAFA-48EC-7261445744DD"/>
+</associations>
+</Column>
+<Column name="Itype" id="16E4C0EB-15B5-81EE-4B9A-760FF2F0D06E">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-28 00:48:33 UTC</createdTime>
+<generatorID>5FEB08CA-8F9D-BE01-581A-DD3ECF18D291</generatorID>
+<ownerDesignName>HW2Q1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="584C2E22-9CF8-3217-369F-982283AE0595" referredColumn="FBF71951-CD23-DD0A-843E-7AE75C87FF5F"/>
+<colAssociation fkAssociation="D0DAF9EE-FF1F-37CA-AE0D-61202F4BEB8B" referredColumn="368626AD-A9E0-1616-D6B6-6D9E9B1EA6EB"/>
+</associations>
+</Column>
+<Column name="StudentID" id="578D70E8-182E-C9CD-AE73-29AC5AE7D5F2">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-28 00:48:34 UTC</createdTime>
+<commentInRDBMS><![CDATA[The Unique Number Assigned to Each Student]]></commentInRDBMS>
+<generatorID>4A615D3B-AB66-EE92-4633-5783CC8A7DF1</generatorID>
+<ownerDesignName>HW2Q1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<ownDataTypeParameters>,20,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="STYPE" id="6036C52E-361A-23F2-3D99-DAA1A0677BDB">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-28 00:48:34 UTC</createdTime>
+<generatorID>904EBEC5-572F-245E-35B5-22842E7E0F88</generatorID>
+<ownerDesignName>HW2Q1</ownerDesignName>
+<constraintName>CH_INH_STUDENT</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<listOfValues>
+<valueDef value="GRA" description="entity GRADUATE"/>
+<valueDef value="UND" description="entity UNDERGRADUATE"/>
+</listOfValues>
+<ownDataTypeParameters>3,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isDiscriminatorColumn>true</isDiscriminatorColumn>
+</Column>
+<Column name="Major" id="8F94C46D-A4C2-1BF1-B1D2-BF98748D0F30">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-28 00:48:34 UTC</createdTime>
+<generatorID>5156F350-CE77-FEE0-4D53-D6E7D3BBA54F</generatorID>
+<ownerDesignName>HW2Q1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DEPT" id="00955702-8321-6C56-6D0F-DDA332864230">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-28 00:48:34 UTC</createdTime>
+<commentInRDBMS><![CDATA[Student's Department]]></commentInRDBMS>
+<generatorID>A6FD2217-B771-E6F2-CA11-32E237989962</generatorID>
+<ownerDesignName>HW2Q1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="GPA" id="F2D4C3E6-4FC9-DC3D-1445-2A849E9B824B">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-28 00:48:34 UTC</createdTime>
+<generatorID>36974721-A726-C4D3-0189-91701D02598D</generatorID>
+<ownerDesignName>HW2Q1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,3,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="InstructorID" id="646DD972-99CC-BAAD-EC42-278FFFD3EEA5">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-28 00:48:34 UTC</createdTime>
+<commentInRDBMS><![CDATA[EmployeeID of Student's Instructor]]></commentInRDBMS>
+<generatorID>618604DF-2DD3-5945-7C71-9097FF284500</generatorID>
+<ownerDesignName>HW2Q1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="584C2E22-9CF8-3217-369F-982283AE0595" referredColumn="551A5DBA-5D2C-8C90-84A8-A5615182BE26"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="47C8B9AB-DB3E-0218-47E9-3BD7C33412B2" name="STUDENT_PK">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-28 00:48:34 UTC</createdTime>
+<generatorID>1E93DE9D-74F3-B89A-925F-70B6776AFEE9</generatorID>
+<ownerDesignName>HW2Q1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BEFCA04E-0711-58FA-C299-43916FA0A18D"/>
+<colUsage columnID="16E4C0EB-15B5-81EE-4B9A-760FF2F0D06E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="76A6060A-3448-4F0C-8400-39BC2C81FA4A" name="STUDENT_PKv1">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-28 00:48:34 UTC</createdTime>
+<generatorID>E063C16D-F88E-66AB-DE37-C6B1B6D0AD05</generatorID>
+<ownerDesignName>HW2Q1</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="578D70E8-182E-C9CD-AE73-29AC5AE7D5F2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="07014E05-9D11-BF62-E24B-DE9572F49F3D" name="STUDENT_INDIVIDUAL_FK">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-28 00:48:34 UTC</createdTime>
+<generatorID>62452833-D414-117E-B121-D3CF5B62BCDA</generatorID>
+<ownerDesignName>HW2Q1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BEFCA04E-0711-58FA-C299-43916FA0A18D"/>
+<colUsage columnID="16E4C0EB-15B5-81EE-4B9A-760FF2F0D06E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B9A14D57-007A-E774-12C7-D76DAC3B0909" name="STUDENT_FACULTY_FK">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-28 00:48:34 UTC</createdTime>
+<generatorID>E8A7035B-8A7E-FB79-038F-9B9E30016FAC</generatorID>
+<ownerDesignName>HW2Q1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="646DD972-99CC-BAAD-EC42-278FFFD3EEA5"/>
+<colUsage columnID="16E4C0EB-15B5-81EE-4B9A-760FF2F0D06E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

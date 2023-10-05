@@ -1,0 +1,104 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1E50A317-2AEA-F468-D28B-DC5F23AE1189" name="ML_INVOICE">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-16 00:00:20 UTC</createdTime>
+<generatorID>2E909E1D-AE25-5500-E432-B6C373FE9C08</generatorID>
+<ownerDesignName>Problem2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="INVOICE_ID" id="2CCCE2C7-7569-FE74-EEE3-99A525B34F04">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-16 00:00:20 UTC</createdTime>
+<commentInRDBMS><![CDATA[THE UNIQUE NUMBER ASSIGNED TO EVERY INVOICE]]></commentInRDBMS>
+<generatorID>244205AF-1740-61E3-283B-AE0C51160C8D</generatorID>
+<ownerDesignName>Problem2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="INVOICE_NO" id="DF2D3F35-71F4-C036-6B41-84EECD2C0348">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-16 00:00:20 UTC</createdTime>
+<commentInRDBMS><![CDATA[INVOICE NUMBER]]></commentInRDBMS>
+<generatorID>56E6C125-50A5-1955-93DF-AECD7B1F7B70</generatorID>
+<ownerDesignName>Problem2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<ownDataTypeParameters>,20,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="INVOICE_DATE" id="A9867595-E21F-7ED9-BC91-F32359CB2B7A">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-16 00:00:20 UTC</createdTime>
+<commentInRDBMS><![CDATA[INVOICE DATE]]></commentInRDBMS>
+<generatorID>33C4AC5E-234C-46E1-CA98-E7C9BE7B5906</generatorID>
+<ownerDesignName>Problem2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="INVOICE_AMOUNT" id="3C06C3B4-B1ED-4259-8E65-BBDF785F3FCC">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-16 00:00:20 UTC</createdTime>
+<commentInRDBMS><![CDATA[INVOICE AMOUNT]]></commentInRDBMS>
+<generatorID>35C8BF6B-0983-E00A-3742-1102A9EBFC97</generatorID>
+<ownerDesignName>Problem2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,5,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="UNIT_ID" id="6BE8A8A1-4A7F-7DDE-436A-6D4F5D5986BE">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-16 00:00:20 UTC</createdTime>
+<generatorID>F302E3E2-A979-01C8-753A-FCE933BEFFC0</generatorID>
+<ownerDesignName>Problem2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A6DBC761-F151-F986-8C2A-DF2448C21E75" referredColumn="C1292576-2CC5-56D3-257D-92E9E6274ACB"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="683C81F1-CFC0-41D2-32A2-BCD91F702592" name="ML_INVOICE_PK">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-16 00:00:20 UTC</createdTime>
+<generatorID>3575D680-C871-45DA-7C8F-91579E59D6EC</generatorID>
+<ownerDesignName>Problem2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2CCCE2C7-7569-FE74-EEE3-99A525B34F04"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0D37827E-FD61-83E5-C057-C55EAFB1B1C1" name="ML_INVOICE_ML_UNIT_FK">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-16 00:00:20 UTC</createdTime>
+<generatorID>32AC82BA-16A2-9A2B-D720-98C045F2B8E7</generatorID>
+<ownerDesignName>Problem2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6BE8A8A1-4A7F-7DDE-436A-6D4F5D5986BE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

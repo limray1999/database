@@ -1,0 +1,144 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="642B7BF8-8B42-52DC-0920-1EEDE6E0E900" name="ML_STUDETN_COURSE_PRO">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-11 17:45:03 UTC</createdTime>
+<generatorID>BAE65C5E-13A6-8DE2-0AFC-917F7BF4DD43</generatorID>
+<ownerDesignName>Problem1</ownerDesignName>
+<ordsAlias>studetn_course_pro</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="sID" id="0187429F-C948-4CA4-56C2-6CF217EE28F0">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-11 17:45:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[StudentId]]></commentInRDBMS>
+<generatorID>4EE32045-8322-36CF-8A4C-04B7950A73E9</generatorID>
+<ownerDesignName>Problem1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="396686BA-597F-0A2B-353C-B746F7AF4AE4" referredColumn="31D80E2D-0CC7-F0C4-50C1-E59CD3885220"/>
+</associations>
+</Column>
+<Column name="cID" id="AE44160E-C3F6-DC6D-5928-6FEEF907AA78">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-11 17:45:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[CourseId]]></commentInRDBMS>
+<generatorID>BFC650C1-52A2-CB97-56FE-057466DBCE23</generatorID>
+<ownerDesignName>Problem1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="694C8A97-5FCA-2551-107C-864B5A33D891" referredColumn="A77C4BE0-307E-4489-907F-7FD9B31CC458"/>
+</associations>
+</Column>
+<Column name="pID" id="793ACE8E-8CB4-CFE9-7D53-F72E6D6AC6E0">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-11 17:45:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[ProfessorId]]></commentInRDBMS>
+<generatorID>1B9FD6CC-0559-C060-A31E-08F98906785C</generatorID>
+<ownerDesignName>Problem1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="646E8985-2B91-7D0A-5CCF-70F4EF8961F6" referredColumn="5629A770-53A6-CC23-1578-B6D428D973FE"/>
+</associations>
+</Column>
+<Column name="SECTION" id="6CB2E3E2-9416-ED6E-B43B-295B1474CA13">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-11 18:47:17 UTC</createdTime>
+<generatorID>C43843E5-528A-5A06-D3BF-DB67AB15E87B</generatorID>
+<ownerDesignName>Problem1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="694C8A97-5FCA-2551-107C-864B5A33D891" referredColumn="45FDF571-6BE2-BD72-E183-D99476B95633"/>
+</associations>
+</Column>
+<Column name="GRADE" id="FFF3FD20-CA7A-32C9-BA91-1E29CBBC3490">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-11 18:48:08 UTC</createdTime>
+<commentInRDBMS><![CDATA[Student's grade in this course, from 0 to 100]]></commentInRDBMS>
+<generatorID>D21E1899-0897-118E-E606-4147B9191145</generatorID>
+<ownerDesignName>Problem1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B6804AA1-35BF-DAB0-31EE-9F0CBF345D65" name="STUDETN_COURSE_PRO_PK">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-11 17:45:03 UTC</createdTime>
+<generatorID>7E023A9D-3318-4A83-B1FC-DD814E912B86</generatorID>
+<ownerDesignName>Problem1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AE44160E-C3F6-DC6D-5928-6FEEF907AA78"/>
+<colUsage columnID="793ACE8E-8CB4-CFE9-7D53-F72E6D6AC6E0"/>
+<colUsage columnID="0187429F-C948-4CA4-56C2-6CF217EE28F0"/>
+<colUsage columnID="6CB2E3E2-9416-ED6E-B43B-295B1474CA13"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BB1DE409-3EA3-EC08-9AC0-EE417D51F799" name="STUDETN_COURSE_PRO_STUDENT_FK">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-11 17:45:03 UTC</createdTime>
+<generatorID>6FF88889-2B2E-0F26-F5E5-9FD855533FAB</generatorID>
+<ownerDesignName>Problem1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0187429F-C948-4CA4-56C2-6CF217EE28F0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9D6997F1-2965-4409-AFBC-546FFD9458B3" name="STUDETN_COURSE_PRO_COURSE_FK">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-11 17:45:03 UTC</createdTime>
+<generatorID>09CD297C-798D-7EF0-0B1D-3E8810A5507B</generatorID>
+<ownerDesignName>Problem1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AE44160E-C3F6-DC6D-5928-6FEEF907AA78"/>
+<colUsage columnID="6CB2E3E2-9416-ED6E-B43B-295B1474CA13"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="00F9109D-D06C-BB99-BAD6-0DDF505C989E" name="STUDETN_COURSE_PRO_PRO_FK">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-11 17:45:03 UTC</createdTime>
+<generatorID>5C12DBA9-5C53-66B6-C385-9F90679BFDE4</generatorID>
+<ownerDesignName>Problem1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="793ACE8E-8CB4-CFE9-7D53-F72E6D6AC6E0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

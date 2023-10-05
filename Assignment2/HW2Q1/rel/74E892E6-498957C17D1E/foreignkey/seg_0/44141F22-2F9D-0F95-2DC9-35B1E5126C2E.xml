@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="44141F22-2F9D-0F95-2DC9-35B1E5126C2E" containerWithKeyObject="CC2CFABF-FA5B-65B6-7EA1-496EC4DB4F1D" localFKIndex="41F1592B-C421-569F-7E7F-46E736BF0D5B" name="EMPLOYEE_INDIVIDUAL_FK">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-28 00:48:34 UTC</createdTime>
+<generatorID>48792F68-02C0-8514-B422-E963C0608452</generatorID>
+<ownerDesignName>HW2Q1</ownerDesignName>
+<referredTableLongName>INDIVIDUAL</referredTableLongName>
+<arc>DE2BBF4E-DCAB-E3E7-C77E-1EBD68916FCB</arc>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>B157380A-B5DB-B7B0-7D6F-CFCD07E35259</referredTableID>
+<keyObject>D7673A10-079D-AB43-7FB3-E2EBE3BFE443</keyObject>
+<referredKeyID>D7673A10-079D-AB43-7FB3-E2EBE3BFE443</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>IndividualID,Itype</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<discriminatorValue>EMP</discriminatorValue>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

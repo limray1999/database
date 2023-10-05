@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="MODEL" id="5BF76F23-F4CE-5EC4-6AD3-37DCB3E73BBA" version="3.5">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-20 02:51:34 UTC</createdTime>
+<ownerDesignName>MODEL</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>5BF76F23-F4CE-5EC4-6AD3-37DCB3E73BBA</designId>
+</OSDM_Design>

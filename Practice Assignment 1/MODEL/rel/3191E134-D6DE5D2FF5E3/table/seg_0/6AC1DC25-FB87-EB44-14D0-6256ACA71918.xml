@@ -1,0 +1,67 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6AC1DC25-FB87-EB44-14D0-6256ACA71918" name="ML_SALGRADE">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-24 04:10:32 UTC</createdTime>
+<generatorID>B93FAF7F-18AB-FD57-A58B-B16441339F31</generatorID>
+<ownerDesignName>MODEL</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="GRADE" id="5425500F-0F7A-3996-399F-CCBC57CC2707">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-24 04:10:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[SALARY GRADE OF EMPLOYEE]]></commentInRDBMS>
+<generatorID>0B6DCC03-073F-105D-B0DD-3179844A3491</generatorID>
+<ownerDesignName>MODEL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="HISAL" id="3FAD36FF-A56F-D328-02D2-44A1B4BFB282">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-24 04:10:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[HIGH SALARY VALUE]]></commentInRDBMS>
+<generatorID>7B45CC25-BEDC-9EC8-3E71-AD7AEC4C26E3</generatorID>
+<ownerDesignName>MODEL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,7,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LOSAL" id="EAE9A007-E0EF-3814-AC62-84536C6B8DCB">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-24 04:10:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[LOW SALARY VALUE]]></commentInRDBMS>
+<generatorID>C4B3EACC-23F7-0A1A-1657-D72E1AE2BB84</generatorID>
+<ownerDesignName>MODEL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,7,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3B37FFAF-EE16-28A1-8249-BB2B428574AF" name="ML_SALGRADE_PK">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-24 04:10:32 UTC</createdTime>
+<generatorID>44F748C3-E915-C559-D58F-7D24A3320724</generatorID>
+<ownerDesignName>MODEL</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5425500F-0F7A-3996-399F-CCBC57CC2707"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

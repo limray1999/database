@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="A6DBC761-F151-F986-8C2A-DF2448C21E75" containerWithKeyObject="1E50A317-2AEA-F468-D28B-DC5F23AE1189" localFKIndex="0D37827E-FD61-83E5-C057-C55EAFB1B1C1" name="ML_INVOICE_ML_UNIT_FK">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-16 00:00:20 UTC</createdTime>
+<generatorID>32AC82BA-16A2-9A2B-D720-98C045F2B8E7</generatorID>
+<ownerDesignName>Problem2</ownerDesignName>
+<referredTableLongName>ML_UNIT</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>27284487-231F-B45C-9CEB-588D190AEA70</referredTableID>
+<keyObject>6108F1B7-4D00-DC23-4A00-1F20D6B89E6B</keyObject>
+<referredKeyID>6108F1B7-4D00-DC23-4A00-1F20D6B89E6B</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>UNIT_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

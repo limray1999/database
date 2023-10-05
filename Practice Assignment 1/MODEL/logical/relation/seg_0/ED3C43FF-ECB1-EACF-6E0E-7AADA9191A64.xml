@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="EK_EMP_PROEMP" directorySegmentName="seg_0" id="ED3C43FF-ECB1-EACF-6E0E-7AADA9191A64">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-20 03:07:50 UTC</createdTime>
+<ownerDesignName>MODEL</ownerDesignName>
+<engineerTo>
+<item key="3191E134-CC4C-99BB-2D5E-D6DE5D2FF5E3" value="true"/>
+</engineerTo>
+<sourcePk>6668B901-010A-4BF6-C44E-134C90FB73A9</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>C4A74E0D-1019-D4C7-54D7-D8945D42CC2E</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>24DFE93F-5731-2FDF-ACD0-A73A97872A32</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

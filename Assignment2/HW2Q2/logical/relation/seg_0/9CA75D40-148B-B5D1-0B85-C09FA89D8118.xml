@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK_CUS_ORD" directorySegmentName="seg_0" id="9CA75D40-148B-B5D1-0B85-C09FA89D8118">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-29 02:23:40 UTC</createdTime>
+<ownerDesignName>HW2Q2</ownerDesignName>
+<engineerTo>
+<item key="05A9960C-3525-046E-5657-E1A70028A3B0" value="true"/>
+</engineerTo>
+<sourcePk>C8FCCA07-8AFA-F419-D0C5-E9FC30C04ED0</sourcePk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>119BC8CD-E80F-1FDE-C39D-5F5E2A36AF58</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>5C8EE5CE-E67B-6AF5-60FF-FAB505EABDB7</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

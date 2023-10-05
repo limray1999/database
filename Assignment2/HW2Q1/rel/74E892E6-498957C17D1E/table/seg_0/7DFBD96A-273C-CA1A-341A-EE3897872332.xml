@@ -1,0 +1,83 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7DFBD96A-273C-CA1A-341A-EE3897872332" name="GRADUATE">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-28 00:48:33 UTC</createdTime>
+<generatorID>97CF97A7-6C21-235E-9072-ADCC5F54E174</generatorID>
+<ownerDesignName>HW2Q1</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="IndividualID" id="0D63C454-CF82-92FF-99F5-487BA6E3073C">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-28 00:48:34 UTC</createdTime>
+<commentInRDBMS><![CDATA[The Unique Number Assigned to Everyone]]></commentInRDBMS>
+<generatorID>AF3984E8-FF4E-62F8-03BB-0B027044E473</generatorID>
+<ownerDesignName>HW2Q1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<ownDataTypeParameters>,20,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CB6F43C3-DCB4-8A75-97CE-48FC1AE1C1C0" referredColumn="BEFCA04E-0711-58FA-C299-43916FA0A18D"/>
+</associations>
+</Column>
+<Column name="Itype" id="81F2C823-7535-261F-45D0-0C3BEFBF25C6">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-28 00:48:34 UTC</createdTime>
+<generatorID>5FEB08CA-8F9D-BE01-581A-DD3ECF18D291</generatorID>
+<ownerDesignName>HW2Q1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CB6F43C3-DCB4-8A75-97CE-48FC1AE1C1C0" referredColumn="16E4C0EB-15B5-81EE-4B9A-760FF2F0D06E"/>
+</associations>
+</Column>
+<Column name="UG_Major" id="01FE58BF-D642-68D2-D7CB-A1638E52A6E7">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-28 00:48:34 UTC</createdTime>
+<commentInRDBMS><![CDATA[Undergraduate Major]]></commentInRDBMS>
+<generatorID>3629B213-D2E8-DD65-A3D2-82AA205BEC35</generatorID>
+<ownerDesignName>HW2Q1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C2B761A2-AE9D-BFF2-B529-32064805C3B8" name="GRADUATE_PK">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-28 00:48:34 UTC</createdTime>
+<generatorID>1E93DE9D-74F3-B89A-925F-70B6776AFEE9</generatorID>
+<ownerDesignName>HW2Q1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0D63C454-CF82-92FF-99F5-487BA6E3073C"/>
+<colUsage columnID="81F2C823-7535-261F-45D0-0C3BEFBF25C6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DFDFC20E-6C22-697A-FB51-11722EB8955E" name="GRADUATE_STUDENT_FK">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-28 00:48:34 UTC</createdTime>
+<generatorID>4A9371D7-D9B2-16A7-86E8-DE06BBF9AEE9</generatorID>
+<ownerDesignName>HW2Q1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0D63C454-CF82-92FF-99F5-487BA6E3073C"/>
+<colUsage columnID="81F2C823-7535-261F-45D0-0C3BEFBF25C6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

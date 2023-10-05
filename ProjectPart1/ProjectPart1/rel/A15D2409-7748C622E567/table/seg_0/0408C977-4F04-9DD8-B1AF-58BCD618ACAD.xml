@@ -1,0 +1,189 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0408C977-4F04-9DD8-B1AF-58BCD618ACAD" name="ML_OZ_PASSENGER">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-12 19:17:58 UTC</createdTime>
+<generatorID>57C20E25-54AB-1C05-F3EB-B12BC2A0CFC4</generatorID>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="PASSENGER_ID" id="56E31C10-3911-3BC8-89B8-BF73CFF970C9">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-12 19:17:58 UTC</createdTime>
+<commentInRDBMS><![CDATA[THE UNIQUE NUMBER ASSIGNED TO EVERY PASSENGER]]></commentInRDBMS>
+<generatorID>AD399E72-765B-BF4B-D110-20B2FD9ED61E</generatorID>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PASSENGER_TYPE" id="5BFD9ED3-CB05-1830-7E3F-99A377257557">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-12 19:17:58 UTC</createdTime>
+<generatorID>8544A759-5908-F527-4A46-F5A9704EEE0C</generatorID>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<constraintName>CH_INH_ML_OZ_PASSENGER</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<listOfValues>
+<valueDef value="A" description="entity ML_OZ_BA"/>
+<valueDef value="C" description="entity ML_OZ_CUS"/>
+<valueDef value="M" description="entity ML_OZ_MEMBER"/>
+<valueDef value="P" description="entity ML_OZ_PASSENGER"/>
+</listOfValues>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isDiscriminatorColumn>true</isDiscriminatorColumn>
+</Column>
+<Column name="FNAME" id="DA8593F8-637E-5CC3-E258-C4BAC8C2DE9E">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-12 19:17:58 UTC</createdTime>
+<commentInRDBMS><![CDATA[FIRST NAME]]></commentInRDBMS>
+<generatorID>C8CC5927-527C-E839-675C-F98FD9A994FE</generatorID>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MNAME" id="63E04885-5C94-C67A-171D-F0C23F39C2BB">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-12 19:17:58 UTC</createdTime>
+<commentInRDBMS><![CDATA[MIDDLE NAME]]></commentInRDBMS>
+<generatorID>2E3C4C87-D2E2-17E1-9D40-9BFD65F539FF</generatorID>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LNAME" id="94B5B1ED-6A92-4DE3-2D6B-984E137B7255">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-12 19:17:58 UTC</createdTime>
+<commentInRDBMS><![CDATA[LASTNAME]]></commentInRDBMS>
+<generatorID>97BA5956-A30C-FE10-6DE8-17C75B2AEFD4</generatorID>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BIRTHDATE" id="5AC86C53-E8DB-803E-BED9-D4A4144E4296">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-12 19:17:58 UTC</createdTime>
+<commentInRDBMS><![CDATA[DATE OF BIRTH]]></commentInRDBMS>
+<generatorID>C94C6FEF-D579-072D-7CE9-33E54430B616</generatorID>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="GENDER" id="8DB3E3F7-3FCC-673A-590C-C4F14A1B76D4">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-12 19:17:58 UTC</createdTime>
+<commentInRDBMS><![CDATA[GENDER, MALE OR FEMALE]]></commentInRDBMS>
+<generatorID>3530710E-DACB-33A8-4D94-E7FFCF134B07</generatorID>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NATIONALITY" id="BB08747B-4302-BDEB-BED9-FCBB19AD4916">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-12 19:17:58 UTC</createdTime>
+<commentInRDBMS><![CDATA[PASSENGER'S NATIONALITY]]></commentInRDBMS>
+<generatorID>7F997789-4481-C40E-D755-71E6355E3DB6</generatorID>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PN" id="E0FF9C5D-27BE-73D2-20A5-25845ED256B9">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-12 19:17:58 UTC</createdTime>
+<commentInRDBMS><![CDATA[PASSPORT NUMBER]]></commentInRDBMS>
+<generatorID>D62E0887-79FE-B126-8D0A-FF68A66960B2</generatorID>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>9</dataTypeSize>
+<ownDataTypeParameters>9,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PNED" id="FC2AADC3-68F8-05AB-A317-0BF5E0BD6181">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-12 19:17:58 UTC</createdTime>
+<commentInRDBMS><![CDATA[PASSPORT EXPIRY DATE]]></commentInRDBMS>
+<generatorID>0BB18CA5-BB00-CD46-5FC0-BE143A33640F</generatorID>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ML_OZ_INSUR_PLAN_PLAN_ID" id="D48366FA-B100-1017-29F3-271FD382BB31">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-12 19:17:58 UTC</createdTime>
+<generatorID>3EE9591A-7E41-387A-0817-B3244B507526</generatorID>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D313DD9E-4ED5-7732-75E2-4252D2033D7E" referredColumn="38C9F5D3-1458-0C18-1B37-8900AB9D346E"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E44B7D3C-3DCA-64E8-3029-C05E0E7E8B89" name="ML_OZ_PASSENGER_PK">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-12 19:17:58 UTC</createdTime>
+<generatorID>7D82683A-4697-5893-5D16-E74CD774C6D3</generatorID>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="56E31C10-3911-3BC8-89B8-BF73CFF970C9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="62CC5018-0131-85C5-501B-8E027BF2ABA7" name="FK_PAS_PLAN">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-12 19:17:58 UTC</createdTime>
+<generatorID>F1126870-C15B-2F04-A2D7-738A16FED845</generatorID>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D48366FA-B100-1017-29F3-271FD382BB31"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

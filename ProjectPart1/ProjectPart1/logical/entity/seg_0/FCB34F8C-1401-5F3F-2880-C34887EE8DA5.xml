@@ -1,0 +1,119 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="FCB34F8C-1401-5F3F-2880-C34887EE8DA5" name="ML_OZ_PURCHASE">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-10 22:22:13 UTC</createdTime>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<engineerTo>
+<item key="A15D2409-CEE6-726D-472B-7748C622E567" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="PURCHASE_ID" id="87BE024E-6661-BEEA-7F3B-358537ED9E92">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-12 19:01:37 UTC</createdTime>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<engineerTo>
+<item key="A15D2409-CEE6-726D-472B-7748C622E567" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CUSTOMER_ID" id="25B0B672-5E00-A5EE-F2D4-ACD04933B0E8">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-11 04:19:58 UTC</createdTime>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="A15D2409-CEE6-726D-472B-7748C622E567" value="false"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PLAN_ID" id="2C4CF79A-650E-6437-C5E9-E1878B149970">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-11 04:21:15 UTC</createdTime>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<engineerTo>
+<item key="A15D2409-CEE6-726D-472B-7748C622E567" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PASSENGER_ID1" id="56301FEA-E07E-0D23-5F5B-476207256DCC">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-11 04:22:00 UTC</createdTime>
+<generatorID>444C860C-A1F6-3F40-5487-FBDAAF6F8CE4</generatorID>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<engineerTo>
+<item key="A15D2409-CEE6-726D-472B-7748C622E567" value="true"/>
+</engineerTo>
+<referedAttribute>AD399E72-765B-BF4B-D110-20B2FD9ED61E</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PLAN_ID1" id="DF838E52-174F-4C77-9649-886AF592E144">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-11 04:23:05 UTC</createdTime>
+<generatorID>45879BB7-A557-6D37-354F-44E95A171E65</generatorID>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<engineerTo>
+<item key="A15D2409-CEE6-726D-472B-7748C622E567" value="true"/>
+</engineerTo>
+<referedAttribute>7CF191D5-A3BC-D8A1-40D2-803D6BA9015C</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="INVOICE_ID" id="17C0ECDB-CDFA-F721-4AC7-2DFC9C24422F">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-11 04:56:04 UTC</createdTime>
+<generatorID>19A2E551-6014-ECD9-39FB-3FE8C83430CE</generatorID>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<engineerTo>
+<item key="A15D2409-CEE6-726D-472B-7748C622E567" value="true"/>
+</engineerTo>
+<referedAttribute>58CBD4EF-D1FF-FAD5-9AB5-B43D53F36A91</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="A7C82C39-565C-F4D6-EED0-C957A540C739" name="ML_OZ_PURCHASE PK">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-10 22:27:22 UTC</createdTime>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="A15D2409-CEE6-726D-472B-7748C622E567" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>87BE024E-6661-BEEA-7F3B-358537ED9E92</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

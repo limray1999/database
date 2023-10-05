@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="EB996C32-D446-AEAA-6C70-3FFCB9A6AC01" mainViewID="E4917EF2-65C0-F2C6-6C23-72E389C5AF6A">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-12 04:24:00 UTC</createdTime>
+<ownerDesignName>Problem2</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</LogicalDesign>

@@ -1,0 +1,94 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="104003B7-D0AB-47F8-E3A3-21F0F360FA77" name="ORD_PRO">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-29 02:35:01 UTC</createdTime>
+<generatorID>BCEB3F12-1961-48C3-8973-BD1E4DA830AD</generatorID>
+<ownerDesignName>HW2Q2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="QUANTITY" id="73EC0B6E-8A3B-FE9B-D30D-09948B7CDCD3">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-29 02:35:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[ORDERED QUANTITY]]></commentInRDBMS>
+<generatorID>C16D8558-EFD2-C34D-9C8D-F5E84E0F2CEB</generatorID>
+<ownerDesignName>HW2Q2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ORD_ID" id="D41FB5C6-9A2F-E0FC-EF46-2D36A0E70DD7">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-29 02:35:01 UTC</createdTime>
+<generatorID>6D48308C-803E-AC7E-A9E9-ACBADB731787</generatorID>
+<ownerDesignName>HW2Q2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="433A4136-5215-5319-3672-46653AE2F782" referredColumn="193D9706-EDF8-15C0-9F1F-BD80BB8B6E45"/>
+</associations>
+</Column>
+<Column name="PRO_ID" id="3B538A97-5837-1A82-374A-BA9193A84835">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-29 02:35:01 UTC</createdTime>
+<generatorID>B0E11557-63F5-3EC3-17E3-32DD398ED378</generatorID>
+<ownerDesignName>HW2Q2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8A1B39D2-1FBD-A121-23F1-C1A2FA5EE986" referredColumn="62511434-89E0-1315-53BD-A7DD3FC86A8D"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3709C0D4-08E3-42B2-2F65-68611988D3AE" name="ORD_PRO_PK">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-29 02:35:01 UTC</createdTime>
+<generatorID>2652C0C6-80E6-E54D-0BCF-5CBBE92ECA56</generatorID>
+<ownerDesignName>HW2Q2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D41FB5C6-9A2F-E0FC-EF46-2D36A0E70DD7"/>
+<colUsage columnID="3B538A97-5837-1A82-374A-BA9193A84835"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E47FA927-C310-C293-AC27-2C5566F770F9" name="ORD_PRO_ORD_FK">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-29 02:35:01 UTC</createdTime>
+<generatorID>3D2EEFBA-EA4F-D771-9954-CFD803C8D765</generatorID>
+<ownerDesignName>HW2Q2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D41FB5C6-9A2F-E0FC-EF46-2D36A0E70DD7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="ED220005-AB02-6CFE-8A91-564EC200F4F6" name="ORD_PRO_PRO_FK">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-29 02:35:01 UTC</createdTime>
+<generatorID>210B502D-A8DF-8C18-17AF-2313E1DE1C41</generatorID>
+<ownerDesignName>HW2Q2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3B538A97-5837-1A82-374A-BA9193A84835"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

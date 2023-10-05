@@ -1,0 +1,95 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="EF410AB3-716E-5556-3E61-F78C54D9396D" name="ML_PRO_pSKILL">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-13 02:10:32 UTC</createdTime>
+<generatorID>F1090FA0-7884-FE2F-59EE-57973EF2C472</generatorID>
+<ownerDesignName>Problem1</ownerDesignName>
+<ordsAlias>pro_pskill</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="pID" id="56AF8B0C-9D3B-7AAC-8F8A-AE65A230A4E0">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-13 02:10:32 UTC</createdTime>
+<generatorID>1A77C7CF-9B94-DF7E-C005-FFA01B3A964A</generatorID>
+<ownerDesignName>Problem1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="15E95898-64F5-9C29-A7D4-BC9131D55F92" referredColumn="5629A770-53A6-CC23-1578-B6D428D973FE"/>
+</associations>
+</Column>
+<Column name="SKILLID" id="BFD193B9-788C-179B-CAFE-FD846E4E7339">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-13 02:10:32 UTC</createdTime>
+<generatorID>728BCED5-9A79-6C0E-E92D-5CECB3E16083</generatorID>
+<ownerDesignName>Problem1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5072FBAB-E670-D0FD-8104-605F35591254" referredColumn="4B9ED3A0-0916-F8CB-2339-6CDB7273FF18"/>
+</associations>
+</Column>
+<Column name="PROFICIENCY" id="6EEB763F-56A2-F84B-1B2C-132492062825">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-13 02:10:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[PROFESSOR'S PROFICIENCY OF A SKILL, 0 REPRESENTS LOWEST PROFICIENCY AND 9 PRESENTS HIGHEST PROFICIENCY, ]]></commentInRDBMS>
+<generatorID>21CD4DF7-3488-BD08-1C4A-D2CCF4FEA735</generatorID>
+<ownerDesignName>Problem1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="AB175B50-F649-279B-3DB6-C0A4FC1E2754" name="PRO_pSKILL_PK">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-13 02:10:32 UTC</createdTime>
+<generatorID>00DA04BE-4691-F39F-E366-BD477DB46616</generatorID>
+<ownerDesignName>Problem1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="56AF8B0C-9D3B-7AAC-8F8A-AE65A230A4E0"/>
+<colUsage columnID="BFD193B9-788C-179B-CAFE-FD846E4E7339"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0BE55037-0BEA-DEC5-2D95-9C1B1E9B6CD8" name="PRO_pSKILL_PRO_FK">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-13 02:10:32 UTC</createdTime>
+<generatorID>B3646654-8AF7-1822-A797-9A7010812DD9</generatorID>
+<ownerDesignName>Problem1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="56AF8B0C-9D3B-7AAC-8F8A-AE65A230A4E0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="273020D3-27F9-72CE-EE87-50D19FA39012" name="PRO_pSKILL_pSKILL_FK">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-13 02:10:32 UTC</createdTime>
+<generatorID>B92798F9-4EEA-045D-1BF7-AEE39F9C6CBB</generatorID>
+<ownerDesignName>Problem1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BFD193B9-788C-179B-CAFE-FD846E4E7339"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

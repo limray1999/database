@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK_pSKILL_PRO" directorySegmentName="seg_0" id="B92798F9-4EEA-045D-1BF7-AEE39F9C6CBB">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-13 02:03:49 UTC</createdTime>
+<ownerDesignName>Problem1</ownerDesignName>
+<engineerTo>
+<item key="8AD6FE7D-827F-8906-0AE7-DD21FCDD93B6" value="true"/>
+</engineerTo>
+<sourcePk>96CCA743-4219-A830-236F-F5CE59C69BAD</sourcePk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>DFB6715A-96DC-A057-305D-7CD9800459F3</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>F1090FA0-7884-FE2F-59EE-57973EF2C472</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

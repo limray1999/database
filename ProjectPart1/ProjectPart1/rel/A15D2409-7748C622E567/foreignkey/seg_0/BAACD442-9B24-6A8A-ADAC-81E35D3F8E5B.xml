@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="BAACD442-9B24-6A8A-ADAC-81E35D3F8E5B" containerWithKeyObject="99461A96-A39D-4BE4-E102-B10AFB258653" localFKIndex="51DE0505-7E42-C58C-15E7-ADA2A1CFAA28" name="ML_OZ_INSUR_PLAN_ML_OZ_PURCHASE_FK">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-12 19:17:58 UTC</createdTime>
+<generatorID>45879BB7-A557-6D37-354F-44E95A171E65</generatorID>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<referredTableLongName>ML_OZ_PURCHASE</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>E7AACC7F-DC61-8286-CB35-D609CB6B4A09</referredTableID>
+<keyObject>CA7BB9E9-8DF6-7EBC-CBD4-4FBC00FEF52D</keyObject>
+<referredKeyID>CA7BB9E9-8DF6-7EBC-CBD4-4FBC00FEF52D</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>PURCHASE_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

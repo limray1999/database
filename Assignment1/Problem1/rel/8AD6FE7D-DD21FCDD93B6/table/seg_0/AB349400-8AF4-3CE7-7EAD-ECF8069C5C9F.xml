@@ -1,0 +1,113 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="AB349400-8AF4-3CE7-7EAD-ECF8069C5C9F" name="ML_COURSE">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-11 17:45:03 UTC</createdTime>
+<generatorID>DE997717-E4E6-EE82-92AB-FBED4CE5B153</generatorID>
+<ownerDesignName>Problem1</ownerDesignName>
+<ordsAlias>course</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cID" id="A77C4BE0-307E-4489-907F-7FD9B31CC458">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-11 17:45:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[The unique course ID assigned to every course]]></commentInRDBMS>
+<generatorID>596354B4-235E-CE8B-8E84-8EF76D752A8B</generatorID>
+<ownerDesignName>Problem1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SECTION" id="45FDF571-6BE2-BD72-E183-D99476B95633">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-11 18:47:17 UTC</createdTime>
+<commentInRDBMS><![CDATA[Section of this course, such as A, B, C etc.]]></commentInRDBMS>
+<generatorID>5FA58B4B-511D-C152-64BA-9A04AD8BA2A0</generatorID>
+<ownerDesignName>Problem1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cNAME" id="E11D6556-069E-80FA-EE50-182A12A9D59F">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-11 17:45:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Course name]]></commentInRDBMS>
+<generatorID>58658C78-436A-9C7F-F734-4718F27BE47C</generatorID>
+<ownerDesignName>Problem1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cCREDIT" id="4B6B0560-8E86-6047-2FFB-8CA84B8A76E8">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-11 17:45:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Course credits]]></commentInRDBMS>
+<generatorID>393B8BA5-B032-BD31-F752-6CFCB0EAAD78</generatorID>
+<ownerDesignName>Problem1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="START_DATE" id="02AF44D7-1D5A-9CCF-DFDE-18B85CD67DC8">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-14 15:10:38 UTC</createdTime>
+<commentInRDBMS><![CDATA[THE START DATE OF COURSE]]></commentInRDBMS>
+<ownerDesignName>Problem1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="END_DATE" id="D059627D-981C-EA2D-65CD-1D6AB0A83DD1">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-14 15:10:55 UTC</createdTime>
+<commentInRDBMS><![CDATA[THE END DATE OF COURSE]]></commentInRDBMS>
+<ownerDesignName>Problem1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TIME" id="F14DA8AA-E5D7-3622-1ABF-AA963A5043A4">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-14 15:11:11 UTC</createdTime>
+<commentInRDBMS><![CDATA[THE TIME OF COURSE]]></commentInRDBMS>
+<ownerDesignName>Problem1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BD35B5EA-5EE4-E9BD-B9CF-9AEEF82D34DF" name="COURSE_PK">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-11 17:45:03 UTC</createdTime>
+<generatorID>7EC14C6C-C18C-F735-D369-1E7367617802</generatorID>
+<ownerDesignName>Problem1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A77C4BE0-307E-4489-907F-7FD9B31CC458"/>
+<colUsage columnID="45FDF571-6BE2-BD72-E183-D99476B95633"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

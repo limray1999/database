@@ -1,0 +1,83 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="AC442B26-2D84-8886-CE20-46F64BFDE3E3" name="UNDERGRADUATE">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-28 00:48:33 UTC</createdTime>
+<generatorID>1E232B90-16D5-0914-E5CC-2D0B55CB6A6A</generatorID>
+<ownerDesignName>HW2Q1</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="IndividualID" id="72D4F6E4-E922-9739-419D-4E01163B1D7F">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-28 00:48:34 UTC</createdTime>
+<commentInRDBMS><![CDATA[The Unique Number Assigned to Everyone]]></commentInRDBMS>
+<generatorID>AF3984E8-FF4E-62F8-03BB-0B027044E473</generatorID>
+<ownerDesignName>HW2Q1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<ownDataTypeParameters>,20,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B9A96B25-6120-3D67-DBD3-B999BB87378C" referredColumn="BEFCA04E-0711-58FA-C299-43916FA0A18D"/>
+</associations>
+</Column>
+<Column name="Itype" id="3E82D146-FD32-B6B4-101D-79E5F9C93265">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-28 00:48:34 UTC</createdTime>
+<generatorID>5FEB08CA-8F9D-BE01-581A-DD3ECF18D291</generatorID>
+<ownerDesignName>HW2Q1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B9A96B25-6120-3D67-DBD3-B999BB87378C" referredColumn="16E4C0EB-15B5-81EE-4B9A-760FF2F0D06E"/>
+</associations>
+</Column>
+<Column name="HS_Diploma_Year" id="AB35AF4D-9732-12D5-E7E2-5B35B22F011B">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-28 00:48:34 UTC</createdTime>
+<commentInRDBMS><![CDATA[High School Diploma Year]]></commentInRDBMS>
+<generatorID>EBC4D7B8-71F7-11E7-D1E8-D079B97DFF67</generatorID>
+<ownerDesignName>HW2Q1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5CD995CA-1506-E62D-B915-9AFAAE57F0BA" name="UNDERGRADUATE_PK">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-28 00:48:34 UTC</createdTime>
+<generatorID>1E93DE9D-74F3-B89A-925F-70B6776AFEE9</generatorID>
+<ownerDesignName>HW2Q1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="72D4F6E4-E922-9739-419D-4E01163B1D7F"/>
+<colUsage columnID="3E82D146-FD32-B6B4-101D-79E5F9C93265"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EC046FDA-9D7A-47D5-C86D-C77521058158" name="UNDERGRADUATE_STUDENT_FK">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-28 00:48:34 UTC</createdTime>
+<generatorID>4EDA2B86-A369-A62F-B68A-30F074F26754</generatorID>
+<ownerDesignName>HW2Q1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="72D4F6E4-E922-9739-419D-4E01163B1D7F"/>
+<colUsage columnID="3E82D146-FD32-B6B4-101D-79E5F9C93265"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

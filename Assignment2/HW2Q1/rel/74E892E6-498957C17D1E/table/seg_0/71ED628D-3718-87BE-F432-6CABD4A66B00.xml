@@ -1,0 +1,130 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="71ED628D-3718-87BE-F432-6CABD4A66B00" name="ALUMNUS">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-28 00:48:33 UTC</createdTime>
+<generatorID>3DDA9F77-0455-8DAB-B236-1FB5EABE569D</generatorID>
+<ownerDesignName>HW2Q1</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="IndividualID" id="60C49EAA-B206-FDE1-4218-9814CA087DA0">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-28 00:48:34 UTC</createdTime>
+<commentInRDBMS><![CDATA[The Unique Number Assigned to Everyone]]></commentInRDBMS>
+<generatorID>AF3984E8-FF4E-62F8-03BB-0B027044E473</generatorID>
+<ownerDesignName>HW2Q1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<ownDataTypeParameters>,20,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="14DAF885-02D5-39AD-F6E6-67F57F3631B2" referredColumn="CBE7D7EB-8927-DAFA-48EC-7261445744DD"/>
+</associations>
+</Column>
+<Column name="Itype" id="A2AA2D02-2934-DD36-8302-D4AD248F7F28">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-28 00:48:34 UTC</createdTime>
+<generatorID>5FEB08CA-8F9D-BE01-581A-DD3ECF18D291</generatorID>
+<ownerDesignName>HW2Q1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="14DAF885-02D5-39AD-F6E6-67F57F3631B2" referredColumn="368626AD-A9E0-1616-D6B6-6D9E9B1EA6EB"/>
+</associations>
+</Column>
+<Column name="AlumnusID" id="41D27D31-5900-1CE3-1791-4658EFC614CC">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-28 00:48:34 UTC</createdTime>
+<commentInRDBMS><![CDATA[The Unique Number Assigned to each Alumnus]]></commentInRDBMS>
+<generatorID>5018371D-646D-DD96-562D-9173563B3888</generatorID>
+<ownerDesignName>HW2Q1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<ownDataTypeParameters>,20,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Highest_Degree" id="F056ECCC-BEF7-1BC3-07EE-ACCA94D670F3">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-28 00:48:34 UTC</createdTime>
+<commentInRDBMS><![CDATA[Highest Degree]]></commentInRDBMS>
+<generatorID>DF7BF896-C10C-EF2D-92FF-4187D24A635C</generatorID>
+<ownerDesignName>HW2Q1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Graduation_Date" id="52742EB3-380A-59A1-0A60-FB6F794B852F">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-28 00:48:34 UTC</createdTime>
+<generatorID>29D36D8E-9816-B9C5-4ACF-1950414CF560</generatorID>
+<ownerDesignName>HW2Q1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Designation" id="B96766B6-141E-5451-2A78-8D270A9CA29A">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-28 00:48:34 UTC</createdTime>
+<generatorID>734F78CF-FEDC-CA70-4586-FB59A6993C9B</generatorID>
+<ownerDesignName>HW2Q1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F0E58A75-E2F1-E7DF-52A4-3066821CEE99" name="ALUMNUS_PK">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-28 00:48:34 UTC</createdTime>
+<generatorID>1E93DE9D-74F3-B89A-925F-70B6776AFEE9</generatorID>
+<ownerDesignName>HW2Q1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="60C49EAA-B206-FDE1-4218-9814CA087DA0"/>
+<colUsage columnID="A2AA2D02-2934-DD36-8302-D4AD248F7F28"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7B608EFB-B49A-F01D-516F-C3DC2833A398" name="ALUMNUS_PKv1">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-28 00:48:34 UTC</createdTime>
+<generatorID>E0C687F7-6D89-A1B9-FB67-0C9C134E2B3C</generatorID>
+<ownerDesignName>HW2Q1</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="41D27D31-5900-1CE3-1791-4658EFC614CC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B4882D6E-712E-B1A6-9374-4FD51A296000" name="ALUMNUS_INDIVIDUAL_FK">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-28 00:48:34 UTC</createdTime>
+<generatorID>8803BDC6-F5AF-E886-12EF-C6730D92492E</generatorID>
+<ownerDesignName>HW2Q1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="60C49EAA-B206-FDE1-4218-9814CA087DA0"/>
+<colUsage columnID="A2AA2D02-2934-DD36-8302-D4AD248F7F28"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

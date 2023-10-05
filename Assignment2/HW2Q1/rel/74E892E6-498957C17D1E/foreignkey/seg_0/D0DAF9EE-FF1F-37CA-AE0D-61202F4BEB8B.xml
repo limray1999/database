@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="D0DAF9EE-FF1F-37CA-AE0D-61202F4BEB8B" containerWithKeyObject="0B3A704B-6C1B-EE3B-0E3B-F590140E86C1" localFKIndex="07014E05-9D11-BF62-E24B-DE9572F49F3D" name="STUDENT_INDIVIDUAL_FK">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-28 00:48:34 UTC</createdTime>
+<generatorID>62452833-D414-117E-B121-D3CF5B62BCDA</generatorID>
+<ownerDesignName>HW2Q1</ownerDesignName>
+<referredTableLongName>INDIVIDUAL</referredTableLongName>
+<arc>DE2BBF4E-DCAB-E3E7-C77E-1EBD68916FCB</arc>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>B157380A-B5DB-B7B0-7D6F-CFCD07E35259</referredTableID>
+<keyObject>D7673A10-079D-AB43-7FB3-E2EBE3BFE443</keyObject>
+<referredKeyID>D7673A10-079D-AB43-7FB3-E2EBE3BFE443</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>IndividualID,Itype</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<discriminatorValue>STU</discriminatorValue>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

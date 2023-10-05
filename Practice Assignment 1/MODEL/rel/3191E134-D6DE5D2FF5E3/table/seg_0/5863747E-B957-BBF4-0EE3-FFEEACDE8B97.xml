@@ -1,0 +1,77 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5863747E-B957-BBF4-0EE3-FFEEACDE8B97" name="ML_PROJECT">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-24 04:10:32 UTC</createdTime>
+<generatorID>EBBC5E35-9E56-5918-EB08-76F029FCD090</generatorID>
+<ownerDesignName>MODEL</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="PROJID" id="76804E2C-E95D-1630-F518-67DFF64214A6">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-24 04:10:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[PROJECT ID NUMBER]]></commentInRDBMS>
+<generatorID>8AEAF2D7-E6A1-94C6-F44A-2F7319ABD165</generatorID>
+<ownerDesignName>MODEL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PNAME" id="4F48723A-D475-4631-8C11-8972150FEDF5">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-24 04:10:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[NAME OF THE PROJECT]]></commentInRDBMS>
+<generatorID>7ACA90D5-A04F-4C16-9D28-2BDC9C8ACDBE</generatorID>
+<ownerDesignName>MODEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="STARTDATE" id="1BCD01C8-AFB4-D55B-8FE2-1E2635E1D422">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-24 04:10:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[START DATE OF THE PEOJECT]]></commentInRDBMS>
+<generatorID>17524CE8-0259-A8AC-E507-F776E9A39C57</generatorID>
+<ownerDesignName>MODEL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ENDDATE" id="CCAC0FED-221A-0AC3-939C-CAA24CF6F6B2">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-24 04:10:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[END DATE OF THE PROJECT]]></commentInRDBMS>
+<generatorID>E37F0B22-749A-FF0B-3D89-C164A22BB069</generatorID>
+<ownerDesignName>MODEL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="DB2A2FF7-F79E-3FA3-CF58-4279A58EA8C4" name="ML_PROJECT_PK">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-24 04:10:32 UTC</createdTime>
+<generatorID>A120D7F0-1456-46E6-D304-026DF19D0140</generatorID>
+<ownerDesignName>MODEL</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="76804E2C-E95D-1630-F518-67DFF64214A6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

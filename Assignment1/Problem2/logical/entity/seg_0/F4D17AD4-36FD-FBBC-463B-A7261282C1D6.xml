@@ -1,0 +1,103 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F4D17AD4-36FD-FBBC-463B-A7261282C1D6" name="ML_LEASE">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-14 14:49:46 UTC</createdTime>
+<ownerDesignName>Problem2</ownerDesignName>
+<engineerTo>
+<item key="C350CEC1-4798-643C-A192-397F210E4078" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="LEASE_ID" id="E105DF56-B521-F70A-3565-84AC409AFFCB">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-14 14:53:20 UTC</createdTime>
+<commentInRDBMS><![CDATA[THE UNIQUE NUMBER ASSIGNED FOR EVERY LEASING]]></commentInRDBMS>
+<ownerDesignName>Problem2</ownerDesignName>
+<engineerTo>
+<item key="C350CEC1-4798-643C-A192-397F210E4078" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="LEASE_SDATE" id="5432356E-E315-11E4-2D5C-DF8136FE2838">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-14 15:21:38 UTC</createdTime>
+<commentInRDBMS><![CDATA[LEASING START DATE]]></commentInRDBMS>
+<ownerDesignName>Problem2</ownerDesignName>
+<engineerTo>
+<item key="C350CEC1-4798-643C-A192-397F210E4078" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="LEASE_EDATE" id="1DDAC10E-CFCD-DEA4-00F0-D67550EE767E">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-14 15:23:20 UTC</createdTime>
+<commentInRDBMS><![CDATA[LEASING END DATE]]></commentInRDBMS>
+<ownerDesignName>Problem2</ownerDesignName>
+<engineerTo>
+<item key="C350CEC1-4798-643C-A192-397F210E4078" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="UNIT_ID" id="D3FD9D81-8B05-94B5-6B5E-441ACAE4946C">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-14 19:33:23 UTC</createdTime>
+<generatorID>A34B24E9-635D-ED26-DED5-ADC5B717F0E6</generatorID>
+<ownerDesignName>Problem2</ownerDesignName>
+<engineerTo>
+<item key="C350CEC1-4798-643C-A192-397F210E4078" value="true"/>
+</engineerTo>
+<referedAttribute>F5AD144A-21F8-64DF-1033-C4C75B7ED47D</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="LEASE_INFO" id="B92CF1C4-D3DB-B5A8-5BF0-E28E8E1D5A7A">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-15 23:08:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[LEASE INFORMATION]]></commentInRDBMS>
+<ownerDesignName>Problem2</ownerDesignName>
+<engineerTo>
+<item key="C350CEC1-4798-643C-A192-397F210E4078" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="4B1CA1C1-3145-4712-C1DF-7D5DB97E7562" name="LEASING PK">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-14 14:52:17 UTC</createdTime>
+<ownerDesignName>Problem2</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="C350CEC1-4798-643C-A192-397F210E4078" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>E105DF56-B521-F70A-3565-84AC409AFFCB</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

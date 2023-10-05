@@ -1,0 +1,143 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B6FB2823-1C78-8D29-B30E-67A1A32C9285" name="ML_OZ_FLIGHT">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-12 19:17:58 UTC</createdTime>
+<generatorID>F184D8F9-68BE-FA6F-64BF-A6FE0D450CBD</generatorID>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ML_OZ_AIRLINE_AIRLINE_ID" id="FAB776C2-1F36-4801-159F-C3E6500371DC">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-12 19:17:58 UTC</createdTime>
+<generatorID>AA4E45FE-AD19-87F1-6BC3-24374C593CC0</generatorID>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="299502DD-92A9-2448-6313-4CF73FADAF7B" referredColumn="FEFF0E40-51F8-BC3F-3507-77DF2D1D174B"/>
+</associations>
+</Column>
+<Column name="FLIGHT_ID" id="D4289603-BAE6-2694-AC46-C3A523596C12">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-12 19:17:58 UTC</createdTime>
+<generatorID>A8C483D3-279B-AD6C-E783-F5F6B9E83075</generatorID>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DAIRPORT" id="4A7A6645-1BFA-B928-CD25-D3B77B94C52A">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-12 19:17:58 UTC</createdTime>
+<commentInRDBMS><![CDATA[DEPARTURE AIPPORT CODE]]></commentInRDBMS>
+<generatorID>596F242A-24CE-972D-DFCF-316154CA1537</generatorID>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="18DFD087-35C7-B580-17C2-D047516B967B" referredColumn="3A96F036-22B5-8517-4BDA-F1FA50750551"/>
+</associations>
+</Column>
+<Column name="AAIRPORT" id="3D1A6172-61E4-2635-1D2D-E7596D48BF19">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-12 19:17:58 UTC</createdTime>
+<commentInRDBMS><![CDATA[ARRIVAL AIRPORT]]></commentInRDBMS>
+<generatorID>71BAA42E-DB43-D733-F6C8-8590C5027B29</generatorID>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<ownDataTypeParameters>3,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D410C956-1B4B-F7EC-C20A-B115AC920403" referredColumn="3A96F036-22B5-8517-4BDA-F1FA50750551"/>
+</associations>
+</Column>
+<Column name="DTIME" id="7468241D-622D-9D20-3CC5-CF5214C670B0">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-12 19:17:58 UTC</createdTime>
+<commentInRDBMS><![CDATA[DEPARTURE TIME]]></commentInRDBMS>
+<generatorID>29F5C946-ADA3-FBE8-946B-F5431C51B200</generatorID>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT047</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ATIME" id="1D6660AA-E5C2-0353-D80C-1E9513A34088">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-12 19:17:58 UTC</createdTime>
+<commentInRDBMS><![CDATA[ARRIVAL TIME]]></commentInRDBMS>
+<generatorID>0DF7F821-A3C6-1AB8-6ABA-0495FD7644ED</generatorID>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT047</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F2CEA90B-F5B1-BF04-B821-0D4A49CD22C4" name="ML_OZ_FLIGHT_PK">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-12 19:17:58 UTC</createdTime>
+<generatorID>111478B5-24E6-813C-F09E-BBAE065D7073</generatorID>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D4289603-BAE6-2694-AC46-C3A523596C12"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6F4C4283-667C-133C-84FF-E557442DF7C0" name="ML_OZ_FLIGHT_ML_OZ_AIRPORT_FK">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-12 19:17:58 UTC</createdTime>
+<generatorID>081BB60D-37D3-A275-0EDA-808C58E1DDD2</generatorID>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3D1A6172-61E4-2635-1D2D-E7596D48BF19"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="57C6D5A6-0E6A-398C-8EAA-7BF82E8C3037" name="ML_OZ_FLIGHT_ML_OZ_AIRPORT_FKv2">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-12 19:17:58 UTC</createdTime>
+<generatorID>3DAFBDA7-87E0-4164-7553-33D4E5A46056</generatorID>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4A7A6645-1BFA-B928-CD25-D3B77B94C52A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="32E297D3-2C92-D353-3966-4821B4570484" name="ML_OZ_FLIGHT_ML_OZ_AIRLINE_FK">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-12 19:17:58 UTC</createdTime>
+<generatorID>7CC623C2-B94F-F779-B78A-F587F12EAC48</generatorID>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FAB776C2-1F36-4801-159F-C3E6500371DC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,91 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A6360E7E-933E-EFAF-4FD1-9FDFDFD0F69A" name="ML_OZ_AIRLINE_MODEL">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-12 19:17:58 UTC</createdTime>
+<generatorID>FD991F24-BA7B-4E2D-9035-CDAB3DD856DE</generatorID>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="QUANTITY" id="F9206CBD-0E40-312B-EAB7-EBBFE94E74E0">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-12 19:17:58 UTC</createdTime>
+<generatorID>8E88C9E9-4456-FED0-0D78-009FBBDFCD19</generatorID>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ML_OZ_AIRLINE_AIRLINE_ID" id="E25BFB64-C99A-7FC9-1196-FF667EFF5C2F">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-12 19:17:58 UTC</createdTime>
+<generatorID>DA42DA1B-A734-F669-4E2F-76CE72D6C6C8</generatorID>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B73CF061-EF53-D240-58D4-BBCB2EDB9C93" referredColumn="FEFF0E40-51F8-BC3F-3507-77DF2D1D174B"/>
+</associations>
+</Column>
+<Column name="ML_OZ_MODEL_MODEL_ID" id="177961C7-8E3A-A938-8F62-110D523AC1F0">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-12 19:17:58 UTC</createdTime>
+<generatorID>805D66F8-AA04-B773-EC04-481A29BF1D0A</generatorID>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D4CDE458-B400-690B-545F-3CA5AA21378F" referredColumn="CAB6F30E-E04E-B88A-00A0-C263FBE2D053"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="18E7FE5D-9A7B-72AA-FC50-FE7C2A12FA41" name="ML_OZ_AIRLINE_MODEL_PK">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-12 19:17:58 UTC</createdTime>
+<generatorID>28D97E88-266B-3777-873F-9487F282CAC7</generatorID>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E25BFB64-C99A-7FC9-1196-FF667EFF5C2F"/>
+<colUsage columnID="177961C7-8E3A-A938-8F62-110D523AC1F0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BC503E95-E301-EB13-215E-94F49B719588" name="ML_OZ_AIRLINE_MODEL_ML_OZ_AIRLINE_FK">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-12 19:17:58 UTC</createdTime>
+<generatorID>E6064C09-B83B-8DAD-B782-A0C0B329E9E6</generatorID>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E25BFB64-C99A-7FC9-1196-FF667EFF5C2F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BBB28E1F-88DC-C53C-ABEF-C08A34C51077" name="ML_OZ_AIRLINE_MODEL_ML_OZ_MODEL_FK">
+<createdBy>limra</createdBy>
+<createdTime>2021-11-12 19:17:58 UTC</createdTime>
+<generatorID>58714B46-264E-AAE1-B9E7-C8ABDCD55950</generatorID>
+<ownerDesignName>ProjectPart1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="177961C7-8E3A-A938-8F62-110D523AC1F0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

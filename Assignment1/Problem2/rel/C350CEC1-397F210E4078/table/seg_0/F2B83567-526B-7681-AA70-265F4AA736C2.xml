@@ -1,0 +1,114 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F2B83567-526B-7681-AA70-265F4AA736C2" name="ML_LEASE">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-16 00:00:20 UTC</createdTime>
+<generatorID>F4D17AD4-36FD-FBBC-463B-A7261282C1D6</generatorID>
+<ownerDesignName>Problem2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="LEASE_ID" id="98BB6EBF-D523-3195-ED96-7E37002FEC98">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-16 00:00:20 UTC</createdTime>
+<commentInRDBMS><![CDATA[THE UNIQUE NUMBER ASSIGNED FOR EVERY LEASING]]></commentInRDBMS>
+<generatorID>E105DF56-B521-F70A-3565-84AC409AFFCB</generatorID>
+<ownerDesignName>Problem2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LEASE_SDATE" id="9A9D5957-9256-AA98-2F91-02C65041F72A">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-16 00:00:20 UTC</createdTime>
+<commentInRDBMS><![CDATA[LEASING START DATE]]></commentInRDBMS>
+<generatorID>5432356E-E315-11E4-2D5C-DF8136FE2838</generatorID>
+<ownerDesignName>Problem2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LEASE_EDATE" id="C861AB18-6D59-B1A0-CAC4-E2B71A1D6707">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-16 00:00:20 UTC</createdTime>
+<commentInRDBMS><![CDATA[LEASING END DATE]]></commentInRDBMS>
+<generatorID>1DDAC10E-CFCD-DEA4-00F0-D67550EE767E</generatorID>
+<ownerDesignName>Problem2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="UNIT_ID" id="1A515E68-D56F-1372-F75D-D16C1EBE9FEF">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-16 00:00:20 UTC</createdTime>
+<generatorID>D3FD9D81-8B05-94B5-6B5E-441ACAE4946C</generatorID>
+<ownerDesignName>Problem2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="102CF86F-CAA0-7D18-65CA-294E9493CD35" referredColumn="C1292576-2CC5-56D3-257D-92E9E6274ACB"/>
+</associations>
+</Column>
+<Column name="LEASE_INFO" id="DC3BD7F0-26B2-76CB-AB39-7D893D2850E4">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-16 00:00:20 UTC</createdTime>
+<commentInRDBMS><![CDATA[LEASE INFORMATION]]></commentInRDBMS>
+<generatorID>B92CF1C4-D3DB-B5A8-5BF0-E28E8E1D5A7A</generatorID>
+<ownerDesignName>Problem2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="75F6A5E5-69A2-9808-1D17-67720AEBE7DC" name="ML_LEASE_PK">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-16 00:00:20 UTC</createdTime>
+<generatorID>4B1CA1C1-3145-4712-C1DF-7D5DB97E7562</generatorID>
+<ownerDesignName>Problem2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="98BB6EBF-D523-3195-ED96-7E37002FEC98"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8B331241-3451-910B-B93E-54731EB44490" name="ML_LEASE__IDX">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-16 00:00:20 UTC</createdTime>
+<ownerDesignName>Problem2</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>A34B24E9-635D-ED26-DED5-ADC5B717F0E6</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="1A515E68-D56F-1372-F75D-D16C1EBE9FEF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5A94EE91-6E4A-DEAC-2BCE-A5038FF812EE" name="ML_LEASE_ML_UNIT_FK">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-16 00:00:20 UTC</createdTime>
+<generatorID>A34B24E9-635D-ED26-DED5-ADC5B717F0E6</generatorID>
+<ownerDesignName>Problem2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1A515E68-D56F-1372-F75D-D16C1EBE9FEF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

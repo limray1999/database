@@ -1,0 +1,53 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D035BC7F-F3E8-AECC-A85A-C4884502CD2C" name="ML_pSKILL">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-13 02:10:32 UTC</createdTime>
+<generatorID>DFB6715A-96DC-A057-305D-7CD9800459F3</generatorID>
+<ownerDesignName>Problem1</ownerDesignName>
+<ordsAlias>pskill</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="SKILLID" id="4B9ED3A0-0916-F8CB-2339-6CDB7273FF18">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-13 02:10:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[THE UNIQUE NUMBER ASSIGNED TO EACH SKILL]]></commentInRDBMS>
+<generatorID>A1C10B6B-5B6D-485D-B657-1A07633D5C91</generatorID>
+<ownerDesignName>Problem1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SKILL_NAME" id="1D2207A5-B6FC-9884-D97E-61357466A938">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-13 02:10:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[THE NAME OF SKILL]]></commentInRDBMS>
+<generatorID>C722DF66-57BC-94F2-1221-B52A5B98CD9F</generatorID>
+<ownerDesignName>Problem1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D567AB85-EAF8-9007-D519-9A2170B7314F" name="pSKILL_PK">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-13 02:10:32 UTC</createdTime>
+<generatorID>96CCA743-4219-A830-236F-F5CE59C69BAD</generatorID>
+<ownerDesignName>Problem1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4B9ED3A0-0916-F8CB-2339-6CDB7273FF18"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

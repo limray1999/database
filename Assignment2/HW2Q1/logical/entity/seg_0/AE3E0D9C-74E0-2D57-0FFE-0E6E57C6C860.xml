@@ -1,0 +1,123 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="AE3E0D9C-74E0-2D57-0FFE-0E6E57C6C860" name="STUDENT">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-27 14:27:45 UTC</createdTime>
+<ownerDesignName>HW2Q1</ownerDesignName>
+<engineerTo>
+<item key="74E892E6-6B91-4587-BE7D-498957C17D1E" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<hierarchicalParent>3D2BE446-25E8-6BCD-80A2-E9AFC7E1FFD7</hierarchicalParent>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<generateDiscrimColumn>true</generateDiscrimColumn>
+<discriminatorAttributeID>904EBEC5-572F-245E-35B5-22842E7E0F88</discriminatorAttributeID>
+<discriminatorValue>STU</discriminatorValue>
+<completeSubtypes>true</completeSubtypes>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="StudentID" id="4A615D3B-AB66-EE92-4633-5783CC8A7DF1">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-27 14:36:16 UTC</createdTime>
+<commentInRDBMS><![CDATA[The Unique Number Assigned to Each Student]]></commentInRDBMS>
+<ownerDesignName>HW2Q1</ownerDesignName>
+<engineerTo>
+<item key="74E892E6-6B91-4587-BE7D-498957C17D1E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<ownDataTypeParameters>,20,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="STYPE" id="904EBEC5-572F-245E-35B5-22842E7E0F88">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-27 21:49:05 UTC</createdTime>
+<ownerDesignName>HW2Q1</ownerDesignName>
+<engineerTo>
+<item key="74E892E6-6B91-4587-BE7D-498957C17D1E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Major" id="5156F350-CE77-FEE0-4D53-D6E7D3BBA54F">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-27 14:54:05 UTC</createdTime>
+<ownerDesignName>HW2Q1</ownerDesignName>
+<engineerTo>
+<item key="74E892E6-6B91-4587-BE7D-498957C17D1E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DEPT" id="A6FD2217-B771-E6F2-CA11-32E237989962">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-27 14:54:18 UTC</createdTime>
+<commentInRDBMS><![CDATA[Student's Department]]></commentInRDBMS>
+<ownerDesignName>HW2Q1</ownerDesignName>
+<engineerTo>
+<item key="74E892E6-6B91-4587-BE7D-498957C17D1E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="GPA" id="36974721-A726-C4D3-0189-91701D02598D">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-27 16:54:25 UTC</createdTime>
+<ownerDesignName>HW2Q1</ownerDesignName>
+<engineerTo>
+<item key="74E892E6-6B91-4587-BE7D-498957C17D1E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,3,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="EmployeeID" id="618604DF-2DD3-5945-7C71-9097FF284500">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-28 00:17:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[EmployeeID of Student's Instructor]]></commentInRDBMS>
+<generatorID>E8A7035B-8A7E-FB79-038F-9B9E30016FAC</generatorID>
+<ownerDesignName>HW2Q1</ownerDesignName>
+<engineerTo>
+<item key="74E892E6-6B91-4587-BE7D-498957C17D1E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>D2DA5C91-01F3-A4B1-DD9A-8AFBDB169E81</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<ownDataTypeParameters>,20,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="E063C16D-F88E-66AB-DE37-C6B1B6D0AD05" name="STUDETN PK">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-27 14:36:53 UTC</createdTime>
+<ownerDesignName>HW2Q1</ownerDesignName>
+<engineerTo>
+<item key="74E892E6-6B91-4587-BE7D-498957C17D1E" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>4A615D3B-AB66-EE92-4633-5783CC8A7DF1</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

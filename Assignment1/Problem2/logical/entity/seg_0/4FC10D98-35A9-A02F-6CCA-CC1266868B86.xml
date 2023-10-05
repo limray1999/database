@@ -1,0 +1,191 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="4FC10D98-35A9-A02F-6CCA-CC1266868B86" name="ML_UNIT">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-12 04:31:42 UTC</createdTime>
+<ownerDesignName>Problem2</ownerDesignName>
+<engineerTo>
+<item key="C350CEC1-4798-643C-A192-397F210E4078" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="BUILDING_ID" id="8B8C8F9B-7E19-119F-6ED9-203059D1BC8D">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-13 02:30:13 UTC</createdTime>
+<generatorID>CE2AC8B1-DD94-4357-A8E7-7C0F7CFE2361</generatorID>
+<ownerDesignName>Problem2</ownerDesignName>
+<engineerTo>
+<item key="C350CEC1-4798-643C-A192-397F210E4078" value="true"/>
+</engineerTo>
+<referedAttribute>A1890C58-45EF-7C65-FAD2-5AED1DD4BF96</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="UNIT_ID" id="F5AD144A-21F8-64DF-1033-C4C75B7ED47D">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-13 02:54:35 UTC</createdTime>
+<commentInRDBMS><![CDATA[THE UNIQUE UNIT NUMBER ASSIGNED TO EACH UNIT, SUCH AS 1A, 2B, 3E, 9P ECT.]]></commentInRDBMS>
+<ownerDesignName>Problem2</ownerDesignName>
+<engineerTo>
+<item key="C350CEC1-4798-643C-A192-397F210E4078" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<ownDataTypeParameters>3,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="FLOOR_NO" id="36953BC5-F041-527E-48A6-F5B55C4AFAA3">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-13 02:56:26 UTC</createdTime>
+<commentInRDBMS><![CDATA[THE FLOOR NUMBER OF UNIT]]></commentInRDBMS>
+<ownerDesignName>Problem2</ownerDesignName>
+<engineerTo>
+<item key="C350CEC1-4798-643C-A192-397F210E4078" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CARPET_AREA" id="9D2CEC7C-6477-38D8-BBA4-7B8109B53826">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-13 02:57:21 UTC</createdTime>
+<commentInRDBMS><![CDATA[THE CARPET AREA OF UNIT, IN SQUARE METERS]]></commentInRDBMS>
+<ownerDesignName>Problem2</ownerDesignName>
+<engineerTo>
+<item key="C350CEC1-4798-643C-A192-397F210E4078" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="BATHROOM_NUM" id="7CBF6CD8-1765-0403-5532-AA7FE798CE83">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-13 03:01:44 UTC</createdTime>
+<commentInRDBMS><![CDATA[NUMBER OF BATHROOM IN UNIT]]></commentInRDBMS>
+<ownerDesignName>Problem2</ownerDesignName>
+<engineerTo>
+<item key="C350CEC1-4798-643C-A192-397F210E4078" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="BEDROOM_NUM" id="8C5CE6BA-2C2B-5640-4C5B-83B21FB33016">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-13 03:09:12 UTC</createdTime>
+<commentInRDBMS><![CDATA[NUMBER OF BEDROOM IN UNIT]]></commentInRDBMS>
+<ownerDesignName>Problem2</ownerDesignName>
+<engineerTo>
+<item key="C350CEC1-4798-643C-A192-397F210E4078" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="MAX_ALLOWED" id="1BD03435-937F-383E-F24A-6FD8387FBCF9">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-13 03:10:14 UTC</createdTime>
+<commentInRDBMS><![CDATA[THE MAXIMUM NUMBER OF PEOPLE ALLOWED TO LIVE IN UNIT]]></commentInRDBMS>
+<ownerDesignName>Problem2</ownerDesignName>
+<engineerTo>
+<item key="C350CEC1-4798-643C-A192-397F210E4078" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="AVAILABLE" id="AB14952E-D4F2-4DF0-6FE1-2D2E361930E7">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-13 03:11:06 UTC</createdTime>
+<commentInRDBMS><![CDATA[THE AVAILIBILITY OF UNIT]]></commentInRDBMS>
+<ownerDesignName>Problem2</ownerDesignName>
+<engineerTo>
+<item key="C350CEC1-4798-643C-A192-397F210E4078" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="AVI_DATE" id="47F4DAF0-8BCB-C4CE-7020-A9AE10CEEB25">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-13 03:11:43 UTC</createdTime>
+<commentInRDBMS><![CDATA[DATE OF AVAILIABILITY FOR UNIT]]></commentInRDBMS>
+<ownerDesignName>Problem2</ownerDesignName>
+<engineerTo>
+<item key="C350CEC1-4798-643C-A192-397F210E4078" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="MONTHLY_PRICE" id="9FEDBD92-114C-244F-26AD-C0518E81FFF1">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-13 03:12:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[THE RENTAL PRICE PER MONTH, IN US DOLLAR]]></commentInRDBMS>
+<ownerDesignName>Problem2</ownerDesignName>
+<engineerTo>
+<item key="C350CEC1-4798-643C-A192-397F210E4078" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,5,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="UNIT_ID1" id="A26AEC13-EDA6-2654-999B-5778A31A6CC9">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-15 17:39:27 UTC</createdTime>
+<generatorID>C215C353-4041-7C49-B977-81E76C9AE3D6</generatorID>
+<ownerDesignName>Problem2</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="C350CEC1-4798-643C-A192-397F210E4078" value="false"/>
+</engineerTo>
+<referedAttribute>CDF1662F-3865-FD54-C925-C06766909B0C</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="E3B9C2CE-C2EB-61F8-76FC-D313AF5D645E" name="APTUNIT PK">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-13 02:56:44 UTC</createdTime>
+<ownerDesignName>Problem2</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="C350CEC1-4798-643C-A192-397F210E4078" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>F5AD144A-21F8-64DF-1033-C4C75B7ED47D</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

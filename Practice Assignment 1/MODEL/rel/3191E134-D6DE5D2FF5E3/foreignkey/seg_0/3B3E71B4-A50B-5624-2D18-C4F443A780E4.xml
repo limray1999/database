@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="3B3E71B4-A50B-5624-2D18-C4F443A780E4" containerWithKeyObject="27924EAF-C676-A862-F9D1-0EC0F73CDC37" localFKIndex="2D891B7B-F836-42EE-F129-5E6AAFB3735B" name="ML_PROEMP_ML_PROJECT_FK">
+<createdBy>limra</createdBy>
+<createdTime>2021-10-24 04:10:32 UTC</createdTime>
+<generatorID>7D86ACFB-A26E-B115-458E-E006AC8DDAA4</generatorID>
+<ownerDesignName>MODEL</ownerDesignName>
+<referredTableLongName>ML_PROJECT</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>5863747E-B957-BBF4-0EE3-FFEEACDE8B97</referredTableID>
+<keyObject>DB2A2FF7-F79E-3FA3-CF58-4279A58EA8C4</keyObject>
+<referredKeyID>DB2A2FF7-F79E-3FA3-CF58-4279A58EA8C4</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>PROJID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

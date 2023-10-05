@@ -1,0 +1,233 @@
+-- ml_oz_passenger
+alter table ml_oz_passenger add constraint c_passengerid check (passengerid between 100000 and 999999);
+alter table ml_oz_passenger add constraint c_passengergender check (pgender in ('M', 'F'));
+alter table ml_oz_passenger add constraint c_pfname check (pfname = initcap(pfname));
+alter table ml_oz_passenger add constraint c_pname check (plname = initcap(plname));
+
+-- ml_oz_insurance
+alter table ml_oz_insurance add constraint c_planid check (planid between 100000 and 999999);
+
+-- ml_oz_invoice
+alter table ml_oz_invoice add constraint c_invoicenumber check (invoicenumber betweeneen 100000 and 999999);
+
+-- ml_oz_payment
+alter table ml_oz_payment add constraint c_paymentid check (paymentid between 100000 and 999999);
+
+-- ml_oz_flight
+alter table ml_oz_flight add constraint c_flightid check (flightid between 100000 and 999999);
+
+-- ml_oz_airline
+alter table ml_oz_airline add constraint c_airid check (airid between 100000 and 999999);
+
+-- ml_oz_airmodel
+alter table ml_oz_airmodel add constraint c_modelid check (modelid between 100000 and 999999);
+
+--ml_oz_mealplan
+alter table ml_oz_mealplan add constraint c_mp_id check (mp_id between 1000 and 9999);
+
+--ml_oz_mealplan
+alter table ml_oz_spec_requ add constraint c_sr_id check (request_id between 1000 and 9999);
+
+--ml_oz_mealplan
+alter table ml_oz_cabin_class add constraint c_cc_id_id check (cc_id between 1000 and 9999);
+
+
+
+
+
+
+
+-- insert into ml_oz_airline
+insert into ml_oz_airline (airid, airlinename, mainhub, headquarter, aircountry) values (200001, 'Emirates Airline', 'Dubai International Airport', 'Dubai', 'United Arab Emirates');
+
+insert into ml_oz_airline (airid, airlinename, mainhub, headquarter, aircountry) values ( 200002, 'Qatar Airways', 'Doha International Airport', 'Doha', 'Qatar');
+
+insert into ml_oz_airline (airid, airlinename, mainhub, headquarter, aircountry) values ( 200003, 'AirAsia', 'Kuala Lumpur International Airport', 'Kuala Lumpur', 'Malaysia');
+
+insert into ml_oz_airline (airid, airlinename, mainhub, headquarter, aircountry) values ( 200004, 'Air China', 'Beijing Capital International Airport', 'Beijing', 'China');
+
+insert into ml_oz_airline (airid, airlinename, mainhub, headquarter, aircountry) values ( 200005, 'Jet Airways', 'Chhatrapati Shivaji International Airport', 'Mumbai', 'India');
+
+insert into ml_oz_airline (airid, airlinename, mainhub, headquarter, aircountry) values ( 200006, 'JAL Group', 'Narita and Tokyo International Airport', 'Tokyo', 'Japn');
+
+insert into ml_oz_airline (airid, airlinename, mainhub, headquarter, aircountry) values ( 200007, 'Jetstar', 'Melbourne Airport', 'Melbourne', 'Australia');
+
+insert into ml_oz_airline (airid, airlinename, mainhub, headquarter, aircountry) values ( 200008, 'Lion Air', 'Soekarno-Hatta International Airport', 'Jakarta', 'Indonesia');
+
+insert into ml_oz_airline (airid, airlinename, mainhub, headquarter, aircountry) values ( 200009, 'Korean Air', 'Incheon International Airport', 'Seoul', 'South Korea');
+
+insert into ml_oz_airline (airid, airlinename, mainhub, headquarter, aircountry) values ( 200010, 'Kingfisher Airlines', 'Bengaluru International Airport', 'Bangalore', 'India');
+
+insert into ml_oz_airline (airid, airlinename, mainhub, headquarter, aircountry) values ( 200011, 'Singapore Airlines', 'Singapore Changi Airport', 'Singapore', 'Singapore');
+
+insert into ml_oz_airline (airid, airlinename, mainhub, headquarter, aircountry) values ( 200012, 'Thai Airways International', 'Suvarnabhumi Airport', 'Bangkok', 'Thailand');
+
+insert into ml_oz_airline (airid, airlinename, mainhub, headquarter, aircountry) values ( 200013, 'Vietnam Airlines', 'Noi Bai International Airport Tan Son Nhat International Airport', 'Hanoi Ho Chi Minh City', 'Vietnam');
+
+insert into ml_oz_airline (airid, airlinename, mainhub, headquarter, aircountry) values ( 200014, 'Air Berlin Group', 'Sheremetyevo International Airport', 'Berlin', 'Germany');
+
+insert into ml_oz_airline (airid, airlinename, mainhub, headquarter, aircountry) values ( 200015, 'Air France KLM', 'Paris-Charles de Gaulle Airport', 'Paris', 'France');
+
+insert into ml_oz_airline (airid, airlinename, mainhub, headquarter, aircountry) values ( 200016, 'Alitalia', 'Leonardo da Vinci-Fiumicino Airport', 'Rome', 'Italy');
+
+insert into ml_oz_airline (airid, airlinename, mainhub, headquarter, aircountry) values ( 200017, 'Austrian Airlines Group', 'Vienna International Airport', 'Vienna', 'Austria');
+
+insert into ml_oz_airline (airid, airlinename, mainhub, headquarter, aircountry) values ( 200018, 'EasyJet', 'London Luton Airport', 'London', 'United Kingdom');
+
+insert into ml_oz_airline (airid, airlinename, mainhub, headquarter, aircountry) values ( 200019, 'Ryanair', 'Dublin Airport', 'Dublin', 'Ireland');
+
+insert into ml_oz_airline (airid, airlinename, mainhub, headquarter, aircountry) values ( 200020, 'Avianca', 'El Dorado International Airport', 'Bogota', 'Columbia');
+
+
+
+
+-- insert into ml_oz_airmodel
+insert into ml_oz_airmodel (modelid, modelname, manufacturer, numofengines, numoffleet) values (100001, '737-800', 'Boeing', 2,826);
+insert into ml_oz_airmodel (modelid, modelname, manufacturer, numofengines, numoffleet) values (100002, '737-700', 'Boeing', 2,579);
+insert into ml_oz_airmodel (modelid, modelname, manufacturer, numofengines, numoffleet) values ( , , , ,);
+
+-- insert into ml_oz_airline_model
+insert into ml_oz_airline_model (qty, airid, modelid) values (100, 300001, 400001);
+insert into ml_oz_airline_model (qty, airid, modelid) values (100, 300002, 400002);
+insert into ml_oz_airline_model (qty, airid, modelid) values (100, 300003, 400003);
+insert into ml_oz_airline_model (qty, airid, modelid) values (100, 300004, 400004);
+insert into ml_oz_airline_model (qty, airid, modelid) values (100, 300005, 400005);
+insert into ml_oz_airline_model (qty, airid, modelid) values (100, 300006, 400006);
+insert into ml_oz_airline_model (qty, airid, modelid) values (100, 300007, 400007);
+insert into ml_oz_airline_model (qty, airid, modelid) values (100, 300008, 400008);
+insert into ml_oz_airline_model (qty, airid, modelid) values (100, 300009, 400009);
+insert into ml_oz_airline_model (qty, airid, modelid) values (100, 300010, 400010);
+insert into ml_oz_airline_model (qty, airid, modelid) values (100, 300011, 400011);
+insert into ml_oz_airline_model (qty, airid, modelid) values (100, 300012, 400012);
+insert into ml_oz_airline_model (qty, airid, modelid) values (100, 300013, 400013);
+insert into ml_oz_airline_model (qty, airid, modelid) values (100, 300014, 400014);
+insert into ml_oz_airline_model (qty, airid, modelid) values (100, 300015, 400015);
+insert into ml_oz_airline_model (qty, airid, modelid) values (100, 300016, 400016);
+insert into ml_oz_airline_model (qty, airid, modelid) values (100, 300017, 400017);
+insert into ml_oz_airline_model (qty, airid, modelid) values (100, 300018, 400018);
+insert into ml_oz_airline_model (qty, airid, modelid) values (100, 300019, 400019);
+insert into ml_oz_airline_model (qty, airid, modelid) values (100, 300020, 400020);
+
+
+
+
+--insert into ml_oz_airport
+insert into ml_oz_airport (airportcode, airportname, airportcity, airportcountry, airporttype) values ('JAC', 'Jackson Hole', 'Jackson', 'United States', 'International');
+insert into ml_oz_airport (airportcode, airportname, airportcity, airportcountry, airporttype) values ('JAG', 'Shahbaz Air Base', 'Jacobabad', 'Pakistan', 'International');
+insert into ml_oz_airport (airportcode, airportname, airportcity, airportcountry, airporttype) values ('JAI', 'Jaipur International', 'Jaipur', 'India', 'Both');
+insert into ml_oz_airport (airportcode, airportname, airportcity, airportcountry, airporttype) values ('JAK', 'Jacmel', 'Jacmel', 'Haiti', 'Both');
+insert into ml_oz_airport (airportcode, airportname, airportcity, airportcountry, airporttype) values ('JAX', ''Jacksonville International, 'Jacksonville', 'United States', 'Both');
+insert into ml_oz_airport (airportcode, airportname, airportcity, airportcountry, airporttype) values ('JED', 'King Abdulaziz International', 'Jeddah', 'Saudi Arabia', 'Both');
+insert into ml_oz_airport (airportcode, airportname, airportcity, airportcountry, airporttype) values ('JFK', 'John F Kennedy International', 'New york', 'United States', 'Both');
+
+insert into ml_oz_airport (airportcode, airportname, airportcity, airportcountry, airporttype) values ('JAE', 'Shumba', 'Jaén', Perú'', 'International');
+insert into ml_oz_airport (airportcode, airportname, airportcity, airportcountry, airporttype) values ('JAD', 'Perth Jandakot', 'Perth', 'Australia', 'International');
+
+insert into ml_oz_airport (airportcode, airportname, airportcity, airportcountry, airporttype) values ('JAU', 'Francisco Carle', 'Jauja', 'Perú', 'International');
+
+insert into ml_oz_airport (airportcode, airportname, airportcity, airportcountry, airporttype) values (JBQ, 'La Isabela International', 'La Isabela', 'Dominican Republic', 'International');
+
+insert into ml_oz_airport (airportcode, airportname, airportcity, airportcountry, airporttype) values ('JAP', 'Chacarita', 'Puntarenas', 'Costa Rica', 'Domestic');
+insert into ml_oz_airport (airportcode, airportname, airportcity, airportcountry, airporttype) values ('JAQ', 'Jacquinot Bay', 'Jacquinot Bay', 'Papua New Guinea', 'Domestic');
+insert into ml_oz_airport (airportcode, airportname, airportcity, airportcountry, airporttype) values ('BAB', 'Beale Air Force Base', 'Marysville', 'United States', 'Domestic');
+insert into ml_oz_airport (airportcode, airportname, airportcity, airportcountry, airporttype) values ('BAF', 'Westfield-Barnes Regional', 'Westfield/Springfield', 'United States', 'Domestic');
+insert into ml_oz_airport (airportcode, airportname, airportcity, airportcountry, airporttype) values ('BAL', 'Batman', 'Batman', 'Turkey', 'Domestic');
+
+
+
+
+
+-- insert into ml_oz_flight
+insert into ml_oz_flight(flightid, dairport, aairport, departuretime, arrivaltime, airid) values (500001, 'JAC', 'JAG', TIMESTAMP '2021-01-31 09:26:56.66 +02:00', TIMESTAMP '2021-01-31 04:23:32.66 +05:00', 200001);
+insert into ml_oz_flight(flightid, dairport, aairport, departuretime, arrivaltime, airid) values (500002, 'JBQ', 'JAU', TIMESTAMP '2021-01-31 09:26:56.66 +02:00', TIMESTAMP '2021-01-31 04:23:32.66 +05:00', 200002);
+
+insert into ml_oz_flight(flightid, dairport, aairport, departuretime, arrivaltime, airid) values (500003, 'JAD', 'JAE', TIMESTAMP '2021-01-31 09:26:56.66 +02:00', TIMESTAMP '2021-01-31 04:23:32.66 +05:00', 100003);
+
+insert into ml_oz_flight(flightid, dairport, aairport, departuretime, arrivaltime, airid) values (500004, 'JED', 'JFK', TIMESTAMP '2021-12-31 09:26:56.66 +02:00', TIMESTAMP '2022-01-01 04:23:32.66 +05:00', 100004);
+insert into ml_oz_flight(flightid, dairport, aairport, departuretime, arrivaltime, airid) values (500005, 'JAX', 'JAE', TIMESTAMP '2021-11-31 09:26:56.66 +02:00', TIMESTAMP '2021-12-01 04:23:32.66 +05:00', 100005);
+insert into ml_oz_flight(flightid, dairport, aairport, departuretime, arrivaltime, airid) values (500006, 'JAX', 'JAI', TIMESTAMP '2021-09-11 09:26:56.66 +02:00', TIMESTAMP '2021-09-12 04:23:32.66 +05:00', 100006);
+insert into ml_oz_flight(flightid, dairport, aairport, departuretime, arrivaltime, airid) values (500007, 'JAP', 'GAQ', TIMESTAMP '2021-07-28 09:26:56.66 +02:00', TIMESTAMP '2021-07-29 04:23:32.66 +05:00', 100007);
+insert into ml_oz_flight(flightid, dairport, aairport, departuretime, arrivaltime, airid) values (500008, 'BAL', 'BAF', TIMESTAMP '2023-07-28 09:26:56.66 +02:00', TIMESTAMP '2023-07-29 04:23:32.66 +05:00', 100008);
+insert into ml_oz_flight(flightid, dairport, aairport, departuretime, arrivaltime, airid) values (500009, 'JAP', 'BAB', TIMESTAMP '2022-07-28 09:26:56.66 +02:00', TIMESTAMP '2022-07-29 04:23:32.66 +05:00', 100009);
+insert into ml_oz_flight(flightid, dairport, aairport, departuretime, arrivaltime, airid) values (500010, 'JFK', 'GAQ', TIMESTAMP '2021-12-28 09:26:56.66 +02:00', TIMESTAMP '2021-12-29 04:23:32.66 +05:00', 100010);
+
+
+
+
+
+
+-- insert into ml_oz_insuranceplan
+insert into ml_oz_insuranceplan (planid, planname, description, cost) values (600001, 'Trip Cancellation', 'Get 3 times of refund when the trip is cancelled', 1234.92);
+insert into ml_oz_insuranceplan (planid, planname, description, cost) values (600002, 'Trip Interruption', 'Get 2 times of refund when the trip is interrupt', 923.12);
+insert into ml_oz_insuranceplan (planid, planname, description, cost) values (600003, 'Medical Insurance', 'Pay full medical bill if incident happen on the airplane', 1123.12);
+insert into ml_oz_insuranceplan (planid, planname, description, cost) values (600004, 'Baggage Insurance', 'Pay up to 2000$ suitcase worth', 93.12);
+insert into ml_oz_insuranceplan (planid, planname, description, cost) values (600005, 'Accidental Death Insurance', 'Get 1 million if death happen', 500.12);
+insert into ml_oz_insuranceplan (planid, planname, description, cost) values (600006, 'All-inclusive Insurance', 'All the insurance included.', 2123.12);
+
+
+
+-- insert into ml_oz_purchase
+insert into ml_oz_purchase (purchaseid, coveragefname, coveragelname, planid, invoicenumber, flightid, passengerid) values ();
+
+
+-- insert into ml_oz_passenger
+insert into ml_oz_passenger (passengerid, pfname, plname, pbirthdate, pnationality, pgender, passportnumber, pexpirydate, passengertype)
+values (100001, 'Peter', 'Parker', DATE '1998-12-25', 'United States', 'M', 'abcd12345', DATE '2026-12-25', 'P');
+
+insert into ml_oz_passenger (passengerid, pfname, plname, pbirthdate, pnationality, pgender, passportnumber, pexpirydate, passengertype)
+values (100006, 'Peter', 'Parker', DATE '1998-12-25', 'United States', 'M', 'abcd12345', DATE '2026-12-25', 'P');
+
+insert into ml_oz_passenger (passengerid, pfname, plname, pbirthdate, pnationality, pgender, passportnumber, pexpirydate, passengertype)
+values (100007, 'Tony', 'Kim', DATE '2001-2-5', 'United States', 'M', 'abrd12567', DATE '2026-9-20', 'C');
+
+insert into ml_oz_passenger (passengerid, pfname, plname, pbirthdate, pnationality, pgender, passportnumber, pexpirydate, passengertype)
+values (100008, 'Amy', 'Smith', DATE '1994-3-9', 'United States', 'F', 'eras2312', DATE '2022-12-20', 'C');
+
+insert into ml_oz_passenger (passengerid, pfname, plname, pbirthdate, pnationality, pgender, passportnumber, pexpirydate, passengertype)
+values (100009, 'Mike', 'Anderson', DATE '1988-6-6', 'Scotland', 'M', 'ebrd34567', DATE '20223-3-27', 'C');
+
+-- insert into ml_oz_customer
+insert into ml_oz_customer (passengerid, street, city, state, zipcode, country, email, contactnumber, numofpassenger, efname, elname, econtact, customertype)
+values (100006, 'a', 'b', 'c', 111111, 'e', 'email', '2323-423', 2, 'harry', 'porter', '1212-3224', 'C');
+
+insert into ml_oz_customer (passengerid, street, city, state, zipcode, country, email, contactnumber, numofpassenger, efname, elname, econtact, customertype)
+values (100007, '100Ave', 'Boston', 'Massachusetts', 02215, 'United States', '100007@gmail.com', '+1 000-0000-001', 3, 'Lily', 'Anderson', '+1 123-634-743', 'M');
+
+insert into ml_oz_customer (passengerid, street, city, state, zipcode, country, email, contactnumber, numofpassenger, efname, elname, econtact, customertype)
+values (100009, ‘101Ave’, ‘New York’, ‘New York’, 11212, ‘United States’, 100009@gmail.com’, ‘+1 000-012-982’, 2, ‘Tom’, ‘Gay’, ‘+1 012-321-864’, B)
+
+-- insert into ml_oz_ba
+insert into ml_oz_ba(passengerid, bname, webaddress, phonenumber) values (100009, ‘Kayak’, ‘www.kayak.com’, ‘+1 636-123-865’);
+
+-- insert into ml_oz_member
+insert into ml_oz_member (passengerid, membershipname, assocaitedairline, mstartdate, menfdate) values (100007, ‘a’, ‘b’, DATE ‘2019-3-7’, NULL);
+
+
+
+
+
+
+
+-- count
+select count (*) from ml_oz_airline;
+select count (*) from ml_oz_passenger;
+select count (*) from ml_oz_customer;
+select count (*) from ml_oz_member;
+select count (*) from ml_oz_ba;
+select count (*) from ml_oz_passenger_request;
+select count (*) from ml_oz_specialrequest;
+select count (*) from ml_oz_passenger_flight;
+select count (*) from ml_oz_airport;
+select count (*) from ml_oz_flight;
+select count (*) from ml_oz_airline_model;
+select count (*) from ml_oz_airmodel;
+select count (*) from ml_oz_insuranceplan;
+select count (*) from ml_oz_purchase;
+select count (*) from ml_oz_invoice;
+select count (*) from ml_oz_payment;
+
+
+
+-- data dictionary queries
+select * from user_cons_columns;
+select * from ALL_TAB_COLUMNS;
